@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://Bachstelze:HF_TOKEN@huggingface.co/spaces/Bachstelze/github_sync main
+        run: git push -f https://Bachstelze:HF_TOKEN@huggingface.co/spaces/Bachstelze/github_sync main

@@ -22,5 +22,4 @@ pinned: false
 - Slack as medium of communications
 - Github for version control
 - Meetings as and when needed
-
-- Upcoming: integrating hugging face as deployment platform
+- synchronization of github with the [hugginface space](https://huggingface.co/spaces/Bachstelze/github_sync)

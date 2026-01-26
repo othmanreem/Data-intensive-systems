@@ -1,5 +1,5 @@
 ---
-title: Mobilenet Demo
+title: Github Sync Space
 emoji: 🔥
 colorFrom: purple
 colorTo: blue

@@ -17,7 +17,5 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://Bachstelze:HF_TOKEN@huggingface.co/spaces/lnuDataProject/A1 main
-
-
+        run: git push https://lnuDataProject:HF_TOKEN@huggingface.co/spaces/lnuDataProject/A1 main
 

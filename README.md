@@ -17,6 +17,13 @@ pinned: false
 3. Amol
 4. Kalle
 
+## Usage
+
+Installation of [gardio](https://www.gradio.app) to build machine learning apps in Python:
+```pip install gradio```
+
+Run the app with ```python3 app.py```
+
 ### Week 1 - Kalle team lead, rest developers
 
 - Slack as medium of communications

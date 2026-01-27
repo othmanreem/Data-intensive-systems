@@ -26,7 +26,9 @@ Run the app with ```python3 app.py```
 
 ### Week 1 - Kalle team lead, rest developers
 
-- Slack as medium of communications
-- Github for version control
+- Slack as a medium of communications
+- GitHub for version control
+- This GitHub issue tracker as a simple project management tool
+- Synchronization of this GitHub repo with the [hugginface space](https://huggingface.co/spaces/Bachstelze/github_sync)
 - Meetings as and when needed
-- synchronization of github with the [hugginface space](https://huggingface.co/spaces/Bachstelze/github_sync)
+

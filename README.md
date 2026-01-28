@@ -31,5 +31,6 @@ Run the app with ```python3 app.py```
 - GitHub for version control
 - This GitHub issue tracker as a simple project management tool
 - Synchronization of this GitHub repo with the [hugginface space](https://huggingface.co/spaces/Bachstelze/github_sync)
+- Local development, switch to [cscloud](https://cscloud.lnu.se/project/) if needed.
 - Meetings as and when needed
 

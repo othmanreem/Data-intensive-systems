@@ -97,9 +97,8 @@ def load_example():
     
     try:
         possible_paths = [
-            DATA_PATH,
+            "Datasets_all/A2_dataset_80.csv",
             "A2/A2_dataset.csv",
-            "../A2/A2_dataset.csv",
             "../Datasets_all/A2_dataset_80.csv",
         ]
         
@@ -112,17 +111,20 @@ def load_example():
         
         # Fallback to GitHub raw URL if no local file found
         if df is None:
-            url = "https://raw.githubusercontent.com/othmanreem/Data-intensive-systems/main/A2/A2_dataset.csv"
+            url = "https://raw.githubusercontent.com/othmanreem/Data-intensive-systems/main/Datasets_all/A2_dataset_80.csv"
             print(f"Loading dataset from {url}")
             df = pd.read_csv(url)
 
         # Get a random row with only the features we need
         available_features = [f for f in FEATURE_NAMES if f in df.columns]
+        print(f"Found {len(available_features)} matching features")
         sample = df[available_features].sample(1).values[0]
         # Convert to float list to ensure proper types for Gradio sliders
         return [float(x) for x in sample]
     except Exception as e:
         print(f"Error loading example: {e}")
+        import traceback
+        traceback.print_exc()
         return [0.5] * len(FEATURE_NAMES)
 
 

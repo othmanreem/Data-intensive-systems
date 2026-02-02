@@ -107,7 +107,14 @@ def load_example():
         for path in possible_paths:
             if os.path.exists(path):
                 df = pd.read_csv(path)
+                print(f"Loaded dataset from {path}")
                 break
+        
+        # Fallback to GitHub raw URL if no local file found
+        if df is None:
+            url = "https://raw.githubusercontent.com/othmanreem/Data-intensive-systems/main/A2/A2_dataset.csv"
+            print(f"Loading dataset from {url}")
+            df = pd.read_csv(url)
 
         # Get a random row with only the features we need
         available_features = [f for f in FEATURE_NAMES if f in df.columns]

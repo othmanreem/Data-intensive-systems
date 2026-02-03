@@ -1,5 +1,6 @@
 import pickle
 import pandas as pd
+from sklearn.model_selection import train_test_split
 from openpyxl.utils import get_column_letter
 from openpyxl import load_workbook
 from openpyxl.workbook import Workbook
@@ -10,12 +11,14 @@ OUTPUT_FILE = "AimoScore_deduped.xlsx"
 REMOVED_REPORT = "AimoScore_removed_report.csv"
 
 # old implemenation to load from original excel
-#sheets = pd.read_excel(INPUT_FILE, sheet_name=None)
-#df = next(iter(sheets.values()))
+sheets = pd.read_excel(INPUT_FILE, sheet_name=None)
+df = next(iter(sheets.values()))
+"""
 with open(SCORE_PICKLE, "rb") as f:
     sheets = pickle.load(f)
     df = sheets["Sheet1"]
     #print(df)
+"""
 
 required_cols = {"AimoScore", "EstimatedScore"}
 if not required_cols.issubset(df.columns):
@@ -76,6 +79,20 @@ for i, col in enumerate(kept_rows.columns, start=1):
     ws.column_dimensions[col_letter].width = adjusted_width
 
 wb.save(OUTPUT_FILE)
+
+# Split kept rows into 80% train and 20% test (random, reproducible)
+train_df, test_df = train_test_split(kept_rows, test_size=0.2, random_state=42, shuffle=True)
+
+# Optional: reset index
+train_df = train_df.reset_index(drop=True)
+test_df = test_df.reset_index(drop=True)
+
+# Save CSVs
+train_df.to_csv("train.csv", index=False)
+test_df.to_csv("test.csv", index=False)
+
+print(f"Train rows: {len(train_df)}")
+print(f"Test rows: {len(test_df)}")
 
 # Save reports
 removed_rows.to_csv(REMOVED_REPORT, index=False)

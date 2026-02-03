@@ -18,8 +18,8 @@ def load_champion_model():
     
     possible_paths = [
         MODEL_PATH,
-        "A2/models/champion_model_final.pkl",
-        "../A2/models/champion_model_final.pkl",
+        "A2/models/champion_model_final_2.pkl",
+        "../A2/models/champion_model_final_2.pkl",
     ]
     
     for path in possible_paths:

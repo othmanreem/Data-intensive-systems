@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 import os
 
-MODEL_PATH = "models/champion_model_final.pkl"
+MODEL_PATH = "models/champion_model_final_2.pkl"
 DATA_PATH = "A2_dataset.csv"
 
 model = None
@@ -17,8 +17,8 @@ def load_champion_model():
     
     possible_paths = [
         MODEL_PATH,
-        "A2/models/champion_model_final.pkl",
-        "../A2/models/champion_model_final.pkl",
+        "A2/models/champion_model_final_2.pkl",
+        "../A2/models/champion_model_final_2.pkl",
     ]
     
     for path in possible_paths:

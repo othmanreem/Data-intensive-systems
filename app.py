@@ -4,8 +4,8 @@ import numpy as np
 import pickle
 import os
 
-# Paths for HuggingFace deployment (running from root folder)
-MODEL_PATH = "A2/models/champion_model_final.pkl"
+# Paths for HuggingFace deployment 
+MODEL_PATH = "A2/models/champion_model_final_2.pkl"
 DATA_PATH = "A2/A2_dataset.csv"
 
 model = None

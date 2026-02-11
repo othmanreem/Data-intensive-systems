@@ -2,14 +2,14 @@ import gradio as gr
 import pandas as pd
 import pickle
 import os
-import requests
+import gdown
 
 # Get directory where this script is located
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Google Drive file IDs for model downloads
-MODEL_GDRIVE_ID = "1ORlU0OOCBkWXVO2UFAkXaKtXfkOH7w1t"  # champion_model_final_2.pkl
-CLASSIFICATION_MODEL_GDRIVE_ID = "1QYVd9sHZbI4Vp21bO2Zd1vTcRpcq9wJs"  # final_champion_model_A3.pkl
+MODEL_GDRIVE_ID = "1ORlU0OOCBkWXVO2UFAkXaKtXfkOH7w1t"
+CLASSIFICATION_MODEL_GDRIVE_ID = "1qU6Q37CoToMxzBwori5V3_bonBIIb-K0"
 
 # Local paths - models loaded from A3/models/ directory
 MODEL_PATH = os.path.join(SCRIPT_DIR, "A3/models/champion_model_final_2.pkl")
@@ -18,20 +18,10 @@ DATA_PATH = os.path.join(SCRIPT_DIR, "A3/A3_Data/train_dataset.csv")
 
 
 def download_from_gdrive(file_id, destination):
-    """Download a file from Google Drive."""
-    URL = "https://drive.google.com/uc?export=download"
-    
-    session = requests.Session()
-    response = session.get(URL, params={'id': file_id, 'confirm': 't'}, stream=True)
-    
-    # Create directory if needed
+    """Download a file from Google Drive using gdown."""
     os.makedirs(os.path.dirname(destination), exist_ok=True)
-    
-    with open(destination, "wb") as f:
-        for chunk in response.iter_content(chunk_size=32768):
-            if chunk:
-                f.write(chunk)
-    
+    url = f"https://drive.google.com/uc?id={file_id}"
+    gdown.download(url, destination, quiet=False)
     print(f"Downloaded to {destination}")
     return True
 

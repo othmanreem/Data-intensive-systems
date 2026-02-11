@@ -189,9 +189,18 @@ def load_example():
     
     try:
         df = pd.read_csv(DATA_PATH, sep=';', decimal=',')
-        available_features = [f for f in FEATURE_NAMES if f in df.columns]
-        sample = df[available_features].sample(1).values[0]
-        return [float(x) for x in sample]
+        sample_row = df.sample(1)
+        # Return value for each feature, using 0.5 as default if feature not in dataset
+        result = []
+        for f in FEATURE_NAMES:
+            if f in df.columns:
+                val = float(sample_row[f].values[0])
+                # Clamp to valid slider range [0, 1]
+                val = max(0.0, min(1.0, val))
+                result.append(val)
+            else:
+                result.append(0.5)
+        return result
     except Exception as e:
         print(f"Error loading example: {e}")
         return [0.5] * len(FEATURE_NAMES)
@@ -203,9 +212,18 @@ def load_classification_example():
     
     try:
         df = pd.read_csv(DATA_PATH, sep=';', decimal=',')
-        available_features = [f for f in CLASSIFICATION_FEATURE_NAMES if f in df.columns]
-        sample = df[available_features].sample(1).values[0]
-        return [float(x) for x in sample]
+        sample_row = df.sample(1)
+        # Return value for each feature, using 0.5 as default if feature not in dataset
+        result = []
+        for f in CLASSIFICATION_FEATURE_NAMES:
+            if f in df.columns:
+                val = float(sample_row[f].values[0])
+                # Clamp to valid slider range [0, 1]
+                val = max(0.0, min(1.0, val))
+                result.append(val)
+            else:
+                result.append(0.5)
+        return result
     except Exception as e:
         print(f"Error loading classification example: {e}")
         return [0.5] * len(CLASSIFICATION_FEATURE_NAMES)
@@ -260,18 +278,22 @@ def create_interface():
     angle_features = [n for n in FEATURE_NAMES if "Angle" in n]
     nasm_features = [n for n in FEATURE_NAMES if "NASM" in n]
     time_features = [n for n in FEATURE_NAMES if "Time" in n]
+    other_features = [n for n in FEATURE_NAMES if "Angle" not in n and "NASM" not in n and "Time" not in n]
     
     angle_indices = [FEATURE_NAMES.index(f) for f in angle_features]
     nasm_indices = [FEATURE_NAMES.index(f) for f in nasm_features]
     time_indices = [FEATURE_NAMES.index(f) for f in time_features]
+    other_indices = [FEATURE_NAMES.index(f) for f in other_features]
 
     if CLASSIFICATION_FEATURE_NAMES is not None:
         class_angle_features = [n for n in CLASSIFICATION_FEATURE_NAMES if "Angle" in n]
         class_nasm_features = [n for n in CLASSIFICATION_FEATURE_NAMES if "NASM" in n]
         class_time_features = [n for n in CLASSIFICATION_FEATURE_NAMES if "Time" in n]
+        class_other_features = [n for n in CLASSIFICATION_FEATURE_NAMES if "Angle" not in n and "NASM" not in n and "Time" not in n]
         class_angle_indices = [CLASSIFICATION_FEATURE_NAMES.index(f) for f in class_angle_features]
         class_nasm_indices = [CLASSIFICATION_FEATURE_NAMES.index(f) for f in class_nasm_features]
         class_time_indices = [CLASSIFICATION_FEATURE_NAMES.index(f) for f in class_time_features]
+        class_other_indices = [CLASSIFICATION_FEATURE_NAMES.index(f) for f in class_other_features]
 
     with gr.Blocks(title="Deep Squat Assessment") as demo:
         gr.Markdown("# Deep Squat Movement Assessment")
@@ -298,6 +320,11 @@ def create_interface():
                             with gr.TabItem(f"Time Deviations ({len(time_indices)})"):
                                 for idx in time_indices:
                                     inputs[idx].render()
+
+                            if other_indices:
+                                with gr.TabItem(f"Other ({len(other_indices)})"):
+                                    for idx in other_indices:
+                                        inputs[idx].render()
 
                     with gr.Column(scale=1):
                         gr.Markdown("### Results")
@@ -340,6 +367,11 @@ def create_interface():
                                 with gr.TabItem(f"Time Deviations ({len(class_time_indices)})"):
                                     for idx in class_time_indices:
                                         classification_inputs[idx].render()
+
+                                if class_other_indices:
+                                    with gr.TabItem(f"Other ({len(class_other_indices)})"):
+                                        for idx in class_other_indices:
+                                            classification_inputs[idx].render()
 
                         with gr.Column(scale=1):
                             gr.Markdown("### Results")

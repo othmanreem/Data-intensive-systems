@@ -1,0 +1,11 @@
+# Model files - upload manually to HuggingFace Spaces via web UI
+# HuggingFace rejects binary files via git push
+A3/models/*.pkl
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS
+.DS_Store

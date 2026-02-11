@@ -3,10 +3,13 @@ import pandas as pd
 import pickle
 import os
 
-# Paths for HuggingFace deployment (runs from repository root)
-MODEL_PATH = "A3/models/champion_model_final_2.pkl"
-CLASSIFICATION_MODEL_PATH = "A3/models/classification_champion.pkl"
-DATA_PATH = "A3/A3_Data/train_dataset.csv"
+# Get directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Local paths - models loaded from A3/models/ directory
+MODEL_PATH = os.path.join(SCRIPT_DIR, "A3/models/champion_model_final_2.pkl")
+CLASSIFICATION_MODEL_PATH = os.path.join(SCRIPT_DIR, "A3/models/final_champion_model_A3.pkl")
+DATA_PATH = os.path.join(SCRIPT_DIR, "A3/A3_Data/train_dataset.csv")
 
 model = None
 FEATURE_NAMES = None

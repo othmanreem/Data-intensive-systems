@@ -7,7 +7,7 @@ import os
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 MODEL_PATH = os.path.join(SCRIPT_DIR, "models/champion_model_final_2.pkl")
-CLASSIFICATION_MODEL_PATH = os.path.join(SCRIPT_DIR, "models/classification_champion.pkl")
+CLASSIFICATION_MODEL_PATH = os.path.join(SCRIPT_DIR, "models/final_champion_model_A3.pkl")
 DATA_PATH = os.path.join(SCRIPT_DIR, "A3_Data/train_dataset.csv")
 
 model = None

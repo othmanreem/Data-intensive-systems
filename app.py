@@ -2,14 +2,38 @@ import gradio as gr
 import pandas as pd
 import pickle
 import os
+import requests
 
 # Get directory where this script is located
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Google Drive file IDs for model downloads
+MODEL_GDRIVE_ID = "1ORlU0OOCBkWXVO2UFAkXaKtXfkOH7w1t"  # champion_model_final_2.pkl
+CLASSIFICATION_MODEL_GDRIVE_ID = "1QYVd9sHZbI4Vp21bO2Zd1vTcRpcq9wJs"  # final_champion_model_A3.pkl
 
 # Local paths - models loaded from A3/models/ directory
 MODEL_PATH = os.path.join(SCRIPT_DIR, "A3/models/champion_model_final_2.pkl")
 CLASSIFICATION_MODEL_PATH = os.path.join(SCRIPT_DIR, "A3/models/final_champion_model_A3.pkl")
 DATA_PATH = os.path.join(SCRIPT_DIR, "A3/A3_Data/train_dataset.csv")
+
+
+def download_from_gdrive(file_id, destination):
+    """Download a file from Google Drive."""
+    URL = "https://drive.google.com/uc?export=download"
+    
+    session = requests.Session()
+    response = session.get(URL, params={'id': file_id, 'confirm': 't'}, stream=True)
+    
+    # Create directory if needed
+    os.makedirs(os.path.dirname(destination), exist_ok=True)
+    
+    with open(destination, "wb") as f:
+        for chunk in response.iter_content(chunk_size=32768):
+            if chunk:
+                f.write(chunk)
+    
+    print(f"Downloaded to {destination}")
+    return True
 
 model = None
 FEATURE_NAMES = None
@@ -30,6 +54,15 @@ BODY_REGION_RECOMMENDATIONS = {
 def load_champion_model():
     global model, FEATURE_NAMES, MODEL_METRICS
     
+    # Download from Google Drive if not exists locally
+    if not os.path.exists(MODEL_PATH):
+        print(f"Model not found locally, downloading from Google Drive...")
+        try:
+            download_from_gdrive(MODEL_GDRIVE_ID, MODEL_PATH)
+        except Exception as e:
+            print(f"Failed to download model: {e}")
+            return False
+    
     if os.path.exists(MODEL_PATH):
         print(f"Loading champion model from {MODEL_PATH}")
         with open(MODEL_PATH, "rb") as f:
@@ -49,6 +82,15 @@ def load_champion_model():
 
 def load_classification_model():
     global classification_model, CLASSIFICATION_FEATURE_NAMES, CLASSIFICATION_CLASSES, CLASSIFICATION_METRICS
+    
+    # Download from Google Drive if not exists locally
+    if not os.path.exists(CLASSIFICATION_MODEL_PATH):
+        print(f"Classification model not found locally, downloading from Google Drive...")
+        try:
+            download_from_gdrive(CLASSIFICATION_MODEL_GDRIVE_ID, CLASSIFICATION_MODEL_PATH)
+        except Exception as e:
+            print(f"Failed to download classification model: {e}")
+            return False
     
     if os.path.exists(CLASSIFICATION_MODEL_PATH):
         print(f"Loading classification model from {CLASSIFICATION_MODEL_PATH}")

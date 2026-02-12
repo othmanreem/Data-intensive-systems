@@ -39,5 +39,9 @@ Run the app with ```python3 app.py```
 
 - Testing pickled models with test/test_model.py
 
+### Week 4 - refactor codebase
+
+- add gitattributes for LSF usage to handle pickle files
+
 ### Outlook
 Input the raw video into a [reasoning vision model](https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning) and develop the workflow with [daggr](https://huggingface.co/blog/daggr) for gradio.

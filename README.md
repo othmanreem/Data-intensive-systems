@@ -17,7 +17,6 @@ Group project to develop in a machine learning setting. The developed [gradio](h
 3. Amol
 4. Kalle
 
-~~5. Abdulla~~
 
 ## Usage
 
@@ -45,3 +44,35 @@ Run the app with ```python3 app.py```
 
 ### Outlook
 Input the raw video into a [reasoning vision model](https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning) and develop the workflow with [daggr](https://huggingface.co/blog/daggr) for gradio.
+
+
+### PR Review Guidelines
+
+To ensure code quality, stability of the HuggingFace deployment, and consistent development practices, all pull requests must follow these guidelines:
+
+#### Before creating a PR
+- Code must follow project structure and naming conventions  
+- No `.pdf` or `.xlsx` files should be committed (these break HuggingFace sync)  
+- Code should pass local linting checks  
+- Changes should be tested locally when possible  
+
+#### CI/CD requirements
+- Linting must pass before merge  
+- CI pipeline must complete successfully  
+
+#### PR description must include
+- Clear explanation of what was implemented or changed  
+- Reason for the change  
+- Screenshots or demo output (if UI/model related)  
+
+#### Reviewer checklist
+- Code readability and structure  
+- Consistency with project design  
+- No restricted file uploads (.pdf/.xlsx)  
+- CI pipeline passes  
+- No breaking changes to deployment  
+
+#### Merge rules
+- PR cannot be merged if CI fails  
+- PR must be up-to-date with `main` branch before merging
+

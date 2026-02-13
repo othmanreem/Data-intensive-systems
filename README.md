@@ -41,7 +41,7 @@ Run the app with ```python3 app.py```
 
 ### Week 4 - refactor codebase
 
-- add gitattributes for LSF usage to handle pickle files
+- add gitattributes for LSF usage to handle pickle files. This is possible for more file types, e.g. ```git lfs track "*.pdf" + git add .gitattributes```
 
 ### Outlook
 Input the raw video into a [reasoning vision model](https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning) and develop the workflow with [daggr](https://huggingface.co/blog/daggr) for gradio.

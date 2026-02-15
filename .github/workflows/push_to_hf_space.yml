@@ -60,6 +60,12 @@ jobs:
         run: |
           echo "No tests implemented yet — placeholder step."
           echo "This will later run pytest."
+
+    # this is the completed test step
+    # - name: Run unit tests
+    #   run: |
+    #     pip install pytest
+    #     pytest A4/ -v --tb=short
       
       # -------------------------
       # 6. Push to HuggingFace

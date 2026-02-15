@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import os
+
 
 def create_score_board(weeks=None, scores=None, save_path=None, show=False):
     """
@@ -30,12 +30,24 @@ def create_score_board(weeks=None, scores=None, save_path=None, show=False):
     fig, ax = plt.subplots(figsize=(8, 6))
 
     # Plot the data
-    ax.plot(weeks, scores, marker='o', linestyle='-', color='b', linewidth=2, markersize=8)
+    ax.plot(
+        weeks,
+        scores,
+        marker='o',
+        linestyle='-',
+        color='b',
+        linewidth=2,
+        markersize=8
+    )
 
     # Set labels and title
     ax.set_xlabel('Week', fontsize=12)
     ax.set_ylabel('R^2 Score', fontsize=12)
-    ax.set_title('R^2 Score Progression Over Weeks', fontsize=14, fontweight='bold')
+    ax.set_title(
+        'R^2 Score Progression Over Weeks',
+        fontsize=14,
+        fontweight='bold'
+    )
 
     # Set x-axis ticks to be exactly the weeks
     ax.set_xticks(weeks)
@@ -46,15 +58,19 @@ def create_score_board(weeks=None, scores=None, save_path=None, show=False):
 
     # Annotate each point with its score
     for i, (x, y) in enumerate(zip(weeks, scores)):
-        ax.annotate(f'{y:.2f}', (x, y), textcoords="offset points", xytext=(0,10), ha='center')
+        ax.annotate(
+            f'{y:.2f}',
+            (x, y),
+            textcoords="offset points",
+            xytext=(0, 10),
+            ha='center'
+        )
 
     # Adjust layout to prevent clipping
     fig.tight_layout()
 
     # Save the plot if save_path is provided
     if save_path is not None:
-        # Ensure the directory exists
-        #os.makedirs(os.path.dirname(save_path), exist_ok=True)
         # we save it into the main directory
         fig.savefig(save_path, dpi=300)
         print(f"Plot saved to {save_path}")
@@ -64,6 +80,7 @@ def create_score_board(weeks=None, scores=None, save_path=None, show=False):
         plt.show()
 
     return fig
+
 
 if __name__ == "__main__":
     # Example usage with default data

@@ -253,7 +253,7 @@ def create_interface():
 1. Adjust the sliders to input deviation values
     (0 = no deviation, 1 = maximum deviation)
 2. Click "Submit" to get your predicted score
-3. Or click "Load Random Example" to test with real data
+3. Or click "Load Sample" to test with real data
 
 **Score Interpretation:**
 - 80-100%: Excellent form
@@ -268,7 +268,7 @@ def create_interface():
 **How to use:**
 1. Adjust the sliders to input deviation values (0 = no deviation, 1 = maximum deviation)
 2. Click "Predict Body Region" to identify where to focus improvements
-3. Or click "Load Random Example" to test with real data
+3. Or click "Load Sample" to test with real data
 
 **Body Regions:** Upper Body, Lower Body
 """
@@ -397,7 +397,7 @@ def create_interface():
                     with gr.Row():
                         class_submit_btn = gr.Button(
                             "Predict Body Region", variant="primary")
-                        class_example_btn = gr.Button("Load Random Example")
+                        class_example_btn = gr.Button("Load Sample")
                         class_clear_btn = gr.Button("Clear")
 
                     class_submit_btn.click(fn=predict_weakest_link, inputs=classification_inputs, outputs=[

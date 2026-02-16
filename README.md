@@ -49,33 +49,76 @@ Run the app with ```python3 app.py```
 Input the raw video into a [reasoning vision model](https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning) and develop the workflow with [daggr](https://huggingface.co/blog/daggr) for gradio.
 
 
-### PR Review Guidelines
+### Development & Contribution Guidelines
 
-To ensure code quality, stability of the HuggingFace deployment, and consistent development practices, all pull requests must follow these guidelines:
+Currently, the team commits directly to the `main` branch.  
+Instead of formal pull request restrictions, we follow shared development and quality guidelines to ensure stability, especially for the HuggingFace deployment and ML workflows.
 
-#### Before creating a PR
-- Code must follow project structure and naming conventions  
-- No `.pdf` or `.xlsx` files should be committed (these break HuggingFace sync)  
-- Code should pass local linting checks  
-- Changes should be tested locally when possible  
+These rules will also prepare the project for a future PR-based workflow.
 
-#### CI/CD requirements
-- Linting must pass before merge  
-- CI pipeline must complete successfully  
+---
 
-#### PR description must include
-- Clear explanation of what was implemented or changed  
-- Reason for the change  
-- Screenshots or demo output (if UI/model related)  
+#### General development rules
 
-#### Reviewer checklist
-- Code readability and structure  
-- Consistency with project design  
-- No restricted file uploads (.pdf/.xlsx)  
-- CI pipeline passes  
-- No breaking changes to deployment  
+- Follow the existing project structure and naming conventions
+- Keep notebooks and scripts readable and well-documented
+- Avoid committing temporary, experimental, or unused code
+- Document design decisions when introducing new components
 
-#### Merge rules
-- PR cannot be merged if CI fails  
-- PR must be up-to-date with `main` branch before merging
+---
+
+#### HuggingFace deployment safety
+
+- Do NOT commit `.pdf` or `.xlsx` files (they break HuggingFace sync)
+- Avoid committing large model artifacts unless required
+- Ensure changes do not break the deployment app (`app.py`)
+
+---
+
+#### Code quality expectations
+
+Before pushing to `main`:
+
+- Run local linting checks when possible
+- Ensure notebooks execute without errors
+- Remove unused imports and variables
+- Keep code modular and readable
+
+CI/CD will enforce:
+
+- Linting checks for `.py` and `.ipynb`
+- Automated tests 
+- Deployment only after quality checks pass
+
+---
+
+#### Design and coding principles
+
+- Write clear, modular Python code
+- Separate experimentation (notebooks) from production logic
+- Reusable functions should live in `.py` modules
+- Use consistent naming and documentation practices
+
+---
+
+#### Team review practice
+
+Even without PRs, team members:
+
+- Communicate major changes in Slack/GitHub Issues
+- Request peer feedback before large commits
+- Document model changes and performance improvements
+- Flag anything that may affect deployment
+
+---
+
+#### Future transition
+
+As the project grows, we may transition to:
+
+- Feature branches
+- Pull request reviews
+- Mandatory CI approval before merge
+
+These guidelines are the first step toward a structured DevOps workflow.
 

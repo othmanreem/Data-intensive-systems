@@ -6,14 +6,14 @@ import os
 # Get directory where this script is located
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Local paths - models loaded from A3/models/ directory
+# Local paths - models loaded from A4/models/ directory
 MODEL_PATH = os.path.join(
     SCRIPT_DIR,
-    "A3/models/champion_model_final_2.pkl"
+    "A4/models/gDriveVersion/champion_model_final_2.pkl"
 )
 CLASSIFICATION_MODEL_PATH = os.path.join(
     SCRIPT_DIR,
-    "A3/models/final_champion_model_A3.pkl"
+    "A4/models/gDriveVersion/final_champion_model_A3.pkl"
 )
 DATA_PATH = os.path.join(
     SCRIPT_DIR,

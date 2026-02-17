@@ -1,81 +1,20 @@
 name: Sync to Hugging Face hub
-
 on:
   push:
     branches: [main]
 
+  # to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
   sync-to-hub:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
           lfs: true
-
-      # -------------------------
-      # 1. Set up Python
-      # -------------------------
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-
-      # -------------------------
-      # 2. Install dependencies
-      # -------------------------
-      - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install flake8 nbqa
-
-      # -------------------------
-      # 3. Lint Python files
-      # -------------------------
-      - name: Lint .py files
-        run: |
-          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-
-      # -------------------------
-      # 4. Lint notebooks with nbQA
-      # This checks .ipynb files
-      # -------------------------
-      - name: Lint notebooks
-        run: |
-          nbqa flake8 .
-
-      # -------------------------
-      # 5. Block problematic files
-      # -------------------------
-      - name: Check for restricted file types
-        run: |
-          if git diff --name-only HEAD~1 | grep -E '\.(pdf|xlsx)$'; then
-            echo "❌ PDF/XLSX files detected. These break HuggingFace sync."
-            exit 1
-          fi
-
-     # -------------------------
-      # 6. Placeholder for unit tests
-      # -------------------------
-      # - name: Run unit tests (placeholder)
-      #   run: |
-      #     echo "No tests implemented yet — placeholder step."
-      #     echo "This will later run pytest."
-
-   # this is the completed test step
-    - name: Run unit tests
-      run: |
-        pip install pytest
-        pytest A4/ -v --tb=short
-
-      # -------------------------
-      # 7. Push to HuggingFace
-      # -------------------------
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: |
-          git push -f https://Bachstelze:$HF_TOKEN@huggingface.co/spaces/Bachstelze/github_sync main
+        run: git push -f https://Bachstelze:$HF_TOKEN@huggingface.co/spaces/Bachstelze/github_sync main

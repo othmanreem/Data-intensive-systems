@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install flake8 nbqa pytest
+          pip install flake8 nbqa pytest pandas
 
       # -------------------------
       # 3. Lint Python files

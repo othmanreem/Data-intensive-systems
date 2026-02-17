@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install flake8 nbqa
+          pip install flake8 nbqa pytest
 
       # -------------------------
       # 3. Lint Python files
@@ -41,7 +41,6 @@ jobs:
 
       # -------------------------
       # 4. Lint notebooks with nbQA
-      # This checks .ipynb files
       # -------------------------
       - name: Lint notebooks
         run: |
@@ -57,15 +56,13 @@ jobs:
             exit 1
           fi
 
-     # -------------------------
-      # 6. Placeholder for unit tests
       # -------------------------
-      - name: Run unit tests (placeholder)
+      # 6. Run unit tests
+      # -------------------------
+      - name: Run unit tests
         run: |
-          echo "No tests implemented yet — placeholder step."
-          echo "This will later run pytest."
+          pytest A4/ -v --tb=short
 
-   
       # -------------------------
       # 7. Push to HuggingFace
       # -------------------------
@@ -74,6 +71,3 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           git push -f https://Bachstelze:$HF_TOKEN@huggingface.co/spaces/Bachstelze/github_sync main
-
-
-

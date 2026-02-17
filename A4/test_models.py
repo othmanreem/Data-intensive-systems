@@ -76,7 +76,8 @@ class TestClassificationModelLoading:
         assert "feature_columns" in classification_artifact
 
     def test_classification_artifact_has_classes(self, classification_artifact):
-        assert "classes" in classification_artifact
+        # weaklink categories for the 14 classes
+        assert "weaklink_categories" in classification_artifact
 
     def test_classification_model_has_predict_method(self, classification_artifact):
         model = classification_artifact["model"]
@@ -85,7 +86,7 @@ class TestClassificationModelLoading:
     def test_classification_classes_match_expected(
         self, classification_artifact, expected_classification_classes
     ):
-        classes = list(classification_artifact["classes"])
+        classes = list(classification_artifact["weaklink_categories"])
         assert sorted(classes) == sorted(expected_classification_classes)
 
 
@@ -95,7 +96,11 @@ class TestClassificationModelPrediction:
         self, classification_artifact, sample_classification_features
     ):
         model = classification_artifact["model"]
-        prediction = model.predict(sample_classification_features)
+        scaler = classification_artifact.get("scaler")
+        features = sample_classification_features
+        if scaler is not None:
+            features = scaler.transform(features)
+        prediction = model.predict(features)
         assert isinstance(prediction, np.ndarray)
 
     def test_classification_prediction_shape(
@@ -103,7 +108,11 @@ class TestClassificationModelPrediction:
     ):
         # one class per sample
         model = classification_artifact["model"]
-        prediction = model.predict(sample_classification_features)
+        scaler = classification_artifact.get("scaler")
+        features = sample_classification_features
+        if scaler is not None:
+            features = scaler.transform(features)
+        prediction = model.predict(features)
         assert prediction.shape[0] == len(sample_classification_features)
 
     def test_classification_prediction_is_valid_class(
@@ -112,7 +121,11 @@ class TestClassificationModelPrediction:
     ):
         # should be a valid class
         model = classification_artifact["model"]
-        prediction = model.predict(sample_classification_features)[0]
+        scaler = classification_artifact.get("scaler")
+        features = sample_classification_features
+        if scaler is not None:
+            features = scaler.transform(features)
+        prediction = model.predict(features)[0]
         assert prediction in expected_classification_classes
 
 
@@ -122,7 +135,7 @@ class TestModelArtifactStructure:
         assert "test_metrics" in regression_artifact
 
     def test_classification_artifact_has_metrics(self, classification_artifact):
-        assert "test_metrics" in classification_artifact
+        assert "test_performance" in classification_artifact
 
     def test_regression_metrics_has_r2(self, regression_artifact):
         metrics = regression_artifact.get("test_metrics", {})

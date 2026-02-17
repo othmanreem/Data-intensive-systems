@@ -18,13 +18,18 @@ def models_dir(repo_root):
 
 
 @pytest.fixture
+def a4_models_dir(repo_root):
+    return os.path.join(repo_root, "A4", "models")
+
+
+@pytest.fixture
 def regression_model_path(models_dir):
     return os.path.join(models_dir, "champion_model_final_2.pkl")
 
 
 @pytest.fixture
-def classification_model_path(models_dir):
-    return os.path.join(models_dir, "final_champion_model_A3.pkl")
+def classification_model_path(a4_models_dir):
+    return os.path.join(a4_models_dir, "weaklink_classifier_rf.pkl")
 
 
 @pytest.fixture
@@ -79,4 +84,11 @@ def sample_classification_features(classification_artifact):
 # expected values
 @pytest.fixture
 def expected_classification_classes():
-    return ["Lower Body", "Upper Body"]
+    # all 14 weaklink categories
+    return [
+        'ExcessiveForwardLean', 'ForwardHead', 'LeftArmFallForward',
+        'LeftAsymmetricalWeightShift', 'LeftHeelRises', 'LeftKneeMovesInward',
+        'LeftKneeMovesOutward', 'LeftShoulderElevation', 'RightArmFallForward',
+        'RightAsymmetricalWeightShift', 'RightHeelRises', 'RightKneeMovesInward',
+        'RightKneeMovesOutward', 'RightShoulderElevation'
+    ]

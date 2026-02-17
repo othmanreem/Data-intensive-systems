@@ -51,15 +51,12 @@ jobs:
             exit 1
           fi
 
-      # -------------------------
-      # 5. Placeholder for unit tests
-      # (does NOT fail pipeline yet)
-      # Replace later with pytest
-      # -------------------------
-      - name: Run unit tests (placeholder)
-        run: |
-          echo "No tests implemented yet — placeholder step."
-          echo "This will later run pytest."
+      # 5. this is the completed test step
+    - name: Run unit tests
+      run: |
+        pip install pytest
+        pytest A4/ -v --tb=short
+
       
       # -------------------------
       # 6. Push to HuggingFace

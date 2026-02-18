@@ -2,6 +2,8 @@ import gradio as gr
 import pandas as pd
 import pickle
 import os
+from A5.CorrelationFilter import CorrelationFilter
+
 
 # Get directory where this script is located
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -9,11 +11,11 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 # Local paths - models loaded from A4/models/ directory
 MODEL_PATH = os.path.join(
     SCRIPT_DIR,
-    "A4/models/gDriveVersion/champion_model_final_2.pkl"
+    "A5/models/aimoscores_improved_A4.pkl"
 )
 CLASSIFICATION_MODEL_PATH = os.path.join(
     SCRIPT_DIR,
-    "A4/models/gDriveVersion/final_champion_model_A3.pkl"
+    "A5/models/weaklink_classifier_rfc_A4.pkl"
 )
 DATA_PATH = os.path.join(
     SCRIPT_DIR,
@@ -84,10 +86,6 @@ def load_classification_model():
 
     print(f"Classification model not found at {CLASSIFICATION_MODEL_PATH}")
     return False
-
-
-load_champion_model()
-load_classification_model()
 
 
 def predict_score(*feature_values):
@@ -415,7 +413,11 @@ def create_interface():
     return demo
 
 
-demo = create_interface()
-
 if __name__ == "__main__":
+    # load the pickled models
+    load_champion_model()
+    load_classification_model()
+
+    # create the interface
+    demo = create_interface()
     demo.launch(share=False, server_name="0.0.0.0", server_port=7860)

@@ -15,8 +15,8 @@ MODEL_PATH = os.path.join(
 )
 CLASSIFICATION_MODEL_PATH = os.path.join(
     SCRIPT_DIR,
-    "A4/models/gDriveVersion/final_champion_model_A3.pkl",
-    #  new "A5/models/weaklink_classifier_rfc_A4.pkl"
+    "A4/models/weaklink_classifier_rf.pkl",
+    #  new classifier without "classes" key "A5/models/weaklink_classifier_rfc_A4.pkl"
 )
 DATA_PATH = os.path.join(
     SCRIPT_DIR,

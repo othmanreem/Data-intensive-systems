@@ -1,0 +1,24 @@
+============================================================
+TWO-WEIGHTED RANDOM FOREST EVALUATION RESULTS
+============================================================
+
+REGRESSION MODEL METRICS (Raw Predictions)
+----------------------------------------
+R² Score: 0.814203
+MAE: 0.069204
+MSE: 0.009850
+RMSE: 0.099246
+
+REGRESSION MODEL METRICS (Weighted Predictions)
+----------------------------------------
+R² Score: -2.545752
+MAE: 0.367594
+MSE: 0.187971
+RMSE: 0.433557
+
+COMPARISON
+----------------------------------------
+R² Improvement: -3.359955
+MAE Improvement: -0.298390
+MSE Improvement: -0.178122
+RMSE Improvement: -0.334311

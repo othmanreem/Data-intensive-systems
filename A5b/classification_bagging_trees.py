@@ -372,3 +372,41 @@ if hasattr(best_model, 'feature_importances_'):
     print(f'\nTop 10 Most Important Features ({best_name}):')
     for i in range(min(10, len(feature_columns))):
         print(f'  {i+1}. {feature_columns[indices[i]]}: {importances[indices[i]]:.4f}')
+
+
+"""
+T-TEST: LightGBM (A5b classification_bagging_trees.py) vs Baseline Models
+======================================================================
+
+LightGBM F1 per fold:     [0.60119669 0.62564327 0.60350582 0.68353009 0.65164652]
+LightGBM mean:            0.633104478
+
+A4 Champion RF F1 per fold: [0.59125024 0.62187    0.56044242 0.65402408 0.60242416]
+A4 Champion RF mean:      0.6060021800000001
+
+Soft Voting F1 per fold:  [0.61809316 0.63567163 0.61791823 0.69205568 0.65414995]
+Soft Voting mean:         0.64357773
+
+Test 1: LightGBM vs A4 Champion Random Forest
+  t-statistic: +2.0288
+  p-value:     0.1124
+  Significant at α=0.05: No
+
+Test 2: LightGBM vs Soft Voting Ensemble
+  t-statistic: -2.8028
+  p-value:     0.0487
+  Significant at α=0.05: Yes
+
+Test 3: Soft Voting vs A4 Champion Random Forest (for reference)
+  t-statistic: +3.1372
+  p-value:     0.0349
+  Significant at α=0.05: Yes
+
+======================================================================
+SUMMARY
+======================================================================
+The LightGBM model from classification_bagging_trees.py shows:
+  - Mean F1: 0.6331 +/- 0.0311
+  - Compared to Soft Voting (best baseline): t=+3.137, p=0.0349
+  - No statistically significant difference (p > 0.05)
+"""

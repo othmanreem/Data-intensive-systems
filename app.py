@@ -15,8 +15,8 @@ MODEL_PATH = os.path.join(
 )
 CLASSIFICATION_MODEL_PATH = os.path.join(
     SCRIPT_DIR,
-    "A4/models/weaklink_classifier_rf.pkl",
-    #  new classifier without "classes" key "A5/models/weaklink_classifier_rfc_A4.pkl"
+    "A5b/models/ensemble_classification_champion.pkl",
+    #  new classifier without "classes" key "A5b/models/ensemble_classification_champion.pkl"
 )
 DATA_PATH = os.path.join(
     SCRIPT_DIR,

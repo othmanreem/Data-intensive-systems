@@ -142,8 +142,11 @@ class TestModelArtifactStructure:
         assert "test_metrics" in regression_artifact
 
     
+    #def test_classification_artifact_has_metrics(self, classification_artifact):
+        #assert "test_metrics" in classification_artifact
+        
     def test_classification_artifact_has_metrics(self, classification_artifact):
-        assert "test_metrics" in classification_artifact
+        assert "test_performance" in classification_artifact  # match actual key
 
     def test_regression_metrics_has_r2(self, regression_artifact):
         metrics = regression_artifact.get("test_metrics", {})

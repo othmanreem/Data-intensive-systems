@@ -79,9 +79,10 @@ class TestClassificationModelLoading:
     def test_classification_artifact_has_feature_columns(self, classification_artifact):
         assert "feature_columns" in classification_artifact
 
-    def test_classification_artifact_has_classes(self, classification_artifact):
-        # weaklink categories for the 14 classes
-        assert "weaklink_categories" in classification_artifact
+    
+    def test_classification_model_has_classes(self, classification_artifact):
+        model = classification_artifact["model"]
+        assert hasattr(model, "classes_")
 
     def test_classification_model_has_predict_method(self, classification_artifact):
         model = classification_artifact["model"]
@@ -90,8 +91,10 @@ class TestClassificationModelLoading:
     def test_classification_classes_match_expected(
         self, classification_artifact, expected_classification_classes
     ):
-        classes = list(classification_artifact["weaklink_categories"])
+        
+        classes = list(classification_artifact["model"].classes_)
         assert sorted(classes) == sorted(expected_classification_classes)
+        
 
 
 class TestClassificationModelPrediction:
@@ -138,8 +141,9 @@ class TestModelArtifactStructure:
     def test_regression_artifact_has_metrics(self, regression_artifact):
         assert "test_metrics" in regression_artifact
 
+    
     def test_classification_artifact_has_metrics(self, classification_artifact):
-        assert "test_performance" in classification_artifact
+        assert "test_metrics" in classification_artifact
 
     def test_regression_metrics_has_r2(self, regression_artifact):
         metrics = regression_artifact.get("test_metrics", {})

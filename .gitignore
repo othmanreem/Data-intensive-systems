@@ -3,8 +3,8 @@
 A3/models/*.pkl
 
 # images
-score_board.png
-A5b/models/adaboost_feature_importance.png
+#score_board.png
+#A5b/models/adaboost_feature_importance.png
 
 # Python
 __pycache__/

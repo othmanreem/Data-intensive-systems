@@ -203,6 +203,7 @@ artifact = {
     'model_name'             : best_name,
     'scaler'                 : scaler,
     'feature_columns'        : feature_columns,
+    'classes': list(best_model.classes_),
     'cv_metrics': {
         'f1_mean'      : float(results_df.iloc[0]['F1_mean']),
         'f1_std'       : float(results_df.iloc[0]['F1_std']),

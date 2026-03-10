@@ -56,6 +56,8 @@ python benchmark_timing.py -n 150 -r 15 -o results/benchmark.json -c -R
 | `--output` | `-o` | Output file path for JSON results | Auto-generated |
 | `--compare` | `-c` | Print comparison table | False |
 | `--recommend` | `-R` | Print model recommendations | False |
+| `--single-sample` | ? | Test single sample inference | False |
+
 
 ## Output
 

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Benchmark Response Time Comparison</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { text-align: center; }
+        .chart { max-width: 1200px; margin: 0 auto; }
+        .model-section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .model-title { font-weight: bold; font-size: 1.2em; margin-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <h1>Benchmark Response Time Comparison</h1>
+    <p><strong>Multi-benchmark:</strong> 100 samples, 10 repeats</p>
+    <p><strong>Single-benchmark:</strong> 100 samples, 10 repeats</p>
+    <p><img src="response_time_comparison.png" alt="Comparison Chart" class="chart"></p>
+    <h2>Detailed Statistics</h2>
+
+    <div class="model-section">
+        <div class="model-title">A4 Random Forest</div>
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Multi-benchmark</th>
+                <th>Single-benchmark</th>
+                <th>Change</th>
+            </tr>
+            <tr>
+                <td>Mean (ms)</td>
+                <td>60.7226</td>
+                <td>54.1178</td>
+                <td>-10.9%</td>
+            </tr>
+            <tr>
+                <td>Std (ms)</td>
+                <td>3.0474</td>
+                <td>8.3909</td>
+                <td>175.3%</td>
+            </tr>
+            <tr>
+                <td>Min (ms)</td>
+                <td>58.1383</td>
+                <td>41.5801</td>
+                <td>-28.5%</td>
+            </tr>
+            <tr>
+                <td>Max (ms)</td>
+                <td>68.9643</td>
+                <td>139.2800</td>
+                <td>102.0%</td>
+            </tr>
+            <tr>
+                <td>Accuracy</td>
+                <td>89.0%</td>
+                <td>89.0%</td>
+                <td>0.0pp</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="model-section">
+        <div class="model-title">A5 Ensemble</div>
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Multi-benchmark</th>
+                <th>Single-benchmark</th>
+                <th>Change</th>
+            </tr>
+            <tr>
+                <td>Mean (ms)</td>
+                <td>87.9247</td>
+                <td>88.4395</td>
+                <td>0.6%</td>
+            </tr>
+            <tr>
+                <td>Std (ms)</td>
+                <td>19.6745</td>
+                <td>15.3584</td>
+                <td>-21.9%</td>
+            </tr>
+            <tr>
+                <td>Min (ms)</td>
+                <td>67.9033</td>
+                <td>60.6458</td>
+                <td>-10.7%</td>
+            </tr>
+            <tr>
+                <td>Max (ms)</td>
+                <td>138.6737</td>
+                <td>213.1680</td>
+                <td>53.7%</td>
+            </tr>
+            <tr>
+                <td>Accuracy</td>
+                <td>67.0%</td>
+                <td>67.0%</td>
+                <td>0.0pp</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="model-section">
+        <div class="model-title">A5b Adaboost</div>
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Multi-benchmark</th>
+                <th>Single-benchmark</th>
+                <th>Change</th>
+            </tr>
+            <tr>
+                <td>Mean (ms)</td>
+                <td>34.6698</td>
+                <td>33.1184</td>
+                <td>-4.5%</td>
+            </tr>
+            <tr>
+                <td>Std (ms)</td>
+                <td>6.9252</td>
+                <td>3.6793</td>
+                <td>-46.9%</td>
+            </tr>
+            <tr>
+                <td>Min (ms)</td>
+                <td>30.5001</td>
+                <td>30.1910</td>
+                <td>-1.0%</td>
+            </tr>
+            <tr>
+                <td>Max (ms)</td>
+                <td>48.3568</td>
+                <td>67.5596</td>
+                <td>39.7%</td>
+            </tr>
+            <tr>
+                <td>Accuracy</td>
+                <td>52.0%</td>
+                <td>52.0%</td>
+                <td>0.0pp</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="model-section">
+        <div class="model-title">A5b Bagging Trees</div>
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Multi-benchmark</th>
+                <th>Single-benchmark</th>
+                <th>Change</th>
+            </tr>
+            <tr>
+                <td>Mean (ms)</td>
+                <td>6.0758</td>
+                <td>3.0341</td>
+                <td>-50.1%</td>
+            </tr>
+            <tr>
+                <td>Std (ms)</td>
+                <td>1.7927</td>
+                <td>1.2043</td>
+                <td>-32.8%</td>
+            </tr>
+            <tr>
+                <td>Min (ms)</td>
+                <td>3.8333</td>
+                <td>2.4478</td>
+                <td>-36.1%</td>
+            </tr>
+            <tr>
+                <td>Max (ms)</td>
+                <td>9.7910</td>
+                <td>17.5220</td>
+                <td>79.0%</td>
+            </tr>
+            <tr>
+                <td>Accuracy</td>
+                <td>0.0%</td>
+                <td>0.0%</td>
+                <td>0.0pp</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="model-section">
+        <div class="model-title">A6 SVM</div>
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Multi-benchmark</th>
+                <th>Single-benchmark</th>
+                <th>Change</th>
+            </tr>
+            <tr>
+                <td>Mean (ms)</td>
+                <td>9.1022</td>
+                <td>0.6455</td>
+                <td>-92.9%</td>
+            </tr>
+            <tr>
+                <td>Std (ms)</td>
+                <td>0.3233</td>
+                <td>0.0336</td>
+                <td>-89.6%</td>
+            </tr>
+            <tr>
+                <td>Min (ms)</td>
+                <td>8.6898</td>
+                <td>0.6043</td>
+                <td>-93.0%</td>
+            </tr>
+            <tr>
+                <td>Max (ms)</td>
+                <td>9.6271</td>
+                <td>1.1998</td>
+                <td>-87.5%</td>
+            </tr>
+            <tr>
+                <td>Accuracy</td>
+                <td>83.0%</td>
+                <td>83.0%</td>
+                <td>0.0pp</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

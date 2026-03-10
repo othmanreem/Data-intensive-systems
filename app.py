@@ -253,7 +253,6 @@ def load_classification_example():
 
 
 def create_interface():
-    global models_loaded
 
     if FEATURE_NAMES is None:
         error_message = loading_error if loading_error else "Model not loaded"
@@ -446,6 +445,7 @@ def create_interface():
     return demo
 
 def load_models_async():
+    # Load models asynchronously in background threads
     global models_loaded
     start_time = time.perf_counter()
     print("Starting asynchronous model loading...")
@@ -456,8 +456,6 @@ def load_models_async():
     print(f"Model loading complete (total time: {elapsed_time:.2f} seconds)")
 
 if __name__ == "__main__":
-    # Load models asynchronously in background threads
-    models_loaded = False
     # Start model loading in background thread
     loading_thread = threading.Thread(target=load_models_async, daemon=True)
     loading_thread.start()

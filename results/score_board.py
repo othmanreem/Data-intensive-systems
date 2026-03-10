@@ -22,9 +22,11 @@ def create_score_board(weeks=None, scores=None, save_path=None, show=False):
         The generated figure object.
     """
     if weeks is None:
-        weeks = [0, 1, 2]
+        weeks = [0, 1, 2, 3, 4, 5]
     if scores is None:
-        scores = [0, 0.51, 0.59]
+        # Week 0: Start, Week 1: A2 baseline, Week 2: A2 outlier removal
+        # Week 3: A4 Random Forest, Week 4: A5 Weighted Ensemble, Week 5: A5b (champion retained)
+        scores = [0, 0.52, 0.59, 0.65, 0.7204, 0.7204]
 
     # Create figure and axis
     fig, ax = plt.subplots(figsize=(8, 6))

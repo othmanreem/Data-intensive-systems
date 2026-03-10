@@ -2,6 +2,8 @@ import gradio as gr
 import pandas as pd
 import pickle
 import os
+import threading
+import time
 from A5.CorrelationFilter import CorrelationFilter
 
 
@@ -33,6 +35,10 @@ CLASSIFICATION_FEATURE_NAMES = None
 CLASSIFICATION_CLASSES = None
 CLASSIFICATION_METRICS = None
 
+# Loading state tracking
+models_loaded = False
+loading_error = None
+
 BODY_REGION_RECOMMENDATIONS = {
     'Upper Body': (
         "Focus on shoulder mobility, thoracic spine extension, "
@@ -44,22 +50,31 @@ BODY_REGION_RECOMMENDATIONS = {
 
 
 def load_champion_model():
-    global model, FEATURE_NAMES, MODEL_METRICS
+    global model, FEATURE_NAMES, MODEL_METRICS, loading_error
 
     if os.path.exists(MODEL_PATH):
         print(f"Loading champion model from {MODEL_PATH}")
-        with open(MODEL_PATH, "rb") as f:
-            artifact = pickle.load(f)
+        start_time = time.perf_counter()
+        try:
+            with open(MODEL_PATH, "rb") as f:
+                artifact = pickle.load(f)
 
-        model = artifact["model"]
-        FEATURE_NAMES = artifact["feature_columns"]
-        MODEL_METRICS = artifact.get("test_metrics", {})
+            model = artifact["model"]
+            FEATURE_NAMES = artifact["feature_columns"]
+            MODEL_METRICS = artifact.get("test_metrics", {})
 
-        print(f"Model loaded: {len(FEATURE_NAMES)} features")
-        print(f"Test R2: {MODEL_METRICS.get('r2', 'N/A')}")
-        return True
+            elapsed_time = time.perf_counter() - start_time
+            print(f"Model loaded: {len(FEATURE_NAMES)} features")
+            print(f"Test R2: {MODEL_METRICS.get('r2', 'N/A')}")
+            print(f"Model loading time: {elapsed_time:.2f} seconds")
+            return True
+        except Exception as e:
+            loading_error = f"Error loading champion model: {e}"
+            print(loading_error)
+            return False
 
-    print(f"Champion model not found at {MODEL_PATH}")
+    loading_error = f"Champion model not found at {MODEL_PATH}"
+    print(loading_error)
     return False
 
 
@@ -68,30 +83,42 @@ def load_classification_model():
     global CLASSIFICATION_FEATURE_NAMES
     global CLASSIFICATION_CLASSES
     global CLASSIFICATION_METRICS
+    global loading_error
 
     if os.path.exists(CLASSIFICATION_MODEL_PATH):
         print(f"Loading classification model from {CLASSIFICATION_MODEL_PATH}")
-        with open(CLASSIFICATION_MODEL_PATH, "rb") as f:
-            artifact = pickle.load(f)
+        start_time = time.perf_counter()
+        try:
+            with open(CLASSIFICATION_MODEL_PATH, "rb") as f:
+                artifact = pickle.load(f)
 
-        classification_model = artifact["model"]
-        CLASSIFICATION_FEATURE_NAMES = artifact["feature_columns"]
-        CLASSIFICATION_CLASSES = artifact["classes"]
-        CLASSIFICATION_METRICS = artifact.get("test_metrics", {})
+            classification_model = artifact["model"]
+            CLASSIFICATION_FEATURE_NAMES = artifact["feature_columns"]
+            CLASSIFICATION_CLASSES = artifact["classes"]
+            CLASSIFICATION_METRICS = artifact.get("test_metrics", {})
 
-        len_features = len(CLASSIFICATION_FEATURE_NAMES)
-        print(
-            f"Classification model loaded: {len_features} features")
-        print(f"Classes: {CLASSIFICATION_CLASSES}")
-        return True
+            len_features = len(CLASSIFICATION_FEATURE_NAMES)
+            elapsed_time = time.perf_counter() - start_time
+            print(
+                f"Classification model loaded: {len_features} features")
+            print(f"Classes: {CLASSIFICATION_CLASSES}")
+            print(f"Classification model loading time: {elapsed_time:.2f} seconds")
+            return True
+        except Exception as e:
+            loading_error = f"Error loading classification model: {e}"
+            print(loading_error)
+            return False
 
-    print(f"Classification model not found at {CLASSIFICATION_MODEL_PATH}")
+    loading_error = f"Classification model not found at {CLASSIFICATION_MODEL_PATH}"
+    print(loading_error)
     return False
 
 
 def predict_score(*feature_values):
     if model is None:
-        return "Error", "Model not loaded", ""
+        if loading_error:
+            return "Error", loading_error, ""
+        return "Error", "Model not loaded yet", ""
 
     features_df = pd.DataFrame([feature_values], columns=FEATURE_NAMES)
     raw_score = model.predict(features_df)[0]
@@ -130,7 +157,9 @@ def predict_score(*feature_values):
 
 def predict_weakest_link(*feature_values):
     if classification_model is None:
-        return "Error", "Model not loaded", ""
+        if loading_error:
+            return "Error", loading_error, ""
+        return "Error", "Classification model not loaded yet", ""
 
     features_df = pd.DataFrame(
         [feature_values], columns=CLASSIFICATION_FEATURE_NAMES)
@@ -224,9 +253,12 @@ def load_classification_example():
 
 
 def create_interface():
+    global models_loaded
+
     if FEATURE_NAMES is None:
+        error_message = loading_error if loading_error else "Model not loaded"
         return gr.Interface(
-            fn=lambda: "Model not loaded",
+            fn=lambda: error_message,
             inputs=[],
             outputs="text",
             title="Error: Model not loaded"
@@ -413,12 +445,29 @@ def create_interface():
 
     return demo
 
-
-if __name__ == "__main__":
-    # load the pickled models
+def load_models_async():
+    global models_loaded
+    start_time = time.perf_counter()
+    print("Starting asynchronous model loading...")
     load_champion_model()
     load_classification_model()
+    models_loaded = True
+    elapsed_time = time.perf_counter() - start_time
+    print(f"Model loading complete (total time: {elapsed_time:.2f} seconds)")
 
-    # create the interface
+if __name__ == "__main__":
+    # Load models asynchronously in background threads
+
+    # Start model loading in background thread
+    loading_thread = threading.Thread(target=load_models_async, daemon=True)
+    loading_thread.start()
+
+    # Create the interface immediately (models loading in background)
     demo = create_interface()
+
+    # Add loading status to the interface
+    if not models_loaded:
+        print("Models are loading in the background...")
+        print("You can use the interface while models load.")
+
     demo.launch(share=False, server_name="0.0.0.0", server_port=7860)

@@ -1,0 +1,5 @@
+a4_rf = "../A4/models/weaklink_classifier_rf.pkl"
+a5_ensemnble = "../A5/models/ensemble_classification_champion.pkl"
+a5b_adaboost = "../A5b/models/adaboost_classification.pkl"
+a5b_bagging_tree = "../A5b/models/bagging_trees_champion.pkl"
+a6_svm = "models/champion_svm.pkl"

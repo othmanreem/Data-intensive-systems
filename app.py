@@ -457,8 +457,9 @@ def load_models_async():
 
 if __name__ == "__main__":
     # Start model loading in background thread
-    loading_thread = threading.Thread(target=load_models_async, daemon=True)
-    loading_thread.start()
+    #loading_thread = threading.Thread(target=load_models_async, daemon=True)
+    #loading_thread.start()
+    load_models_async()
 
     # Create the interface immediately (models loading in background)
     demo = create_interface()

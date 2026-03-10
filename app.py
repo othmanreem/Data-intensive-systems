@@ -457,7 +457,7 @@ def load_models_async():
 
 if __name__ == "__main__":
     # Load models asynchronously in background threads
-
+    models_loaded = False
     # Start model loading in background thread
     loading_thread = threading.Thread(target=load_models_async, daemon=True)
     loading_thread.start()

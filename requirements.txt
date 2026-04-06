@@ -8,6 +8,11 @@ gdown==5.2.0
 xgboost==3.2.0
 lightgbm==4.6.0
 
+# A8: Deep Learning / Pose Estimation
+tensorflow>=2.21.0
+tensorflow-hub>=0.16.1
+opencv-python>=4.10.0
+
 pytest==8.3.4
 pytest-cov==6.0.0
 

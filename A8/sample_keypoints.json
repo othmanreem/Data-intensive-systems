@@ -1,0 +1,98 @@
+{
+  "source": "test_person.jpg",
+  "model": "movenet/lightning",
+  "frames": [
+    {
+      "frame_id": 0,
+      "timestamp": 0.0,
+      "inference_time_ms": 28.4,
+      "keypoints": {
+        "nose": {
+          "x": 0.498,
+          "y": 0.404,
+          "confidence": 0.99
+        },
+        "left_eye": {
+          "x": 0.456,
+          "y": 0.361,
+          "confidence": 0.975
+        },
+        "right_eye": {
+          "x": 0.562,
+          "y": 0.362,
+          "confidence": 0.973
+        },
+        "left_ear": {
+          "x": 0.392,
+          "y": 0.394,
+          "confidence": 0.911
+        },
+        "right_ear": {
+          "x": 0.64,
+          "y": 0.403,
+          "confidence": 0.918
+        },
+        "left_shoulder": {
+          "x": 0.252,
+          "y": 0.732,
+          "confidence": 0.942
+        },
+        "right_shoulder": {
+          "x": 0.774,
+          "y": 0.731,
+          "confidence": 0.946
+        },
+        "left_elbow": {
+          "x": 0.305,
+          "y": 0.69,
+          "confidence": 0.44
+        },
+        "right_elbow": {
+          "x": 0.708,
+          "y": 0.69,
+          "confidence": 0.452
+        },
+        "left_wrist": {
+          "x": 0.28,
+          "y": 0.77,
+          "confidence": 0.181
+        },
+        "right_wrist": {
+          "x": 0.733,
+          "y": 0.77,
+          "confidence": 0.193
+        },
+        "left_hip": {
+          "x": 0.445,
+          "y": 0.784,
+          "confidence": 0.612
+        },
+        "right_hip": {
+          "x": 0.553,
+          "y": 0.784,
+          "confidence": 0.627
+        },
+        "left_knee": {
+          "x": 0.455,
+          "y": 0.885,
+          "confidence": 0.144
+        },
+        "right_knee": {
+          "x": 0.547,
+          "y": 0.885,
+          "confidence": 0.151
+        },
+        "left_ankle": {
+          "x": 0.465,
+          "y": 0.97,
+          "confidence": 0.103
+        },
+        "right_ankle": {
+          "x": 0.537,
+          "y": 0.97,
+          "confidence": 0.109
+        }
+      }
+    }
+  ]
+}

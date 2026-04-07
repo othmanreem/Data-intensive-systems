@@ -227,7 +227,7 @@ demo = gr.Interface(
         gr.Image(type="pil", label="Pose Output"),
         gr.Textbox(label="Pose Data", lines=15)
     ],
-    title="OpenPose Pose Generator",
+    title="Pose Estimation and Export",
     description="Generate full body pose including face and hands. Extracts and stores joint positions in CSV and JSON formats."
 )
 

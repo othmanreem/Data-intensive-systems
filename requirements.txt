@@ -15,5 +15,3 @@ opencv-python>=4.10.0
 
 pytest==8.3.4
 pytest-cov==6.0.0
-
-controlnet-aux==0.0.6

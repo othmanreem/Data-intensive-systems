@@ -12,8 +12,7 @@ lightgbm==4.6.0
 tensorflow>=2.21.0
 tensorflow-hub>=0.16.1
 opencv-python>=4.10.0
+setuptools==68.1.2
 
 pytest==8.3.4
 pytest-cov==6.0.0
-
-controlnet-aux==0.0.6

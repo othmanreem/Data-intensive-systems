@@ -112,7 +112,7 @@ MODEL_CONFIGS = {
             'pool_size': 3,
             'dense_units': (256, 128, 64),
             'activation': 'relu',
-            'dropout_rate': 0.2,
+            'dropout_rate': 0.05,
         },
         'data_type': 'windowed',
     }

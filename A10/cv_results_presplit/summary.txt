@@ -1,0 +1,3111 @@
+Cross-Validation Training Summary - Optimizer & Loss Function Variants
+==================================================
+
+DENSE:
+----------------------------------------
+
+  Optimizer: SGD, Loss: MSE
+    Best Fold: 3
+    Val RMSE: 0.059440 ± 0.000469
+    Val MAE:  0.043848 ± 0.000274
+    Val R²:   0.813391 ± 0.001776
+    Test RMSE: 0.057611
+    Test MAE:  0.041881
+    Test R²:   0.814375
+
+  Optimizer: SGD, Loss: MAE
+    Best Fold: 1
+    Val RMSE: 0.042735 ± 0.000542
+    Val MAE:  0.029590 ± 0.000358
+    Val R²:   0.903531 ± 0.002022
+    Test RMSE: 0.047109
+    Test MAE:  0.032102
+    Test R²:   0.875881
+
+  Optimizer: RMSPROP, Loss: MSE
+    Best Fold: 1
+    Val RMSE: 0.059301 ± 0.000518
+    Val MAE:  0.043721 ± 0.000284
+    Val R²:   0.814260 ± 0.001954
+    Test RMSE: 0.057767
+    Test MAE:  0.041876
+    Test R²:   0.813365
+
+  Optimizer: RMSPROP, Loss: MAE
+    Best Fold: 3
+    Val RMSE: 0.043169 ± 0.000744
+    Val MAE:  0.029957 ± 0.000701
+    Val R²:   0.901551 ± 0.002967
+    Test RMSE: 0.046718
+    Test MAE:  0.032240
+    Test R²:   0.877935
+
+  Optimizer: ADAM, Loss: MSE
+    Best Fold: 3
+    Val RMSE: 0.059307 ± 0.000549
+    Val MAE:  0.043731 ± 0.000365
+    Val R²:   0.814206 ± 0.003245
+    Test RMSE: 0.057551
+    Test MAE:  0.041935
+    Test R²:   0.814760
+
+  Optimizer: ADAM, Loss: MAE
+    Best Fold: 2
+    Val RMSE: 0.042999 ± 0.000112
+    Val MAE:  0.029868 ± 0.000158
+    Val R²:   0.902337 ± 0.001160
+    Test RMSE: 0.045812
+    Test MAE:  0.031605
+    Test R²:   0.882620
+
+CONV1D_V3:
+----------------------------------------
+
+  Optimizer: SGD, Loss: MSE
+    Best Fold: 1
+    Val RMSE: 0.020739 ± 0.000612
+    Val MAE:  0.015054 ± 0.000351
+    Val R²:   0.979737 ± 0.001972
+    Test RMSE: 0.044137
+    Test MAE:  0.029071
+    Test R²:   0.904544
+
+  Optimizer: SGD, Loss: MAE
+    Best Fold: 4
+    Val RMSE: 0.020470 ± 0.000950
+    Val MAE:  0.014000 ± 0.000437
+    Val R²:   0.980242 ± 0.002410
+    Test RMSE: 0.042961
+    Test MAE:  0.028418
+    Test R²:   0.909563
+
+  Optimizer: RMSPROP, Loss: MSE
+    Best Fold: 4
+    Val RMSE: 0.021277 ± 0.001194
+    Val MAE:  0.015399 ± 0.000737
+    Val R²:   0.978691 ± 0.002403
+    Test RMSE: 0.043499
+    Test MAE:  0.028848
+    Test R²:   0.907284
+
+  Optimizer: RMSPROP, Loss: MAE
+    Best Fold: 1
+    Val RMSE: 0.020385 ± 0.001024
+    Val MAE:  0.013899 ± 0.000467
+    Val R²:   0.980447 ± 0.002032
+    Test RMSE: 0.043318
+    Test MAE:  0.028820
+    Test R²:   0.908055
+
+  Optimizer: ADAM, Loss: MSE
+    Best Fold: 1
+    Val RMSE: 0.020567 ± 0.000542
+    Val MAE:  0.014934 ± 0.000317
+    Val R²:   0.980085 ± 0.001752
+    Test RMSE: 0.042539
+    Test MAE:  0.027975
+    Test R²:   0.911329
+
+  Optimizer: ADAM, Loss: MAE
+    Best Fold: 1
+    Val RMSE: 0.021087 ± 0.001406
+    Val MAE:  0.014232 ± 0.000878
+    Val R²:   0.978933 ± 0.003641
+    Test RMSE: 0.044988
+    Test MAE:  0.030042
+    Test R²:   0.900828
+
+LSTM:
+----------------------------------------
+
+  Optimizer: SGD, Loss: MSE
+    Best Fold: 1
+    Val RMSE: 0.076478 ± 0.003520
+    Val MAE:  0.057918 ± 0.002391
+    Val R²:   0.725706 ± 0.014399
+    Test RMSE: 0.070213
+    Test MAE:  0.051882
+    Test R²:   0.758436
+
+  Optimizer: SGD, Loss: MAE
+    Best Fold: 4
+    Val RMSE: 0.073830 ± 0.001911
+    Val MAE:  0.053947 ± 0.001588
+    Val R²:   0.744050 ± 0.013005
+    Test RMSE: 0.069264
+    Test MAE:  0.050812
+    Test R²:   0.764920
+
+  Optimizer: RMSPROP, Loss: MSE
+    Best Fold: 5
+    Val RMSE: 0.075967 ± 0.003251
+    Val MAE:  0.057454 ± 0.002373
+    Val R²:   0.729088 ± 0.018138
+    Test RMSE: 0.070163
+    Test MAE:  0.052138
+    Test R²:   0.758780
+
+  Optimizer: RMSPROP, Loss: MAE
+    Best Fold: 4
+    Val RMSE: 0.074841 ± 0.002584
+    Val MAE:  0.054793 ± 0.001883
+    Val R²:   0.736949 ± 0.016486
+    Test RMSE: 0.069860
+    Test MAE:  0.050640
+    Test R²:   0.760858
+
+  Optimizer: ADAM, Loss: MSE
+    Best Fold: 4
+    Val RMSE: 0.076445 ± 0.003468
+    Val MAE:  0.057632 ± 0.002748
+    Val R²:   0.725815 ± 0.016610
+    Test RMSE: 0.069739
+    Test MAE:  0.051728
+    Test R²:   0.761684
+
+  Optimizer: ADAM, Loss: MAE
+    Best Fold: 5
+    Val RMSE: 0.074841 ± 0.003193
+    Val MAE:  0.054920 ± 0.002287
+    Val R²:   0.737077 ± 0.017281
+    Test RMSE: 0.070218
+    Test MAE:  0.050958
+    Test R²:   0.758400
+
+GRU:
+----------------------------------------
+
+  Optimizer: SGD, Loss: MSE
+    Best Fold: 5
+    Val RMSE: 0.075010 ± 0.001165
+    Val MAE:  0.056806 ± 0.000583
+    Val R²:   0.735682 ± 0.013455
+    Test RMSE: 0.072503
+    Test MAE:  0.054428
+    Test R²:   0.742419
+
+  Optimizer: SGD, Loss: MAE
+    Best Fold: 5
+    Val RMSE: 0.073662 ± 0.003335
+    Val MAE:  0.054129 ± 0.002476
+    Val R²:   0.745142 ± 0.019985
+    Test RMSE: 0.068828
+    Test MAE:  0.049941
+    Test R²:   0.767871
+
+  Optimizer: RMSPROP, Loss: MSE
+    Best Fold: 5
+    Val RMSE: 0.075915 ± 0.002800
+    Val MAE:  0.057739 ± 0.001973
+    Val R²:   0.729783 ± 0.008282
+    Test RMSE: 0.072316
+    Test MAE:  0.054308
+    Test R²:   0.743749
+
+  Optimizer: RMSPROP, Loss: MAE
+    Best Fold: 5
+    Val RMSE: 0.075372 ± 0.005200
+    Val MAE:  0.055400 ± 0.004344
+    Val R²:   0.732276 ± 0.037537
+    Test RMSE: 0.068158
+    Test MAE:  0.049745
+    Test R²:   0.772367
+
+  Optimizer: ADAM, Loss: MSE
+    Best Fold: 4
+    Val RMSE: 0.077147 ± 0.001636
+    Val MAE:  0.058403 ± 0.001197
+    Val R²:   0.720586 ± 0.011655
+    Test RMSE: 0.070669
+    Test MAE:  0.053239
+    Test R²:   0.755283
+
+  Optimizer: ADAM, Loss: MAE
+    Best Fold: 4
+    Val RMSE: 0.075166 ± 0.002424
+    Val MAE:  0.055303 ± 0.001958
+    Val R²:   0.734786 ± 0.013853
+    Test RMSE: 0.067393
+    Test MAE:  0.049462
+    Test R²:   0.777447
+
+
+DENSE_SGD_MSE
+------------------------------
+Best Fold: 3
+
+Validation Metrics (mean ± std):
+  val_mse: 0.003533 ± 0.000056
+  val_rmse: 0.059440 ± 0.000469
+  val_mae: 0.043848 ± 0.000274
+  val_r2: 0.813391 ± 0.001776
+  val_head_mse: 0.002404 ± 0.000040
+  val_head_rmse: 0.049032 ± 0.000406
+  val_head_mae: 0.038085 ± 0.000251
+  val_head_r2: 0.751177 ± 0.005038
+  val_left_shoulder_mse: 0.001792 ± 0.000041
+  val_left_shoulder_rmse: 0.042326 ± 0.000487
+  val_left_shoulder_mae: 0.032348 ± 0.000245
+  val_left_shoulder_r2: 0.677581 ± 0.008675
+  val_left_elbow_mse: 0.002485 ± 0.000061
+  val_left_elbow_rmse: 0.049843 ± 0.000607
+  val_left_elbow_mae: 0.038593 ± 0.000370
+  val_left_elbow_r2: 0.814228 ± 0.004471
+  val_right_shoulder_mse: 0.002213 ± 0.000040
+  val_right_shoulder_rmse: 0.047041 ± 0.000430
+  val_right_shoulder_mae: 0.036269 ± 0.000330
+  val_right_shoulder_r2: 0.651742 ± 0.006005
+  val_right_elbow_mse: 0.003055 ± 0.000089
+  val_right_elbow_rmse: 0.055269 ± 0.000804
+  val_right_elbow_mae: 0.043759 ± 0.000703
+  val_right_elbow_r2: 0.796330 ± 0.006220
+  val_left_hand_mse: 0.004698 ± 0.000073
+  val_left_hand_rmse: 0.068540 ± 0.000531
+  val_left_hand_mae: 0.053853 ± 0.000526
+  val_left_hand_r2: 0.820221 ± 0.001704
+  val_right_hand_mse: 0.004932 ± 0.000164
+  val_right_hand_rmse: 0.070216 ± 0.001166
+  val_right_hand_mae: 0.055105 ± 0.000829
+  val_right_hand_r2: 0.815151 ± 0.005053
+  val_left_hip_mse: 0.003801 ± 0.000124
+  val_left_hip_rmse: 0.061645 ± 0.001007
+  val_left_hip_mae: 0.043471 ± 0.000572
+  val_left_hip_r2: 0.523490 ± 0.011769
+  val_right_hip_mse: 0.003949 ± 0.000115
+  val_right_hip_rmse: 0.062836 ± 0.000909
+  val_right_hip_mae: 0.043940 ± 0.000595
+  val_right_hip_r2: 0.522334 ± 0.011693
+  val_left_knee_mse: 0.003710 ± 0.000162
+  val_left_knee_rmse: 0.060895 ± 0.001332
+  val_left_knee_mae: 0.044268 ± 0.000770
+  val_left_knee_r2: 0.618625 ± 0.015216
+  val_right_knee_mse: 0.003923 ± 0.000129
+  val_right_knee_rmse: 0.062625 ± 0.001020
+  val_right_knee_mae: 0.045214 ± 0.000642
+  val_right_knee_r2: 0.641292 ± 0.011673
+  val_left_foot_mse: 0.004297 ± 0.000201
+  val_left_foot_rmse: 0.065533 ± 0.001542
+  val_left_foot_mae: 0.045818 ± 0.000775
+  val_left_foot_r2: 0.086720 ± 0.012507
+  val_right_foot_mse: 0.004674 ± 0.000135
+  val_right_foot_rmse: 0.068358 ± 0.000986
+  val_right_foot_mae: 0.049306 ± 0.000550
+  val_right_foot_r2: 0.060068 ± 0.010143
+
+Test Metrics:
+  test_mse: 0.003319
+  test_rmse: 0.057611
+  test_mae: 0.041881
+  test_r2: 0.814375
+  test_head_mse: 0.001970
+  test_head_rmse: 0.044381
+  test_head_mae: 0.033515
+  test_head_r2: 0.748568
+  test_left_shoulder_mse: 0.001252
+  test_left_shoulder_rmse: 0.035382
+  test_left_shoulder_mae: 0.027632
+  test_left_shoulder_r2: 0.720289
+  test_left_elbow_mse: 0.003612
+  test_left_elbow_rmse: 0.060101
+  test_left_elbow_mae: 0.045149
+  test_left_elbow_r2: 0.736922
+  test_right_shoulder_mse: 0.001611
+  test_right_shoulder_rmse: 0.040131
+  test_right_shoulder_mae: 0.030762
+  test_right_shoulder_r2: 0.708152
+  test_right_elbow_mse: 0.004542
+  test_right_elbow_rmse: 0.067398
+  test_right_elbow_mae: 0.050044
+  test_right_elbow_r2: 0.720813
+  test_left_hand_mse: 0.006775
+  test_left_hand_rmse: 0.082313
+  test_left_hand_mae: 0.063111
+  test_left_hand_r2: 0.742439
+  test_right_hand_mse: 0.009261
+  test_right_hand_rmse: 0.096233
+  test_right_hand_mae: 0.070520
+  test_right_hand_r2: 0.681905
+  test_left_hip_mse: 0.002240
+  test_left_hip_rmse: 0.047328
+  test_left_hip_mae: 0.035105
+  test_left_hip_r2: 0.591762
+  test_right_hip_mse: 0.002384
+  test_right_hip_rmse: 0.048824
+  test_right_hip_mae: 0.035966
+  test_right_hip_r2: 0.590975
+  test_left_knee_mse: 0.001898
+  test_left_knee_rmse: 0.043565
+  test_left_knee_mae: 0.034052
+  test_left_knee_r2: 0.774421
+  test_right_knee_mse: 0.002272
+  test_right_knee_rmse: 0.047667
+  test_right_knee_mae: 0.037466
+  test_right_knee_r2: 0.766440
+  test_left_foot_mse: 0.002424
+  test_left_foot_rmse: 0.049236
+  test_left_foot_mae: 0.039652
+  test_left_foot_r2: 0.194172
+  test_right_foot_mse: 0.002906
+  test_right_foot_rmse: 0.053908
+  test_right_foot_mae: 0.041478
+  test_right_foot_r2: 0.041810
+
+DENSE_SGD_MAE
+------------------------------
+Best Fold: 1
+
+Validation Metrics (mean ± std):
+  val_mse: 0.001827 ± 0.000046
+  val_rmse: 0.042735 ± 0.000542
+  val_mae: 0.029590 ± 0.000358
+  val_r2: 0.903531 ± 0.002022
+  val_head_mse: 0.001403 ± 0.000056
+  val_head_rmse: 0.037450 ± 0.000749
+  val_head_mae: 0.027575 ± 0.000443
+  val_head_r2: 0.854842 ± 0.004761
+  val_left_shoulder_mse: 0.001048 ± 0.000039
+  val_left_shoulder_rmse: 0.032362 ± 0.000610
+  val_left_shoulder_mae: 0.023523 ± 0.000355
+  val_left_shoulder_r2: 0.811498 ± 0.006905
+  val_left_elbow_mse: 0.001573 ± 0.000055
+  val_left_elbow_rmse: 0.039659 ± 0.000693
+  val_left_elbow_mae: 0.029623 ± 0.000325
+  val_left_elbow_r2: 0.882401 ± 0.002946
+  val_right_shoulder_mse: 0.001015 ± 0.000066
+  val_right_shoulder_rmse: 0.031840 ± 0.001038
+  val_right_shoulder_mae: 0.023186 ± 0.000704
+  val_right_shoulder_r2: 0.840414 ± 0.008148
+  val_right_elbow_mse: 0.001686 ± 0.000069
+  val_right_elbow_rmse: 0.041058 ± 0.000836
+  val_right_elbow_mae: 0.030794 ± 0.000567
+  val_right_elbow_r2: 0.887620 ± 0.003653
+  val_left_hand_mse: 0.002609 ± 0.000109
+  val_left_hand_rmse: 0.051071 ± 0.001066
+  val_left_hand_mae: 0.039252 ± 0.000933
+  val_left_hand_r2: 0.900134 ± 0.004285
+  val_right_hand_mse: 0.003028 ± 0.000134
+  val_right_hand_rmse: 0.055011 ± 0.001214
+  val_right_hand_mae: 0.041233 ± 0.000874
+  val_right_hand_r2: 0.886495 ± 0.005036
+  val_left_hip_mse: 0.001501 ± 0.000108
+  val_left_hip_rmse: 0.038715 ± 0.001376
+  val_left_hip_mae: 0.027585 ± 0.000742
+  val_left_hip_r2: 0.812037 ± 0.009897
+  val_right_hip_mse: 0.001552 ± 0.000110
+  val_right_hip_rmse: 0.039367 ± 0.001377
+  val_right_hip_mae: 0.027821 ± 0.000744
+  val_right_hip_r2: 0.812496 ± 0.010094
+  val_left_knee_mse: 0.001752 ± 0.000085
+  val_left_knee_rmse: 0.041845 ± 0.001017
+  val_left_knee_mae: 0.027459 ± 0.000217
+  val_left_knee_r2: 0.819870 ± 0.008607
+  val_right_knee_mse: 0.001657 ± 0.000107
+  val_right_knee_rmse: 0.040687 ± 0.001305
+  val_right_knee_mae: 0.027804 ± 0.000484
+  val_right_knee_r2: 0.848435 ± 0.010316
+  val_left_foot_mse: 0.002528 ± 0.000155
+  val_left_foot_rmse: 0.050255 ± 0.001559
+  val_left_foot_mae: 0.028674 ± 0.000424
+  val_left_foot_r2: 0.462929 ± 0.017102
+  val_right_foot_mse: 0.002394 ± 0.000135
+  val_right_foot_rmse: 0.048908 ± 0.001378
+  val_right_foot_mae: 0.030140 ± 0.000392
+  val_right_foot_r2: 0.518787 ± 0.019472
+
+Test Metrics:
+  test_mse: 0.002219
+  test_rmse: 0.047109
+  test_mae: 0.032102
+  test_r2: 0.875881
+  test_head_mse: 0.001663
+  test_head_rmse: 0.040781
+  test_head_mae: 0.029398
+  test_head_r2: 0.787702
+  test_left_shoulder_mse: 0.001017
+  test_left_shoulder_rmse: 0.031889
+  test_left_shoulder_mae: 0.023327
+  test_left_shoulder_r2: 0.772793
+  test_left_elbow_mse: 0.002614
+  test_left_elbow_rmse: 0.051123
+  test_left_elbow_mae: 0.036674
+  test_left_elbow_r2: 0.809652
+  test_right_shoulder_mse: 0.001323
+  test_right_shoulder_rmse: 0.036369
+  test_right_shoulder_mae: 0.024785
+  test_right_shoulder_r2: 0.760307
+  test_right_elbow_mse: 0.003613
+  test_right_elbow_rmse: 0.060105
+  test_right_elbow_mae: 0.039766
+  test_right_elbow_r2: 0.777963
+  test_left_hand_mse: 0.004495
+  test_left_hand_rmse: 0.067041
+  test_left_hand_mae: 0.051227
+  test_left_hand_r2: 0.829145
+  test_right_hand_mse: 0.007091
+  test_right_hand_rmse: 0.084210
+  test_right_hand_mae: 0.057273
+  test_right_hand_r2: 0.756426
+  test_left_hip_mse: 0.001132
+  test_left_hip_rmse: 0.033641
+  test_left_hip_mae: 0.024891
+  test_left_hip_r2: 0.793746
+  test_right_hip_mse: 0.001179
+  test_right_hip_rmse: 0.034330
+  test_right_hip_mae: 0.025360
+  test_right_hip_r2: 0.797776
+  test_left_knee_mse: 0.001018
+  test_left_knee_rmse: 0.031905
+  test_left_knee_mae: 0.024267
+  test_left_knee_r2: 0.879015
+  test_right_knee_mse: 0.001067
+  test_right_knee_rmse: 0.032662
+  test_right_knee_mae: 0.025449
+  test_right_knee_r2: 0.890341
+  test_left_foot_mse: 0.001150
+  test_left_foot_rmse: 0.033914
+  test_left_foot_mae: 0.025090
+  test_left_foot_r2: 0.617662
+  test_right_foot_mse: 0.001490
+  test_right_foot_rmse: 0.038607
+  test_right_foot_mae: 0.029819
+  test_right_foot_r2: 0.508556
+
+DENSE_RMSPROP_MSE
+------------------------------
+Best Fold: 1
+
+Validation Metrics (mean ± std):
+  val_mse: 0.003517 ± 0.000061
+  val_rmse: 0.059301 ± 0.000518
+  val_mae: 0.043721 ± 0.000284
+  val_r2: 0.814260 ± 0.001954
+  val_head_mse: 0.002411 ± 0.000046
+  val_head_rmse: 0.049099 ± 0.000471
+  val_head_mae: 0.038031 ± 0.000214
+  val_head_r2: 0.750490 ± 0.005370
+  val_left_shoulder_mse: 0.001800 ± 0.000058
+  val_left_shoulder_rmse: 0.042424 ± 0.000684
+  val_left_shoulder_mae: 0.032436 ± 0.000383
+  val_left_shoulder_r2: 0.676058 ± 0.011000
+  val_left_elbow_mse: 0.002487 ± 0.000073
+  val_left_elbow_rmse: 0.049861 ± 0.000735
+  val_left_elbow_mae: 0.038602 ± 0.000459
+  val_left_elbow_r2: 0.814109 ± 0.004478
+  val_right_shoulder_mse: 0.002222 ± 0.000057
+  val_right_shoulder_rmse: 0.047138 ± 0.000602
+  val_right_shoulder_mae: 0.036301 ± 0.000450
+  val_right_shoulder_r2: 0.650293 ± 0.007892
+  val_right_elbow_mse: 0.003051 ± 0.000088
+  val_right_elbow_rmse: 0.055233 ± 0.000792
+  val_right_elbow_mae: 0.043756 ± 0.000705
+  val_right_elbow_r2: 0.796634 ± 0.004751
+  val_left_hand_mse: 0.004625 ± 0.000116
+  val_left_hand_rmse: 0.067999 ± 0.000850
+  val_left_hand_mae: 0.053335 ± 0.000804
+  val_left_hand_r2: 0.823057 ± 0.002573
+  val_right_hand_mse: 0.004870 ± 0.000151
+  val_right_hand_rmse: 0.069779 ± 0.001088
+  val_right_hand_mae: 0.054751 ± 0.000952
+  val_right_hand_r2: 0.817472 ± 0.003664
+  val_left_hip_mse: 0.003831 ± 0.000134
+  val_left_hip_rmse: 0.061887 ± 0.001077
+  val_left_hip_mae: 0.043743 ± 0.000723
+  val_left_hip_r2: 0.519758 ± 0.012204
+  val_right_hip_mse: 0.003980 ± 0.000126
+  val_right_hip_rmse: 0.063077 ± 0.000994
+  val_right_hip_mae: 0.044218 ± 0.000672
+  val_right_hip_r2: 0.518675 ± 0.012250
+  val_left_knee_mse: 0.003659 ± 0.000125
+  val_left_knee_rmse: 0.060477 ± 0.001034
+  val_left_knee_mae: 0.043902 ± 0.000411
+  val_left_knee_r2: 0.623937 ± 0.010202
+  val_right_knee_mse: 0.003901 ± 0.000128
+  val_right_knee_rmse: 0.062451 ± 0.001017
+  val_right_knee_mae: 0.045058 ± 0.000545
+  val_right_knee_r2: 0.643314 ± 0.010804
+  val_left_foot_mse: 0.004241 ± 0.000163
+  val_left_foot_rmse: 0.065110 ± 0.001258
+  val_left_foot_mae: 0.045289 ± 0.000387
+  val_left_foot_r2: 0.098385 ± 0.004762
+  val_right_foot_mse: 0.004642 ± 0.000112
+  val_right_foot_rmse: 0.068127 ± 0.000821
+  val_right_foot_mae: 0.048954 ± 0.000248
+  val_right_foot_r2: 0.066390 ± 0.005615
+
+Test Metrics:
+  test_mse: 0.003337
+  test_rmse: 0.057767
+  test_mae: 0.041876
+  test_r2: 0.813365
+  test_head_mse: 0.002036
+  test_head_rmse: 0.045127
+  test_head_mae: 0.034073
+  test_head_r2: 0.740048
+  test_left_shoulder_mse: 0.001286
+  test_left_shoulder_rmse: 0.035865
+  test_left_shoulder_mae: 0.028035
+  test_left_shoulder_r2: 0.712602
+  test_left_elbow_mse: 0.003675
+  test_left_elbow_rmse: 0.060620
+  test_left_elbow_mae: 0.045267
+  test_left_elbow_r2: 0.732360
+  test_right_shoulder_mse: 0.001620
+  test_right_shoulder_rmse: 0.040253
+  test_right_shoulder_mae: 0.030719
+  test_right_shoulder_r2: 0.706383
+  test_right_elbow_mse: 0.004563
+  test_right_elbow_rmse: 0.067551
+  test_right_elbow_mae: 0.049802
+  test_right_elbow_r2: 0.719544
+  test_left_hand_mse: 0.006820
+  test_left_hand_rmse: 0.082584
+  test_left_hand_mae: 0.062793
+  test_left_hand_r2: 0.740738
+  test_right_hand_mse: 0.009293
+  test_right_hand_rmse: 0.096399
+  test_right_hand_mae: 0.070107
+  test_right_hand_r2: 0.680809
+  test_left_hip_mse: 0.002180
+  test_left_hip_rmse: 0.046689
+  test_left_hip_mae: 0.034576
+  test_left_hip_r2: 0.602708
+  test_right_hip_mse: 0.002315
+  test_right_hip_rmse: 0.048118
+  test_right_hip_mae: 0.035338
+  test_right_hip_r2: 0.602715
+  test_left_knee_mse: 0.001934
+  test_left_knee_rmse: 0.043972
+  test_left_knee_mae: 0.034319
+  test_left_knee_r2: 0.770186
+  test_right_knee_mse: 0.002253
+  test_right_knee_rmse: 0.047463
+  test_right_knee_mae: 0.037498
+  test_right_knee_r2: 0.768434
+  test_left_foot_mse: 0.002476
+  test_left_foot_rmse: 0.049763
+  test_left_foot_mae: 0.040212
+  test_left_foot_r2: 0.176820
+  test_right_foot_mse: 0.002930
+  test_right_foot_rmse: 0.054129
+  test_right_foot_mae: 0.041644
+  test_right_foot_r2: 0.033938
+
+DENSE_RMSPROP_MAE
+------------------------------
+Best Fold: 3
+
+Validation Metrics (mean ± std):
+  val_mse: 0.001864 ± 0.000064
+  val_rmse: 0.043169 ± 0.000744
+  val_mae: 0.029957 ± 0.000701
+  val_r2: 0.901551 ± 0.002967
+  val_head_mse: 0.001417 ± 0.000086
+  val_head_rmse: 0.037626 ± 0.001156
+  val_head_mae: 0.027599 ± 0.000759
+  val_head_r2: 0.853389 ± 0.008323
+  val_left_shoulder_mse: 0.001069 ± 0.000044
+  val_left_shoulder_rmse: 0.032691 ± 0.000684
+  val_left_shoulder_mae: 0.023689 ± 0.000381
+  val_left_shoulder_r2: 0.807604 ± 0.008661
+  val_left_elbow_mse: 0.001651 ± 0.000067
+  val_left_elbow_rmse: 0.040619 ± 0.000825
+  val_left_elbow_mae: 0.030231 ± 0.000446
+  val_left_elbow_r2: 0.876642 ± 0.003629
+  val_right_shoulder_mse: 0.001061 ± 0.000094
+  val_right_shoulder_rmse: 0.032542 ± 0.001447
+  val_right_shoulder_mae: 0.023687 ± 0.000935
+  val_right_shoulder_r2: 0.833223 ± 0.012123
+  val_right_elbow_mse: 0.001786 ± 0.000109
+  val_right_elbow_rmse: 0.042240 ± 0.001267
+  val_right_elbow_mae: 0.031749 ± 0.000768
+  val_right_elbow_r2: 0.881042 ± 0.005644
+  val_left_hand_mse: 0.002697 ± 0.000153
+  val_left_hand_rmse: 0.051909 ± 0.001473
+  val_left_hand_mae: 0.039988 ± 0.001025
+  val_left_hand_r2: 0.896798 ± 0.005898
+  val_right_hand_mse: 0.003135 ± 0.000160
+  val_right_hand_rmse: 0.055974 ± 0.001418
+  val_right_hand_mae: 0.042027 ± 0.000961
+  val_right_hand_r2: 0.882502 ± 0.005204
+  val_left_hip_mse: 0.001488 ± 0.000104
+  val_left_hip_rmse: 0.038555 ± 0.001337
+  val_left_hip_mae: 0.027666 ± 0.001012
+  val_left_hip_r2: 0.813471 ± 0.011784
+  val_right_hip_mse: 0.001529 ± 0.000111
+  val_right_hip_rmse: 0.039075 ± 0.001417
+  val_right_hip_mae: 0.027655 ± 0.001048
+  val_right_hip_r2: 0.815138 ± 0.012480
+  val_left_knee_mse: 0.001750 ± 0.000083
+  val_left_knee_rmse: 0.041817 ± 0.000991
+  val_left_knee_mae: 0.027751 ± 0.000405
+  val_left_knee_r2: 0.820169 ± 0.007235
+  val_right_knee_mse: 0.001667 ± 0.000049
+  val_right_knee_rmse: 0.040824 ± 0.000599
+  val_right_knee_mae: 0.027998 ± 0.000449
+  val_right_knee_r2: 0.847580 ± 0.004206
+  val_left_foot_mse: 0.002550 ± 0.000166
+  val_left_foot_rmse: 0.050472 ± 0.001650
+  val_left_foot_mae: 0.028925 ± 0.000993
+  val_left_foot_r2: 0.458324 ± 0.017221
+  val_right_foot_mse: 0.002435 ± 0.000074
+  val_right_foot_rmse: 0.049336 ± 0.000748
+  val_right_foot_mae: 0.030478 ± 0.001092
+  val_right_foot_r2: 0.510229 ± 0.014439
+
+Test Metrics:
+  test_mse: 0.002183
+  test_rmse: 0.046718
+  test_mae: 0.032240
+  test_r2: 0.877935
+  test_head_mse: 0.001647
+  test_head_rmse: 0.040584
+  test_head_mae: 0.029050
+  test_head_r2: 0.789748
+  test_left_shoulder_mse: 0.001013
+  test_left_shoulder_rmse: 0.031824
+  test_left_shoulder_mae: 0.023417
+  test_left_shoulder_r2: 0.773716
+  test_left_elbow_mse: 0.002444
+  test_left_elbow_rmse: 0.049432
+  test_left_elbow_mae: 0.036603
+  test_left_elbow_r2: 0.822035
+  test_right_shoulder_mse: 0.001319
+  test_right_shoulder_rmse: 0.036322
+  test_right_shoulder_mae: 0.024998
+  test_right_shoulder_r2: 0.760932
+  test_right_elbow_mse: 0.003557
+  test_right_elbow_rmse: 0.059642
+  test_right_elbow_mae: 0.040213
+  test_right_elbow_r2: 0.781371
+  test_left_hand_mse: 0.004144
+  test_left_hand_rmse: 0.064377
+  test_left_hand_mae: 0.050195
+  test_left_hand_r2: 0.842455
+  test_right_hand_mse: 0.006954
+  test_right_hand_rmse: 0.083389
+  test_right_hand_mae: 0.057311
+  test_right_hand_r2: 0.761148
+  test_left_hip_mse: 0.001156
+  test_left_hip_rmse: 0.034006
+  test_left_hip_mae: 0.025312
+  test_left_hip_r2: 0.789248
+  test_right_hip_mse: 0.001220
+  test_right_hip_rmse: 0.034925
+  test_right_hip_mae: 0.025934
+  test_right_hip_r2: 0.790705
+  test_left_knee_mse: 0.001055
+  test_left_knee_rmse: 0.032487
+  test_left_knee_mae: 0.024905
+  test_left_knee_r2: 0.874561
+  test_right_knee_mse: 0.001102
+  test_right_knee_rmse: 0.033201
+  test_right_knee_mae: 0.026071
+  test_right_knee_r2: 0.886687
+  test_left_foot_mse: 0.001204
+  test_left_foot_rmse: 0.034699
+  test_left_foot_mae: 0.025144
+  test_left_foot_r2: 0.599766
+  test_right_foot_mse: 0.001557
+  test_right_foot_rmse: 0.039459
+  test_right_foot_mae: 0.029972
+  test_right_foot_r2: 0.486619
+
+DENSE_ADAM_MSE
+------------------------------
+Best Fold: 3
+
+Validation Metrics (mean ± std):
+  val_mse: 0.003518 ± 0.000065
+  val_rmse: 0.059307 ± 0.000549
+  val_mae: 0.043731 ± 0.000365
+  val_r2: 0.814206 ± 0.003245
+  val_head_mse: 0.002398 ± 0.000044
+  val_head_rmse: 0.048963 ± 0.000447
+  val_head_mae: 0.037996 ± 0.000220
+  val_head_r2: 0.751870 ± 0.005523
+  val_left_shoulder_mse: 0.001790 ± 0.000042
+  val_left_shoulder_rmse: 0.042304 ± 0.000498
+  val_left_shoulder_mae: 0.032324 ± 0.000376
+  val_left_shoulder_r2: 0.677852 ± 0.010845
+  val_left_elbow_mse: 0.002463 ± 0.000063
+  val_left_elbow_rmse: 0.049628 ± 0.000631
+  val_left_elbow_mae: 0.038409 ± 0.000574
+  val_left_elbow_r2: 0.815804 ± 0.005463
+  val_right_shoulder_mse: 0.002210 ± 0.000054
+  val_right_shoulder_rmse: 0.047005 ± 0.000583
+  val_right_shoulder_mae: 0.036215 ± 0.000421
+  val_right_shoulder_r2: 0.652218 ± 0.009537
+  val_right_elbow_mse: 0.003026 ± 0.000065
+  val_right_elbow_rmse: 0.055002 ± 0.000591
+  val_right_elbow_mae: 0.043511 ± 0.000490
+  val_right_elbow_r2: 0.798319 ± 0.004509
+  val_left_hand_mse: 0.004635 ± 0.000129
+  val_left_hand_rmse: 0.068077 ± 0.000947
+  val_left_hand_mae: 0.053400 ± 0.000877
+  val_left_hand_r2: 0.822583 ± 0.005672
+  val_right_hand_mse: 0.004859 ± 0.000047
+  val_right_hand_rmse: 0.069706 ± 0.000337
+  val_right_hand_mae: 0.054617 ± 0.000420
+  val_right_hand_r2: 0.817815 ± 0.003407
+  val_left_hip_mse: 0.003788 ± 0.000101
+  val_left_hip_rmse: 0.061538 ± 0.000817
+  val_left_hip_mae: 0.043403 ± 0.000520
+  val_left_hip_r2: 0.525199 ± 0.006627
+  val_right_hip_mse: 0.003937 ± 0.000084
+  val_right_hip_rmse: 0.062746 ± 0.000670
+  val_right_hip_mae: 0.043906 ± 0.000495
+  val_right_hip_r2: 0.523772 ± 0.006124
+  val_left_knee_mse: 0.003722 ± 0.000159
+  val_left_knee_rmse: 0.060994 ± 0.001297
+  val_left_knee_mae: 0.044355 ± 0.000615
+  val_left_knee_r2: 0.617415 ± 0.014425
+  val_right_knee_mse: 0.003924 ± 0.000130
+  val_right_knee_rmse: 0.062635 ± 0.001031
+  val_right_knee_mae: 0.045184 ± 0.000546
+  val_right_knee_r2: 0.641174 ± 0.011888
+  val_left_foot_mse: 0.004301 ± 0.000214
+  val_left_foot_rmse: 0.065560 ± 0.001649
+  val_left_foot_mae: 0.045859 ± 0.000796
+  val_left_foot_r2: 0.086000 ± 0.015116
+  val_right_foot_mse: 0.004677 ± 0.000122
+  val_right_foot_rmse: 0.068381 ± 0.000892
+  val_right_foot_mae: 0.049322 ± 0.000356
+  val_right_foot_r2: 0.059416 ± 0.010829
+
+Test Metrics:
+  test_mse: 0.003312
+  test_rmse: 0.057551
+  test_mae: 0.041935
+  test_r2: 0.814760
+  test_head_mse: 0.001986
+  test_head_rmse: 0.044566
+  test_head_mae: 0.033741
+  test_head_r2: 0.746467
+  test_left_shoulder_mse: 0.001270
+  test_left_shoulder_rmse: 0.035637
+  test_left_shoulder_mae: 0.027863
+  test_left_shoulder_r2: 0.716245
+  test_left_elbow_mse: 0.003604
+  test_left_elbow_rmse: 0.060031
+  test_left_elbow_mae: 0.044591
+  test_left_elbow_r2: 0.737540
+  test_right_shoulder_mse: 0.001616
+  test_right_shoulder_rmse: 0.040198
+  test_right_shoulder_mae: 0.030859
+  test_right_shoulder_r2: 0.707187
+  test_right_elbow_mse: 0.004473
+  test_right_elbow_rmse: 0.066878
+  test_right_elbow_mae: 0.049687
+  test_right_elbow_r2: 0.725099
+  test_left_hand_mse: 0.006689
+  test_left_hand_rmse: 0.081788
+  test_left_hand_mae: 0.062154
+  test_left_hand_r2: 0.745712
+  test_right_hand_mse: 0.009051
+  test_right_hand_rmse: 0.095136
+  test_right_hand_mae: 0.069496
+  test_right_hand_r2: 0.689116
+  test_left_hip_mse: 0.002197
+  test_left_hip_rmse: 0.046876
+  test_left_hip_mae: 0.034748
+  test_left_hip_r2: 0.599536
+  test_right_hip_mse: 0.002348
+  test_right_hip_rmse: 0.048459
+  test_right_hip_mae: 0.035763
+  test_right_hip_r2: 0.597067
+  test_left_knee_mse: 0.001985
+  test_left_knee_rmse: 0.044556
+  test_left_knee_mae: 0.034951
+  test_left_knee_r2: 0.764046
+  test_right_knee_mse: 0.002276
+  test_right_knee_rmse: 0.047708
+  test_right_knee_mae: 0.037869
+  test_right_knee_r2: 0.766039
+  test_left_foot_mse: 0.002572
+  test_left_foot_rmse: 0.050713
+  test_left_foot_mae: 0.041143
+  test_left_foot_r2: 0.145074
+  test_right_foot_mse: 0.002990
+  test_right_foot_rmse: 0.054683
+  test_right_foot_mae: 0.042287
+  test_right_foot_r2: 0.014061
+
+DENSE_ADAM_MAE
+------------------------------
+Best Fold: 2
+
+Validation Metrics (mean ± std):
+  val_mse: 0.001849 ± 0.000010
+  val_rmse: 0.042999 ± 0.000112
+  val_mae: 0.029868 ± 0.000158
+  val_r2: 0.902337 ± 0.001160
+  val_head_mse: 0.001427 ± 0.000042
+  val_head_rmse: 0.037766 ± 0.000552
+  val_head_mae: 0.027705 ± 0.000404
+  val_head_r2: 0.852405 ± 0.002928
+  val_left_shoulder_mse: 0.001090 ± 0.000013
+  val_left_shoulder_rmse: 0.033012 ± 0.000194
+  val_left_shoulder_mae: 0.023848 ± 0.000143
+  val_left_shoulder_r2: 0.803874 ± 0.004141
+  val_left_elbow_mse: 0.001607 ± 0.000029
+  val_left_elbow_rmse: 0.040085 ± 0.000360
+  val_left_elbow_mae: 0.029843 ± 0.000290
+  val_left_elbow_r2: 0.879859 ± 0.002016
+  val_right_shoulder_mse: 0.001061 ± 0.000036
+  val_right_shoulder_rmse: 0.032567 ± 0.000560
+  val_right_shoulder_mae: 0.023779 ± 0.000296
+  val_right_shoulder_r2: 0.833081 ± 0.004527
+  val_right_elbow_mse: 0.001714 ± 0.000022
+  val_right_elbow_rmse: 0.041400 ± 0.000262
+  val_right_elbow_mae: 0.031232 ± 0.000284
+  val_right_elbow_r2: 0.885713 ± 0.003205
+  val_left_hand_mse: 0.002665 ± 0.000073
+  val_left_hand_rmse: 0.051620 ± 0.000709
+  val_left_hand_mae: 0.039588 ± 0.000847
+  val_left_hand_r2: 0.897968 ± 0.003971
+  val_right_hand_mse: 0.003075 ± 0.000114
+  val_right_hand_rmse: 0.055446 ± 0.001030
+  val_right_hand_mae: 0.041826 ± 0.000527
+  val_right_hand_r2: 0.884657 ± 0.005477
+  val_left_hip_mse: 0.001492 ± 0.000101
+  val_left_hip_rmse: 0.038607 ± 0.001293
+  val_left_hip_mae: 0.027759 ± 0.000855
+  val_left_hip_r2: 0.812991 ± 0.011277
+  val_right_hip_mse: 0.001537 ± 0.000105
+  val_right_hip_rmse: 0.039188 ± 0.001324
+  val_right_hip_mae: 0.027788 ± 0.000810
+  val_right_hip_r2: 0.814054 ± 0.012298
+  val_left_knee_mse: 0.001766 ± 0.000095
+  val_left_knee_rmse: 0.042006 ± 0.001120
+  val_left_knee_mae: 0.027719 ± 0.000333
+  val_left_knee_r2: 0.818522 ± 0.008386
+  val_right_knee_mse: 0.001695 ± 0.000062
+  val_right_knee_rmse: 0.041158 ± 0.000756
+  val_right_knee_mae: 0.028139 ± 0.000428
+  val_right_knee_r2: 0.845072 ± 0.005162
+  val_left_foot_mse: 0.002515 ± 0.000194
+  val_left_foot_rmse: 0.050110 ± 0.001976
+  val_left_foot_mae: 0.028821 ± 0.000527
+  val_left_foot_r2: 0.466015 ± 0.024870
+  val_right_foot_mse: 0.002392 ± 0.000117
+  val_right_foot_rmse: 0.048896 ± 0.001196
+  val_right_foot_mae: 0.030235 ± 0.000393
+  val_right_foot_r2: 0.518886 ± 0.020253
+
+Test Metrics:
+  test_mse: 0.002099
+  test_rmse: 0.045812
+  test_mae: 0.031605
+  test_r2: 0.882620
+  test_head_mse: 0.001587
+  test_head_rmse: 0.039840
+  test_head_mae: 0.028323
+  test_head_r2: 0.797385
+  test_left_shoulder_mse: 0.000967
+  test_left_shoulder_rmse: 0.031101
+  test_left_shoulder_mae: 0.022837
+  test_left_shoulder_r2: 0.783879
+  test_left_elbow_mse: 0.002331
+  test_left_elbow_rmse: 0.048280
+  test_left_elbow_mae: 0.035775
+  test_left_elbow_r2: 0.830236
+  test_right_shoulder_mse: 0.001261
+  test_right_shoulder_rmse: 0.035517
+  test_right_shoulder_mae: 0.024147
+  test_right_shoulder_r2: 0.771407
+  test_right_elbow_mse: 0.003311
+  test_right_elbow_rmse: 0.057540
+  test_right_elbow_mae: 0.038178
+  test_right_elbow_r2: 0.796512
+  test_left_hand_mse: 0.003980
+  test_left_hand_rmse: 0.063089
+  test_left_hand_mae: 0.049144
+  test_left_hand_r2: 0.848693
+  test_right_hand_mse: 0.006484
+  test_right_hand_rmse: 0.080524
+  test_right_hand_mae: 0.054930
+  test_right_hand_r2: 0.777282
+  test_left_hip_mse: 0.001196
+  test_left_hip_rmse: 0.034590
+  test_left_hip_mae: 0.025413
+  test_left_hip_r2: 0.781944
+  test_right_hip_mse: 0.001262
+  test_right_hip_rmse: 0.035527
+  test_right_hip_mae: 0.026003
+  test_right_hip_r2: 0.783425
+  test_left_knee_mse: 0.001055
+  test_left_knee_rmse: 0.032485
+  test_left_knee_mae: 0.025056
+  test_left_knee_r2: 0.874579
+  test_right_knee_mse: 0.001132
+  test_right_knee_rmse: 0.033652
+  test_right_knee_mae: 0.026405
+  test_right_knee_r2: 0.883587
+  test_left_foot_mse: 0.001167
+  test_left_foot_rmse: 0.034166
+  test_left_foot_mae: 0.024909
+  test_left_foot_r2: 0.611964
+  test_right_foot_mse: 0.001548
+  test_right_foot_rmse: 0.039347
+  test_right_foot_mae: 0.029747
+  test_right_foot_r2: 0.489540
+
+CONV1D_V3_SGD_MSE
+------------------------------
+Best Fold: 1
+
+Validation Metrics (mean ± std):
+  val_mse: 0.000430 ± 0.000025
+  val_rmse: 0.020739 ± 0.000612
+  val_mae: 0.015054 ± 0.000351
+  val_r2: 0.979737 ± 0.001972
+  val_head_mse: 0.000458 ± 0.000054
+  val_head_rmse: 0.021363 ± 0.001222
+  val_head_mae: 0.015866 ± 0.000499
+  val_head_r2: 0.955245 ± 0.006494
+  val_left_shoulder_mse: 0.000314 ± 0.000034
+  val_left_shoulder_rmse: 0.017694 ± 0.000951
+  val_left_shoulder_mae: 0.013399 ± 0.000531
+  val_left_shoulder_r2: 0.944968 ± 0.007926
+  val_left_elbow_mse: 0.000449 ± 0.000037
+  val_left_elbow_rmse: 0.021180 ± 0.000849
+  val_left_elbow_mae: 0.016041 ± 0.000684
+  val_left_elbow_r2: 0.966405 ± 0.005117
+  val_right_shoulder_mse: 0.000290 ± 0.000011
+  val_right_shoulder_rmse: 0.017026 ± 0.000332
+  val_right_shoulder_mae: 0.012944 ± 0.000266
+  val_right_shoulder_r2: 0.956321 ± 0.002721
+  val_right_elbow_mse: 0.000413 ± 0.000039
+  val_right_elbow_rmse: 0.020302 ± 0.000947
+  val_right_elbow_mae: 0.015208 ± 0.000493
+  val_right_elbow_r2: 0.972713 ± 0.004020
+  val_left_hand_mse: 0.000710 ± 0.000059
+  val_left_hand_rmse: 0.026627 ± 0.001103
+  val_left_hand_mae: 0.019917 ± 0.000796
+  val_left_hand_r2: 0.972395 ± 0.004019
+  val_right_hand_mse: 0.000698 ± 0.000063
+  val_right_hand_rmse: 0.026393 ± 0.001151
+  val_right_hand_mae: 0.019873 ± 0.000743
+  val_right_hand_r2: 0.973955 ± 0.003844
+  val_left_hip_mse: 0.000335 ± 0.000024
+  val_left_hip_rmse: 0.018292 ± 0.000665
+  val_left_hip_mae: 0.013832 ± 0.000453
+  val_left_hip_r2: 0.961162 ± 0.002800
+  val_right_hip_mse: 0.000337 ± 0.000024
+  val_right_hip_rmse: 0.018341 ± 0.000653
+  val_right_hip_mae: 0.013815 ± 0.000355
+  val_right_hip_r2: 0.962301 ± 0.002750
+  val_left_knee_mse: 0.000372 ± 0.000076
+  val_left_knee_rmse: 0.019188 ± 0.001917
+  val_left_knee_mae: 0.013623 ± 0.000503
+  val_left_knee_r2: 0.962327 ± 0.007484
+  val_right_knee_mse: 0.000371 ± 0.000033
+  val_right_knee_rmse: 0.019231 ± 0.000849
+  val_right_knee_mae: 0.014142 ± 0.000426
+  val_right_knee_r2: 0.966384 ± 0.003833
+  val_left_foot_mse: 0.000478 ± 0.000146
+  val_left_foot_rmse: 0.021606 ± 0.003333
+  val_left_foot_mae: 0.013563 ± 0.000545
+  val_left_foot_r2: 0.901887 ± 0.021784
+  val_right_foot_mse: 0.000372 ± 0.000030
+  val_right_foot_rmse: 0.019266 ± 0.000775
+  val_right_foot_mae: 0.013481 ± 0.000466
+  val_right_foot_r2: 0.925186 ± 0.012678
+
+Test Metrics:
+  test_mse: 0.001948
+  test_rmse: 0.044137
+  test_mae: 0.029071
+  test_r2: 0.904544
+  test_head_mse: 0.001881
+  test_head_rmse: 0.043372
+  test_head_mae: 0.030479
+  test_head_r2: 0.780852
+  test_left_shoulder_mse: 0.000930
+  test_left_shoulder_rmse: 0.030492
+  test_left_shoulder_mae: 0.022507
+  test_left_shoulder_r2: 0.804765
+  test_left_elbow_mse: 0.001793
+  test_left_elbow_rmse: 0.042339
+  test_left_elbow_mae: 0.031418
+  test_left_elbow_r2: 0.874156
+  test_right_shoulder_mse: 0.001533
+  test_right_shoulder_rmse: 0.039149
+  test_right_shoulder_mae: 0.025846
+  test_right_shoulder_r2: 0.744493
+  test_right_elbow_mse: 0.003739
+  test_right_elbow_rmse: 0.061145
+  test_right_elbow_mae: 0.037122
+  test_right_elbow_r2: 0.784654
+  test_left_hand_mse: 0.003091
+  test_left_hand_rmse: 0.055601
+  test_left_hand_mae: 0.042624
+  test_left_hand_r2: 0.884139
+  test_right_hand_mse: 0.006940
+  test_right_hand_rmse: 0.083305
+  test_right_hand_mae: 0.050927
+  test_right_hand_r2: 0.773965
+  test_left_hip_mse: 0.000848
+  test_left_hip_rmse: 0.029115
+  test_left_hip_mae: 0.022319
+  test_left_hip_r2: 0.844633
+  test_right_hip_mse: 0.000888
+  test_right_hip_rmse: 0.029794
+  test_right_hip_mae: 0.022619
+  test_right_hip_r2: 0.848263
+  test_left_knee_mse: 0.000902
+  test_left_knee_rmse: 0.030035
+  test_left_knee_mae: 0.023754
+  test_left_knee_r2: 0.890104
+  test_right_knee_mse: 0.000921
+  test_right_knee_rmse: 0.030353
+  test_right_knee_mae: 0.023431
+  test_right_knee_r2: 0.903134
+  test_left_foot_mse: 0.000948
+  test_left_foot_rmse: 0.030791
+  test_left_foot_mae: 0.021798
+  test_left_foot_r2: 0.687542
+  test_right_foot_mse: 0.000912
+  test_right_foot_rmse: 0.030196
+  test_right_foot_mae: 0.023079
+  test_right_foot_r2: 0.690511
+
+CONV1D_V3_SGD_MAE
+------------------------------
+Best Fold: 4
+
+Validation Metrics (mean ± std):
+  val_mse: 0.000420 ± 0.000040
+  val_rmse: 0.020470 ± 0.000950
+  val_mae: 0.014000 ± 0.000437
+  val_r2: 0.980242 ± 0.002410
+  val_head_mse: 0.000422 ± 0.000057
+  val_head_rmse: 0.020492 ± 0.001395
+  val_head_mae: 0.014630 ± 0.000712
+  val_head_r2: 0.958907 ± 0.005801
+  val_left_shoulder_mse: 0.000275 ± 0.000041
+  val_left_shoulder_rmse: 0.016536 ± 0.001191
+  val_left_shoulder_mae: 0.011917 ± 0.000509
+  val_left_shoulder_r2: 0.951991 ± 0.007596
+  val_left_elbow_mse: 0.000412 ± 0.000045
+  val_left_elbow_rmse: 0.020277 ± 0.001063
+  val_left_elbow_mae: 0.014961 ± 0.000477
+  val_left_elbow_r2: 0.969243 ± 0.004825
+  val_right_shoulder_mse: 0.000254 ± 0.000018
+  val_right_shoulder_rmse: 0.015926 ± 0.000558
+  val_right_shoulder_mae: 0.011471 ± 0.000383
+  val_right_shoulder_r2: 0.961826 ± 0.002266
+  val_right_elbow_mse: 0.000378 ± 0.000035
+  val_right_elbow_rmse: 0.019409 ± 0.000913
+  val_right_elbow_mae: 0.014236 ± 0.000610
+  val_right_elbow_r2: 0.975122 ± 0.003033
+  val_left_hand_mse: 0.000676 ± 0.000084
+  val_left_hand_rmse: 0.025959 ± 0.001616
+  val_left_hand_mae: 0.018825 ± 0.000883
+  val_left_hand_r2: 0.973759 ± 0.004329
+  val_right_hand_mse: 0.000689 ± 0.000046
+  val_right_hand_rmse: 0.026225 ± 0.000884
+  val_right_hand_mae: 0.019283 ± 0.000789
+  val_right_hand_r2: 0.974370 ± 0.002867
+  val_left_hip_mse: 0.000298 ± 0.000028
+  val_left_hip_rmse: 0.017245 ± 0.000807
+  val_left_hip_mae: 0.012701 ± 0.000558
+  val_left_hip_r2: 0.965482 ± 0.002885
+  val_right_hip_mse: 0.000305 ± 0.000031
+  val_right_hip_rmse: 0.017449 ± 0.000865
+  val_right_hip_mae: 0.012795 ± 0.000563
+  val_right_hip_r2: 0.965878 ± 0.003009
+  val_left_knee_mse: 0.000403 ± 0.000126
+  val_left_knee_rmse: 0.019852 ± 0.002966
+  val_left_knee_mae: 0.012784 ± 0.000560
+  val_left_knee_r2: 0.959122 ± 0.012769
+  val_right_knee_mse: 0.000359 ± 0.000039
+  val_right_knee_rmse: 0.018918 ± 0.001061
+  val_right_knee_mae: 0.013123 ± 0.000609
+  val_right_knee_r2: 0.967573 ± 0.003076
+  val_left_foot_mse: 0.000546 ± 0.000187
+  val_left_foot_rmse: 0.023028 ± 0.004025
+  val_left_foot_mae: 0.012522 ± 0.000693
+  val_left_foot_r2: 0.887259 ± 0.031759
+  val_right_foot_mse: 0.000442 ± 0.000080
+  val_right_foot_rmse: 0.020936 ± 0.001894
+  val_right_foot_mae: 0.012746 ± 0.000325
+  val_right_foot_r2: 0.912867 ± 0.010755
+
+Test Metrics:
+  test_mse: 0.001846
+  test_rmse: 0.042961
+  test_mae: 0.028418
+  test_r2: 0.909563
+  test_head_mse: 0.001718
+  test_head_rmse: 0.041452
+  test_head_mae: 0.028591
+  test_head_r2: 0.799823
+  test_left_shoulder_mse: 0.000820
+  test_left_shoulder_rmse: 0.028636
+  test_left_shoulder_mae: 0.021665
+  test_left_shoulder_r2: 0.827809
+  test_left_elbow_mse: 0.001574
+  test_left_elbow_rmse: 0.039669
+  test_left_elbow_mae: 0.029427
+  test_left_elbow_r2: 0.889527
+  test_right_shoulder_mse: 0.001452
+  test_right_shoulder_rmse: 0.038099
+  test_right_shoulder_mae: 0.025491
+  test_right_shoulder_r2: 0.758009
+  test_right_elbow_mse: 0.003435
+  test_right_elbow_rmse: 0.058605
+  test_right_elbow_mae: 0.036511
+  test_right_elbow_r2: 0.802175
+  test_left_hand_mse: 0.003080
+  test_left_hand_rmse: 0.055496
+  test_left_hand_mae: 0.041771
+  test_left_hand_r2: 0.884574
+  test_right_hand_mse: 0.006399
+  test_right_hand_rmse: 0.079993
+  test_right_hand_mae: 0.049622
+  test_right_hand_r2: 0.791581
+  test_left_hip_mse: 0.000844
+  test_left_hip_rmse: 0.029048
+  test_left_hip_mae: 0.022494
+  test_left_hip_r2: 0.845340
+  test_right_hip_mse: 0.000919
+  test_right_hip_rmse: 0.030320
+  test_right_hip_mae: 0.023238
+  test_right_hip_r2: 0.842857
+  test_left_knee_mse: 0.000959
+  test_left_knee_rmse: 0.030969
+  test_left_knee_mae: 0.023720
+  test_left_knee_r2: 0.883165
+  test_right_knee_mse: 0.000963
+  test_right_knee_rmse: 0.031037
+  test_right_knee_mae: 0.023840
+  test_right_knee_r2: 0.898719
+  test_left_foot_mse: 0.000898
+  test_left_foot_rmse: 0.029964
+  test_left_foot_mae: 0.020735
+  test_left_foot_r2: 0.704101
+  test_right_foot_mse: 0.000933
+  test_right_foot_rmse: 0.030547
+  test_right_foot_mae: 0.022332
+  test_right_foot_r2: 0.683273
+
+CONV1D_V3_RMSPROP_MSE
+------------------------------
+Best Fold: 4
+
+Validation Metrics (mean ± std):
+  val_mse: 0.000454 ± 0.000050
+  val_rmse: 0.021277 ± 0.001194
+  val_mae: 0.015399 ± 0.000737
+  val_r2: 0.978691 ± 0.002403
+  val_head_mse: 0.000454 ± 0.000071
+  val_head_rmse: 0.021238 ± 0.001717
+  val_head_mae: 0.015703 ± 0.001292
+  val_head_r2: 0.955823 ± 0.006971
+  val_left_shoulder_mse: 0.000321 ± 0.000036
+  val_left_shoulder_rmse: 0.017878 ± 0.001031
+  val_left_shoulder_mae: 0.013648 ± 0.000589
+  val_left_shoulder_r2: 0.944166 ± 0.005318
+  val_left_elbow_mse: 0.000476 ± 0.000057
+  val_left_elbow_rmse: 0.021785 ± 0.001315
+  val_left_elbow_mae: 0.016580 ± 0.000859
+  val_left_elbow_r2: 0.964593 ± 0.005142
+  val_right_shoulder_mse: 0.000292 ± 0.000032
+  val_right_shoulder_rmse: 0.017065 ± 0.000951
+  val_right_shoulder_mae: 0.013025 ± 0.000647
+  val_right_shoulder_r2: 0.956151 ± 0.003841
+  val_right_elbow_mse: 0.000422 ± 0.000046
+  val_right_elbow_rmse: 0.020505 ± 0.001163
+  val_right_elbow_mae: 0.015413 ± 0.000728
+  val_right_elbow_r2: 0.972299 ± 0.003306
+  val_left_hand_mse: 0.000750 ± 0.000086
+  val_left_hand_rmse: 0.027346 ± 0.001606
+  val_left_hand_mae: 0.020321 ± 0.001029
+  val_left_hand_r2: 0.970992 ± 0.003979
+  val_right_hand_mse: 0.000725 ± 0.000088
+  val_right_hand_rmse: 0.026880 ± 0.001683
+  val_right_hand_mae: 0.020296 ± 0.001113
+  val_right_hand_r2: 0.973205 ± 0.002486
+  val_left_hip_mse: 0.000359 ± 0.000032
+  val_left_hip_rmse: 0.018927 ± 0.000832
+  val_left_hip_mae: 0.014180 ± 0.000756
+  val_left_hip_r2: 0.958466 ± 0.002680
+  val_right_hip_mse: 0.000355 ± 0.000023
+  val_right_hip_rmse: 0.018844 ± 0.000605
+  val_right_hip_mae: 0.014119 ± 0.000494
+  val_right_hip_r2: 0.960246 ± 0.002056
+  val_left_knee_mse: 0.000434 ± 0.000130
+  val_left_knee_rmse: 0.020597 ± 0.003069
+  val_left_knee_mae: 0.014198 ± 0.000826
+  val_left_knee_r2: 0.955984 ± 0.013210
+  val_right_knee_mse: 0.000392 ± 0.000037
+  val_right_knee_rmse: 0.019766 ± 0.000955
+  val_right_knee_mae: 0.014563 ± 0.000849
+  val_right_knee_r2: 0.964594 ± 0.003209
+  val_left_foot_mse: 0.000520 ± 0.000181
+  val_left_foot_rmse: 0.022483 ± 0.003861
+  val_left_foot_mae: 0.014084 ± 0.001033
+  val_left_foot_r2: 0.892695 ± 0.030084
+  val_right_foot_mse: 0.000403 ± 0.000047
+  val_right_foot_rmse: 0.020047 ± 0.001178
+  val_right_foot_mae: 0.014053 ± 0.000588
+  val_right_foot_r2: 0.920149 ± 0.005440
+
+Test Metrics:
+  test_mse: 0.001892
+  test_rmse: 0.043499
+  test_mae: 0.028848
+  test_r2: 0.907284
+  test_head_mse: 0.001582
+  test_head_rmse: 0.039779
+  test_head_mae: 0.027504
+  test_head_r2: 0.815658
+  test_left_shoulder_mse: 0.000816
+  test_left_shoulder_rmse: 0.028573
+  test_left_shoulder_mae: 0.021322
+  test_left_shoulder_r2: 0.828565
+  test_left_elbow_mse: 0.001749
+  test_left_elbow_rmse: 0.041821
+  test_left_elbow_mae: 0.031559
+  test_left_elbow_r2: 0.877218
+  test_right_shoulder_mse: 0.001279
+  test_right_shoulder_rmse: 0.035761
+  test_right_shoulder_mae: 0.023565
+  test_right_shoulder_r2: 0.786804
+  test_right_elbow_mse: 0.003611
+  test_right_elbow_rmse: 0.060091
+  test_right_elbow_mae: 0.037721
+  test_right_elbow_r2: 0.792014
+  test_left_hand_mse: 0.003074
+  test_left_hand_rmse: 0.055445
+  test_left_hand_mae: 0.043006
+  test_left_hand_r2: 0.884787
+  test_right_hand_mse: 0.006968
+  test_right_hand_rmse: 0.083473
+  test_right_hand_mae: 0.051879
+  test_right_hand_r2: 0.773052
+  test_left_hip_mse: 0.000871
+  test_left_hip_rmse: 0.029509
+  test_left_hip_mae: 0.022804
+  test_left_hip_r2: 0.840393
+  test_right_hip_mse: 0.000915
+  test_right_hip_rmse: 0.030251
+  test_right_hip_mae: 0.023075
+  test_right_hip_r2: 0.843567
+  test_left_knee_mse: 0.000876
+  test_left_knee_rmse: 0.029602
+  test_left_knee_mae: 0.023206
+  test_left_knee_r2: 0.893250
+  test_right_knee_mse: 0.000900
+  test_right_knee_rmse: 0.030006
+  test_right_knee_mae: 0.023487
+  test_right_knee_r2: 0.905337
+  test_left_foot_mse: 0.000915
+  test_left_foot_rmse: 0.030249
+  test_left_foot_mae: 0.021818
+  test_left_foot_r2: 0.698445
+  test_right_foot_mse: 0.001041
+  test_right_foot_rmse: 0.032264
+  test_right_foot_mae: 0.024081
+  test_right_foot_r2: 0.646678
+
+CONV1D_V3_RMSPROP_MAE
+------------------------------
+Best Fold: 1
+
+Validation Metrics (mean ± std):
+  val_mse: 0.000417 ± 0.000042
+  val_rmse: 0.020385 ± 0.001024
+  val_mae: 0.013899 ± 0.000467
+  val_r2: 0.980447 ± 0.002032
+  val_head_mse: 0.000411 ± 0.000085
+  val_head_rmse: 0.020172 ± 0.002035
+  val_head_mae: 0.014657 ± 0.001068
+  val_head_r2: 0.959854 ± 0.008921
+  val_left_shoulder_mse: 0.000258 ± 0.000031
+  val_left_shoulder_rmse: 0.016027 ± 0.000992
+  val_left_shoulder_mae: 0.011536 ± 0.000590
+  val_left_shoulder_r2: 0.955021 ± 0.005650
+  val_left_elbow_mse: 0.000419 ± 0.000040
+  val_left_elbow_rmse: 0.020443 ± 0.000962
+  val_left_elbow_mae: 0.015039 ± 0.000656
+  val_left_elbow_r2: 0.968792 ± 0.004330
+  val_right_shoulder_mse: 0.000241 ± 0.000024
+  val_right_shoulder_rmse: 0.015498 ± 0.000773
+  val_right_shoulder_mae: 0.011335 ± 0.000469
+  val_right_shoulder_r2: 0.963742 ± 0.003945
+  val_right_elbow_mse: 0.000372 ± 0.000029
+  val_right_elbow_rmse: 0.019277 ± 0.000742
+  val_right_elbow_mae: 0.014239 ± 0.000600
+  val_right_elbow_r2: 0.975487 ± 0.002671
+  val_left_hand_mse: 0.000705 ± 0.000078
+  val_left_hand_rmse: 0.026508 ± 0.001499
+  val_left_hand_mae: 0.019353 ± 0.001087
+  val_left_hand_r2: 0.972725 ± 0.003797
+  val_right_hand_mse: 0.000679 ± 0.000031
+  val_right_hand_rmse: 0.026055 ± 0.000593
+  val_right_hand_mae: 0.019286 ± 0.000743
+  val_right_hand_r2: 0.974730 ± 0.002401
+  val_left_hip_mse: 0.000274 ± 0.000028
+  val_left_hip_rmse: 0.016535 ± 0.000829
+  val_left_hip_mae: 0.012201 ± 0.000568
+  val_left_hip_r2: 0.968194 ± 0.003555
+  val_right_hip_mse: 0.000278 ± 0.000031
+  val_right_hip_rmse: 0.016653 ± 0.000931
+  val_right_hip_mae: 0.012312 ± 0.000575
+  val_right_hip_r2: 0.968798 ± 0.004091
+  val_left_knee_mse: 0.000391 ± 0.000109
+  val_left_knee_rmse: 0.019603 ± 0.002674
+  val_left_knee_mae: 0.012810 ± 0.000541
+  val_left_knee_r2: 0.960362 ± 0.010860
+  val_right_knee_mse: 0.000410 ± 0.000145
+  val_right_knee_rmse: 0.019963 ± 0.003336
+  val_right_knee_mae: 0.013388 ± 0.000700
+  val_right_knee_r2: 0.962831 ± 0.013635
+  val_left_foot_mse: 0.000510 ± 0.000177
+  val_left_foot_rmse: 0.022232 ± 0.003910
+  val_left_foot_mae: 0.012064 ± 0.000734
+  val_left_foot_r2: 0.895139 ± 0.029420
+  val_right_foot_mse: 0.000468 ± 0.000157
+  val_right_foot_rmse: 0.021376 ± 0.003356
+  val_right_foot_mae: 0.012466 ± 0.000528
+  val_right_foot_r2: 0.908513 ± 0.022896
+
+Test Metrics:
+  test_mse: 0.001876
+  test_rmse: 0.043318
+  test_mae: 0.028820
+  test_r2: 0.908055
+  test_head_mse: 0.001737
+  test_head_rmse: 0.041677
+  test_head_mae: 0.028787
+  test_head_r2: 0.797638
+  test_left_shoulder_mse: 0.000835
+  test_left_shoulder_rmse: 0.028895
+  test_left_shoulder_mae: 0.021288
+  test_left_shoulder_r2: 0.824691
+  test_left_elbow_mse: 0.001680
+  test_left_elbow_rmse: 0.040985
+  test_left_elbow_mae: 0.031332
+  test_left_elbow_r2: 0.882080
+  test_right_shoulder_mse: 0.001388
+  test_right_shoulder_rmse: 0.037252
+  test_right_shoulder_mae: 0.023810
+  test_right_shoulder_r2: 0.768657
+  test_right_elbow_mse: 0.003342
+  test_right_elbow_rmse: 0.057812
+  test_right_elbow_mae: 0.035038
+  test_right_elbow_r2: 0.807492
+  test_left_hand_mse: 0.003093
+  test_left_hand_rmse: 0.055611
+  test_left_hand_mae: 0.042952
+  test_left_hand_r2: 0.884098
+  test_right_hand_mse: 0.006235
+  test_right_hand_rmse: 0.078962
+  test_right_hand_mae: 0.049137
+  test_right_hand_r2: 0.796920
+  test_left_hip_mse: 0.000860
+  test_left_hip_rmse: 0.029332
+  test_left_hip_mae: 0.022252
+  test_left_hip_r2: 0.842305
+  test_right_hip_mse: 0.000924
+  test_right_hip_rmse: 0.030399
+  test_right_hip_mae: 0.022746
+  test_right_hip_r2: 0.842030
+  test_left_knee_mse: 0.001103
+  test_left_knee_rmse: 0.033219
+  test_left_knee_mae: 0.024926
+  test_left_knee_r2: 0.865571
+  test_right_knee_mse: 0.001139
+  test_right_knee_rmse: 0.033753
+  test_right_knee_mae: 0.025330
+  test_right_knee_r2: 0.880218
+  test_left_foot_mse: 0.000974
+  test_left_foot_rmse: 0.031210
+  test_left_foot_mae: 0.022599
+  test_left_foot_r2: 0.678982
+  test_right_foot_mse: 0.001083
+  test_right_foot_rmse: 0.032909
+  test_right_foot_mae: 0.024464
+  test_right_foot_r2: 0.632405
+
+CONV1D_V3_ADAM_MSE
+------------------------------
+Best Fold: 1
+
+Validation Metrics (mean ± std):
+  val_mse: 0.000423 ± 0.000022
+  val_rmse: 0.020567 ± 0.000542
+  val_mae: 0.014934 ± 0.000317
+  val_r2: 0.980085 ± 0.001752
+  val_head_mse: 0.000437 ± 0.000063
+  val_head_rmse: 0.020855 ± 0.001434
+  val_head_mae: 0.015570 ± 0.000578
+  val_head_r2: 0.957306 ± 0.007035
+  val_left_shoulder_mse: 0.000303 ± 0.000038
+  val_left_shoulder_rmse: 0.017371 ± 0.001062
+  val_left_shoulder_mae: 0.013180 ± 0.000613
+  val_left_shoulder_r2: 0.947035 ± 0.007496
+  val_left_elbow_mse: 0.000454 ± 0.000034
+  val_left_elbow_rmse: 0.021303 ± 0.000780
+  val_left_elbow_mae: 0.016148 ± 0.000549
+  val_left_elbow_r2: 0.966105 ± 0.004501
+  val_right_shoulder_mse: 0.000274 ± 0.000018
+  val_right_shoulder_rmse: 0.016555 ± 0.000551
+  val_right_shoulder_mae: 0.012563 ± 0.000329
+  val_right_shoulder_r2: 0.958716 ± 0.002913
+  val_right_elbow_mse: 0.000391 ± 0.000036
+  val_right_elbow_rmse: 0.019746 ± 0.000895
+  val_right_elbow_mae: 0.014870 ± 0.000617
+  val_right_elbow_r2: 0.974224 ± 0.003557
+  val_left_hand_mse: 0.000709 ± 0.000058
+  val_left_hand_rmse: 0.026606 ± 0.001089
+  val_left_hand_mae: 0.019659 ± 0.000893
+  val_left_hand_r2: 0.972493 ± 0.003666
+  val_right_hand_mse: 0.000653 ± 0.000026
+  val_right_hand_rmse: 0.025555 ± 0.000513
+  val_right_hand_mae: 0.019314 ± 0.000409
+  val_right_hand_r2: 0.975729 ± 0.001891
+  val_left_hip_mse: 0.000344 ± 0.000022
+  val_left_hip_rmse: 0.018531 ± 0.000594
+  val_left_hip_mae: 0.013866 ± 0.000216
+  val_left_hip_r2: 0.960127 ± 0.002969
+  val_right_hip_mse: 0.000345 ± 0.000023
+  val_right_hip_rmse: 0.018555 ± 0.000621
+  val_right_hip_mae: 0.013867 ± 0.000332
+  val_right_hip_r2: 0.961383 ± 0.003172
+  val_left_knee_mse: 0.000381 ± 0.000073
+  val_left_knee_rmse: 0.019427 ± 0.001818
+  val_left_knee_mae: 0.013806 ± 0.000435
+  val_left_knee_r2: 0.961402 ± 0.007262
+  val_right_knee_mse: 0.000368 ± 0.000021
+  val_right_knee_rmse: 0.019186 ± 0.000557
+  val_right_knee_mae: 0.014426 ± 0.000180
+  val_right_knee_r2: 0.966633 ± 0.002529
+  val_left_foot_mse: 0.000473 ± 0.000123
+  val_left_foot_rmse: 0.021573 ± 0.002807
+  val_left_foot_mae: 0.013455 ± 0.000454
+  val_left_foot_r2: 0.902199 ± 0.017958
+  val_right_foot_mse: 0.000370 ± 0.000039
+  val_right_foot_rmse: 0.019219 ± 0.001010
+  val_right_foot_mae: 0.013420 ± 0.000507
+  val_right_foot_r2: 0.926054 ± 0.010267
+
+Test Metrics:
+  test_mse: 0.001810
+  test_rmse: 0.042539
+  test_mae: 0.027975
+  test_r2: 0.911329
+  test_head_mse: 0.001583
+  test_head_rmse: 0.039781
+  test_head_mae: 0.028672
+  test_head_r2: 0.815637
+  test_left_shoulder_mse: 0.000815
+  test_left_shoulder_rmse: 0.028540
+  test_left_shoulder_mae: 0.021250
+  test_left_shoulder_r2: 0.828971
+  test_left_elbow_mse: 0.001607
+  test_left_elbow_rmse: 0.040087
+  test_left_elbow_mae: 0.030503
+  test_left_elbow_r2: 0.887188
+  test_right_shoulder_mse: 0.001242
+  test_right_shoulder_rmse: 0.035247
+  test_right_shoulder_mae: 0.023155
+  test_right_shoulder_r2: 0.792881
+  test_right_elbow_mse: 0.003288
+  test_right_elbow_rmse: 0.057337
+  test_right_elbow_mae: 0.034589
+  test_right_elbow_r2: 0.810643
+  test_left_hand_mse: 0.002812
+  test_left_hand_rmse: 0.053026
+  test_left_hand_mae: 0.040809
+  test_left_hand_r2: 0.894622
+  test_right_hand_mse: 0.006234
+  test_right_hand_rmse: 0.078954
+  test_right_hand_mae: 0.047785
+  test_right_hand_r2: 0.796961
+  test_left_hip_mse: 0.000848
+  test_left_hip_rmse: 0.029117
+  test_left_hip_mae: 0.022264
+  test_left_hip_r2: 0.844609
+  test_right_hip_mse: 0.000896
+  test_right_hip_rmse: 0.029930
+  test_right_hip_mae: 0.022441
+  test_right_hip_r2: 0.846874
+  test_left_knee_mse: 0.001052
+  test_left_knee_rmse: 0.032431
+  test_left_knee_mae: 0.023781
+  test_left_knee_r2: 0.871868
+  test_right_knee_mse: 0.001025
+  test_right_knee_rmse: 0.032015
+  test_right_knee_mae: 0.024315
+  test_right_knee_r2: 0.892238
+  test_left_foot_mse: 0.001084
+  test_left_foot_rmse: 0.032919
+  test_left_foot_mae: 0.020916
+  test_left_foot_r2: 0.642858
+  test_right_foot_mse: 0.001041
+  test_right_foot_rmse: 0.032270
+  test_right_foot_mae: 0.023196
+  test_right_foot_r2: 0.646545
+
+CONV1D_V3_ADAM_MAE
+------------------------------
+Best Fold: 1
+
+Validation Metrics (mean ± std):
+  val_mse: 0.000447 ± 0.000061
+  val_rmse: 0.021087 ± 0.001406
+  val_mae: 0.014232 ± 0.000878
+  val_r2: 0.978933 ± 0.003641
+  val_head_mse: 0.000407 ± 0.000080
+  val_head_rmse: 0.020090 ± 0.001900
+  val_head_mae: 0.014545 ± 0.000987
+  val_head_r2: 0.960171 ± 0.008608
+  val_left_shoulder_mse: 0.000267 ± 0.000043
+  val_left_shoulder_rmse: 0.016289 ± 0.001257
+  val_left_shoulder_mae: 0.011874 ± 0.000510
+  val_left_shoulder_r2: 0.953219 ± 0.008736
+  val_left_elbow_mse: 0.000426 ± 0.000076
+  val_left_elbow_rmse: 0.020565 ± 0.001834
+  val_left_elbow_mae: 0.015143 ± 0.001061
+  val_left_elbow_r2: 0.968117 ± 0.007014
+  val_right_shoulder_mse: 0.000262 ± 0.000033
+  val_right_shoulder_rmse: 0.016150 ± 0.001023
+  val_right_shoulder_mae: 0.011799 ± 0.000773
+  val_right_shoulder_r2: 0.960506 ± 0.005687
+  val_right_elbow_mse: 0.000426 ± 0.000089
+  val_right_elbow_rmse: 0.020531 ± 0.002131
+  val_right_elbow_mae: 0.015080 ± 0.001537
+  val_right_elbow_r2: 0.971797 ± 0.006889
+  val_left_hand_mse: 0.000713 ± 0.000156
+  val_left_hand_rmse: 0.026547 ± 0.002927
+  val_left_hand_mae: 0.019304 ± 0.002036
+  val_left_hand_r2: 0.972282 ± 0.006945
+  val_right_hand_mse: 0.000758 ± 0.000139
+  val_right_hand_rmse: 0.027422 ± 0.002515
+  val_right_hand_mae: 0.020146 ± 0.001918
+  val_right_hand_r2: 0.971697 ± 0.006229
+  val_left_hip_mse: 0.000299 ± 0.000037
+  val_left_hip_rmse: 0.017270 ± 0.001072
+  val_left_hip_mae: 0.012733 ± 0.000768
+  val_left_hip_r2: 0.965213 ± 0.004928
+  val_right_hip_mse: 0.000305 ± 0.000043
+  val_right_hip_rmse: 0.017422 ± 0.001244
+  val_right_hip_mae: 0.012732 ± 0.000815
+  val_right_hip_r2: 0.965756 ± 0.005481
+  val_left_knee_mse: 0.000416 ± 0.000133
+  val_left_knee_rmse: 0.020168 ± 0.003040
+  val_left_knee_mae: 0.013015 ± 0.000817
+  val_left_knee_r2: 0.957825 ± 0.013468
+  val_right_knee_mse: 0.000424 ± 0.000079
+  val_right_knee_rmse: 0.020502 ± 0.001936
+  val_right_knee_mae: 0.013506 ± 0.000768
+  val_right_knee_r2: 0.961740 ± 0.006498
+  val_left_foot_mse: 0.000530 ± 0.000204
+  val_left_foot_rmse: 0.022614 ± 0.004294
+  val_left_foot_mae: 0.012059 ± 0.000716
+  val_left_foot_r2: 0.891386 ± 0.034130
+  val_right_foot_mse: 0.000572 ± 0.000192
+  val_right_foot_rmse: 0.023566 ± 0.004085
+  val_right_foot_mae: 0.013076 ± 0.000343
+  val_right_foot_r2: 0.888196 ± 0.033096
+
+Test Metrics:
+  test_mse: 0.002024
+  test_rmse: 0.044988
+  test_mae: 0.030042
+  test_r2: 0.900828
+  test_head_mse: 0.001693
+  test_head_rmse: 0.041147
+  test_head_mae: 0.028923
+  test_head_r2: 0.802759
+  test_left_shoulder_mse: 0.000907
+  test_left_shoulder_rmse: 0.030120
+  test_left_shoulder_mae: 0.022447
+  test_left_shoulder_r2: 0.809509
+  test_left_elbow_mse: 0.001916
+  test_left_elbow_rmse: 0.043771
+  test_left_elbow_mae: 0.033621
+  test_left_elbow_r2: 0.865503
+  test_right_shoulder_mse: 0.001381
+  test_right_shoulder_rmse: 0.037156
+  test_right_shoulder_mae: 0.025279
+  test_right_shoulder_r2: 0.769843
+  test_right_elbow_mse: 0.003421
+  test_right_elbow_rmse: 0.058486
+  test_right_elbow_mae: 0.037405
+  test_right_elbow_r2: 0.802979
+  test_left_hand_mse: 0.003633
+  test_left_hand_rmse: 0.060275
+  test_left_hand_mae: 0.046951
+  test_left_hand_r2: 0.863840
+  test_right_hand_mse: 0.006962
+  test_right_hand_rmse: 0.083441
+  test_right_hand_mae: 0.052612
+  test_right_hand_r2: 0.773225
+  test_left_hip_mse: 0.001011
+  test_left_hip_rmse: 0.031803
+  test_left_hip_mae: 0.023934
+  test_left_hip_r2: 0.814618
+  test_right_hip_mse: 0.001080
+  test_right_hip_rmse: 0.032860
+  test_right_hip_mae: 0.024211
+  test_right_hip_r2: 0.815419
+  test_left_knee_mse: 0.001057
+  test_left_knee_rmse: 0.032514
+  test_left_knee_mae: 0.023683
+  test_left_knee_r2: 0.871212
+  test_right_knee_mse: 0.001066
+  test_right_knee_rmse: 0.032642
+  test_right_knee_mae: 0.024244
+  test_right_knee_r2: 0.887972
+  test_left_foot_mse: 0.001067
+  test_left_foot_rmse: 0.032669
+  test_left_foot_mae: 0.023212
+  test_left_foot_r2: 0.648254
+  test_right_foot_mse: 0.001117
+  test_right_foot_rmse: 0.033417
+  test_right_foot_mae: 0.024028
+  test_right_foot_r2: 0.620968
+
+LSTM_SGD_MSE
+------------------------------
+Best Fold: 1
+
+Validation Metrics (mean ± std):
+  val_mse: 0.005861 ± 0.000554
+  val_rmse: 0.076478 ± 0.003520
+  val_mae: 0.057918 ± 0.002391
+  val_r2: 0.725706 ± 0.014399
+  val_head_mse: 0.004435 ± 0.000461
+  val_head_rmse: 0.066510 ± 0.003446
+  val_head_mae: 0.053846 ± 0.002675
+  val_head_r2: 0.569591 ± 0.027049
+  val_left_shoulder_mse: 0.002953 ± 0.000299
+  val_left_shoulder_rmse: 0.054277 ± 0.002670
+  val_left_shoulder_mae: 0.043767 ± 0.002296
+  val_left_shoulder_r2: 0.485747 ± 0.037484
+  val_left_elbow_mse: 0.005798 ± 0.000816
+  val_left_elbow_rmse: 0.075968 ± 0.005179
+  val_left_elbow_mae: 0.060698 ± 0.004230
+  val_left_elbow_r2: 0.572909 ± 0.032053
+  val_right_shoulder_mse: 0.003701 ± 0.000371
+  val_right_shoulder_rmse: 0.060764 ± 0.003011
+  val_right_shoulder_mae: 0.048844 ± 0.002346
+  val_right_shoulder_r2: 0.444116 ± 0.043544
+  val_right_elbow_mse: 0.007423 ± 0.000766
+  val_right_elbow_rmse: 0.086046 ± 0.004320
+  val_right_elbow_mae: 0.069152 ± 0.003492
+  val_right_elbow_r2: 0.514386 ± 0.028132
+  val_left_hand_mse: 0.011057 ± 0.001819
+  val_left_hand_rmse: 0.104817 ± 0.008406
+  val_left_hand_mae: 0.084223 ± 0.006374
+  val_left_hand_r2: 0.577665 ± 0.031091
+  val_right_hand_mse: 0.012547 ± 0.001762
+  val_right_hand_rmse: 0.111760 ± 0.007552
+  val_right_hand_mae: 0.088975 ± 0.006338
+  val_right_hand_r2: 0.537709 ± 0.034559
+  val_left_hip_mse: 0.004673 ± 0.000419
+  val_left_hip_rmse: 0.068285 ± 0.003112
+  val_left_hip_mae: 0.051392 ± 0.003316
+  val_left_hip_r2: 0.459750 ± 0.031401
+  val_right_hip_mse: 0.004881 ± 0.000506
+  val_right_hip_rmse: 0.069767 ± 0.003712
+  val_right_hip_mae: 0.052146 ± 0.003595
+  val_right_hip_r2: 0.455535 ± 0.037495
+  val_left_knee_mse: 0.004672 ± 0.000663
+  val_left_knee_rmse: 0.068181 ± 0.004797
+  val_left_knee_mae: 0.050981 ± 0.002822
+  val_left_knee_r2: 0.527671 ± 0.053444
+  val_right_knee_mse: 0.004738 ± 0.000325
+  val_right_knee_rmse: 0.068788 ± 0.002381
+  val_right_knee_mae: 0.051022 ± 0.001760
+  val_right_knee_r2: 0.571534 ± 0.027846
+  val_left_foot_mse: 0.004550 ± 0.000509
+  val_left_foot_rmse: 0.067342 ± 0.003810
+  val_left_foot_mae: 0.048029 ± 0.001916
+  val_left_foot_r2: 0.049490 ± 0.025120
+  val_right_foot_mse: 0.004768 ± 0.000582
+  val_right_foot_rmse: 0.068925 ± 0.004201
+  val_right_foot_mae: 0.049865 ± 0.001629
+  val_right_foot_r2: 0.058481 ± 0.007955
+
+Test Metrics:
+  test_mse: 0.004930
+  test_rmse: 0.070213
+  test_mae: 0.051882
+  test_r2: 0.758436
+  test_head_mse: 0.003022
+  test_head_rmse: 0.054972
+  test_head_mae: 0.045051
+  test_head_r2: 0.647942
+  test_left_shoulder_mse: 0.001792
+  test_left_shoulder_rmse: 0.042335
+  test_left_shoulder_mae: 0.034001
+  test_left_shoulder_r2: 0.623668
+  test_left_elbow_mse: 0.006188
+  test_left_elbow_rmse: 0.078662
+  test_left_elbow_mae: 0.061815
+  test_left_elbow_r2: 0.565612
+  test_right_shoulder_mse: 0.002490
+  test_right_shoulder_rmse: 0.049897
+  test_right_shoulder_mae: 0.039946
+  test_right_shoulder_r2: 0.584940
+  test_right_elbow_mse: 0.008275
+  test_right_elbow_rmse: 0.090966
+  test_right_elbow_mae: 0.071505
+  test_right_elbow_r2: 0.523386
+  test_left_hand_mse: 0.012019
+  test_left_hand_rmse: 0.109631
+  test_left_hand_mae: 0.088539
+  test_left_hand_r2: 0.549554
+  test_right_hand_mse: 0.014855
+  test_right_hand_rmse: 0.121879
+  test_right_hand_mae: 0.095705
+  test_right_hand_r2: 0.516166
+  test_left_hip_mse: 0.002392
+  test_left_hip_rmse: 0.048908
+  test_left_hip_mae: 0.037506
+  test_left_hip_r2: 0.561587
+  test_right_hip_mse: 0.002690
+  test_right_hip_rmse: 0.051867
+  test_right_hip_mae: 0.039404
+  test_right_hip_r2: 0.540147
+  test_left_knee_mse: 0.002233
+  test_left_knee_rmse: 0.047255
+  test_left_knee_mae: 0.037206
+  test_left_knee_r2: 0.727962
+  test_right_knee_mse: 0.002498
+  test_right_knee_rmse: 0.049978
+  test_right_knee_mae: 0.038917
+  test_right_knee_r2: 0.737384
+  test_left_foot_mse: 0.002818
+  test_left_foot_rmse: 0.053088
+  test_left_foot_mae: 0.043328
+  test_left_foot_r2: 0.071158
+  test_right_foot_mse: 0.002816
+  test_right_foot_rmse: 0.053071
+  test_right_foot_mae: 0.041540
+  test_right_foot_r2: 0.044006
+
+LSTM_SGD_MAE
+------------------------------
+Best Fold: 4
+
+Validation Metrics (mean ± std):
+  val_mse: 0.005455 ± 0.000283
+  val_rmse: 0.073830 ± 0.001911
+  val_mae: 0.053947 ± 0.001588
+  val_r2: 0.744050 ± 0.013005
+  val_head_mse: 0.003818 ± 0.000310
+  val_head_rmse: 0.061739 ± 0.002519
+  val_head_mae: 0.048735 ± 0.002086
+  val_head_r2: 0.628207 ± 0.031293
+  val_left_shoulder_mse: 0.002649 ± 0.000136
+  val_left_shoulder_rmse: 0.051455 ± 0.001308
+  val_left_shoulder_mae: 0.040070 ± 0.001072
+  val_left_shoulder_r2: 0.537058 ± 0.034676
+  val_left_elbow_mse: 0.005081 ± 0.000590
+  val_left_elbow_rmse: 0.071160 ± 0.004216
+  val_left_elbow_mae: 0.055339 ± 0.003513
+  val_left_elbow_r2: 0.624967 ± 0.028429
+  val_right_shoulder_mse: 0.003411 ± 0.000170
+  val_right_shoulder_rmse: 0.058385 ± 0.001445
+  val_right_shoulder_mae: 0.045019 ± 0.000741
+  val_right_shoulder_r2: 0.486230 ± 0.036107
+  val_right_elbow_mse: 0.006704 ± 0.000360
+  val_right_elbow_rmse: 0.081845 ± 0.002225
+  val_right_elbow_mae: 0.063613 ± 0.002594
+  val_right_elbow_r2: 0.559734 ± 0.028981
+  val_left_hand_mse: 0.010061 ± 0.001591
+  val_left_hand_rmse: 0.099971 ± 0.008190
+  val_left_hand_mae: 0.077483 ± 0.006840
+  val_left_hand_r2: 0.614976 ± 0.039895
+  val_right_hand_mse: 0.011808 ± 0.001001
+  val_right_hand_rmse: 0.108566 ± 0.004644
+  val_right_hand_mae: 0.083083 ± 0.004633
+  val_right_hand_r2: 0.562770 ± 0.031553
+  val_left_hip_mse: 0.004378 ± 0.000442
+  val_left_hip_rmse: 0.066080 ± 0.003408
+  val_left_hip_mae: 0.046359 ± 0.002609
+  val_left_hip_r2: 0.493689 ± 0.039319
+  val_right_hip_mse: 0.004483 ± 0.000433
+  val_right_hip_rmse: 0.066871 ± 0.003309
+  val_right_hip_mae: 0.046309 ± 0.002292
+  val_right_hip_r2: 0.499437 ± 0.036707
+  val_left_knee_mse: 0.004464 ± 0.000523
+  val_left_knee_rmse: 0.066706 ± 0.003817
+  val_left_knee_mae: 0.048419 ± 0.001751
+  val_left_knee_r2: 0.548302 ± 0.039729
+  val_right_knee_mse: 0.004744 ± 0.000294
+  val_right_knee_rmse: 0.068846 ± 0.002120
+  val_right_knee_mae: 0.049593 ± 0.001750
+  val_right_knee_r2: 0.571200 ± 0.019248
+  val_left_foot_mse: 0.004522 ± 0.000506
+  val_left_foot_rmse: 0.067138 ± 0.003801
+  val_left_foot_mae: 0.047705 ± 0.001994
+  val_left_foot_r2: 0.055372 ± 0.019239
+  val_right_foot_mse: 0.004785 ± 0.000636
+  val_right_foot_rmse: 0.069018 ± 0.004591
+  val_right_foot_mae: 0.049590 ± 0.001613
+  val_right_foot_r2: 0.056461 ± 0.018610
+
+Test Metrics:
+  test_mse: 0.004797
+  test_rmse: 0.069264
+  test_mae: 0.050812
+  test_r2: 0.764920
+  test_head_mse: 0.002568
+  test_head_rmse: 0.050671
+  test_head_mae: 0.040680
+  test_head_r2: 0.700874
+  test_left_shoulder_mse: 0.001642
+  test_left_shoulder_rmse: 0.040517
+  test_left_shoulder_mae: 0.031992
+  test_left_shoulder_r2: 0.655299
+  test_left_elbow_mse: 0.005742
+  test_left_elbow_rmse: 0.075775
+  test_left_elbow_mae: 0.058623
+  test_left_elbow_r2: 0.596915
+  test_right_shoulder_mse: 0.002450
+  test_right_shoulder_rmse: 0.049496
+  test_right_shoulder_mae: 0.039203
+  test_right_shoulder_r2: 0.591578
+  test_right_elbow_mse: 0.007732
+  test_right_elbow_rmse: 0.087934
+  test_right_elbow_mae: 0.068814
+  test_right_elbow_r2: 0.554626
+  test_left_hand_mse: 0.010707
+  test_left_hand_rmse: 0.103476
+  test_left_hand_mae: 0.081775
+  test_left_hand_r2: 0.598715
+  test_right_hand_mse: 0.015067
+  test_right_hand_rmse: 0.122746
+  test_right_hand_mae: 0.095506
+  test_right_hand_r2: 0.509263
+  test_left_hip_mse: 0.002542
+  test_left_hip_rmse: 0.050419
+  test_left_hip_mae: 0.038104
+  test_left_hip_r2: 0.534068
+  test_right_hip_mse: 0.002729
+  test_right_hip_rmse: 0.052238
+  test_right_hip_mae: 0.038877
+  test_right_hip_r2: 0.533538
+  test_left_knee_mse: 0.002694
+  test_left_knee_rmse: 0.051900
+  test_left_knee_mae: 0.040265
+  test_left_knee_r2: 0.671860
+  test_right_knee_mse: 0.003030
+  test_right_knee_rmse: 0.055043
+  test_right_knee_mae: 0.042590
+  test_right_knee_r2: 0.681453
+  test_left_foot_mse: 0.002693
+  test_left_foot_rmse: 0.051897
+  test_left_foot_mae: 0.042729
+  test_left_foot_r2: 0.112339
+  test_right_foot_mse: 0.002773
+  test_right_foot_rmse: 0.052656
+  test_right_foot_mae: 0.041397
+  test_right_foot_r2: 0.058890
+
+LSTM_RMSPROP_MSE
+------------------------------
+Best Fold: 5
+
+Validation Metrics (mean ± std):
+  val_mse: 0.005782 ± 0.000490
+  val_rmse: 0.075967 ± 0.003251
+  val_mae: 0.057454 ± 0.002373
+  val_r2: 0.729088 ± 0.018138
+  val_head_mse: 0.004343 ± 0.000216
+  val_head_rmse: 0.065879 ± 0.001637
+  val_head_mae: 0.053494 ± 0.001841
+  val_head_r2: 0.577427 ± 0.014762
+  val_left_shoulder_mse: 0.002893 ± 0.000153
+  val_left_shoulder_rmse: 0.053765 ± 0.001431
+  val_left_shoulder_mae: 0.043469 ± 0.001711
+  val_left_shoulder_r2: 0.494369 ± 0.041323
+  val_left_elbow_mse: 0.005788 ± 0.000724
+  val_left_elbow_rmse: 0.075932 ± 0.004773
+  val_left_elbow_mae: 0.060617 ± 0.003918
+  val_left_elbow_r2: 0.573409 ± 0.027674
+  val_right_shoulder_mse: 0.003697 ± 0.000196
+  val_right_shoulder_rmse: 0.060781 ± 0.001631
+  val_right_shoulder_mae: 0.048784 ± 0.001846
+  val_right_shoulder_r2: 0.444005 ± 0.026091
+  val_right_elbow_mse: 0.007291 ± 0.000628
+  val_right_elbow_rmse: 0.085309 ± 0.003672
+  val_right_elbow_mae: 0.068069 ± 0.002693
+  val_right_elbow_r2: 0.522577 ± 0.024799
+  val_left_hand_mse: 0.010839 ± 0.001546
+  val_left_hand_rmse: 0.103842 ± 0.007483
+  val_left_hand_mae: 0.083372 ± 0.005752
+  val_left_hand_r2: 0.584755 ± 0.034956
+  val_right_hand_mse: 0.012265 ± 0.001346
+  val_right_hand_rmse: 0.110581 ± 0.006097
+  val_right_hand_mae: 0.087341 ± 0.004949
+  val_right_hand_r2: 0.546867 ± 0.034305
+  val_left_hip_mse: 0.004558 ± 0.000516
+  val_left_hip_rmse: 0.067395 ± 0.003927
+  val_left_hip_mae: 0.050401 ± 0.002915
+  val_left_hip_r2: 0.473014 ± 0.049559
+  val_right_hip_mse: 0.004786 ± 0.000508
+  val_right_hip_rmse: 0.069078 ± 0.003768
+  val_right_hip_mae: 0.051314 ± 0.002838
+  val_right_hip_r2: 0.465841 ± 0.043184
+  val_left_knee_mse: 0.004665 ± 0.000475
+  val_left_knee_rmse: 0.068216 ± 0.003463
+  val_left_knee_mae: 0.050795 ± 0.002284
+  val_left_knee_r2: 0.527543 ± 0.037824
+  val_right_knee_mse: 0.004750 ± 0.000483
+  val_right_knee_rmse: 0.068834 ± 0.003509
+  val_right_knee_mae: 0.051057 ± 0.002419
+  val_right_knee_r2: 0.571096 ± 0.034277
+  val_left_foot_mse: 0.004533 ± 0.000446
+  val_left_foot_rmse: 0.067247 ± 0.003357
+  val_left_foot_mae: 0.048121 ± 0.001905
+  val_left_foot_r2: 0.051472 ± 0.025844
+  val_right_foot_mse: 0.004751 ± 0.000590
+  val_right_foot_rmse: 0.068793 ± 0.004259
+  val_right_foot_mae: 0.050065 ± 0.001756
+  val_right_foot_r2: 0.061834 ± 0.026908
+
+Test Metrics:
+  test_mse: 0.004923
+  test_rmse: 0.070163
+  test_mae: 0.052138
+  test_r2: 0.758780
+  test_head_mse: 0.002931
+  test_head_rmse: 0.054135
+  test_head_mae: 0.044111
+  test_head_r2: 0.658584
+  test_left_shoulder_mse: 0.001869
+  test_left_shoulder_rmse: 0.043226
+  test_left_shoulder_mae: 0.035023
+  test_left_shoulder_r2: 0.607653
+  test_left_elbow_mse: 0.006375
+  test_left_elbow_rmse: 0.079844
+  test_left_elbow_mae: 0.063509
+  test_left_elbow_r2: 0.552467
+  test_right_shoulder_mse: 0.002459
+  test_right_shoulder_rmse: 0.049593
+  test_right_shoulder_mae: 0.039833
+  test_right_shoulder_r2: 0.589984
+  test_right_elbow_mse: 0.008172
+  test_right_elbow_rmse: 0.090400
+  test_right_elbow_mae: 0.070789
+  test_right_elbow_r2: 0.529298
+  test_left_hand_mse: 0.011743
+  test_left_hand_rmse: 0.108365
+  test_left_hand_mae: 0.087052
+  test_left_hand_r2: 0.559901
+  test_right_hand_mse: 0.014612
+  test_right_hand_rmse: 0.120878
+  test_right_hand_mae: 0.093462
+  test_right_hand_r2: 0.524083
+  test_left_hip_mse: 0.002374
+  test_left_hip_rmse: 0.048720
+  test_left_hip_mae: 0.037988
+  test_left_hip_r2: 0.564944
+  test_right_hip_mse: 0.002617
+  test_right_hip_rmse: 0.051156
+  test_right_hip_mae: 0.039742
+  test_right_hip_r2: 0.552658
+  test_left_knee_mse: 0.002596
+  test_left_knee_rmse: 0.050956
+  test_left_knee_mae: 0.040959
+  test_left_knee_r2: 0.683693
+  test_right_knee_mse: 0.002646
+  test_right_knee_rmse: 0.051441
+  test_right_knee_mae: 0.040505
+  test_right_knee_r2: 0.721786
+  test_left_foot_mse: 0.002850
+  test_left_foot_rmse: 0.053386
+  test_left_foot_mae: 0.043268
+  test_left_foot_r2: 0.060692
+  test_right_foot_mse: 0.002753
+  test_right_foot_rmse: 0.052469
+  test_right_foot_mae: 0.041551
+  test_right_foot_r2: 0.065570
+
+LSTM_RMSPROP_MAE
+------------------------------
+Best Fold: 4
+
+Validation Metrics (mean ± std):
+  val_mse: 0.005608 ± 0.000388
+  val_rmse: 0.074841 ± 0.002584
+  val_mae: 0.054793 ± 0.001883
+  val_r2: 0.736949 ± 0.016486
+  val_head_mse: 0.003906 ± 0.000453
+  val_head_rmse: 0.062400 ± 0.003561
+  val_head_mae: 0.049097 ± 0.002437
+  val_head_r2: 0.619262 ± 0.048109
+  val_left_shoulder_mse: 0.002744 ± 0.000304
+  val_left_shoulder_rmse: 0.052302 ± 0.002834
+  val_left_shoulder_mae: 0.040944 ± 0.002014
+  val_left_shoulder_r2: 0.520012 ± 0.064281
+  val_left_elbow_mse: 0.005491 ± 0.000699
+  val_left_elbow_rmse: 0.073940 ± 0.004851
+  val_left_elbow_mae: 0.057080 ± 0.004101
+  val_left_elbow_r2: 0.594549 ± 0.040430
+  val_right_shoulder_mse: 0.003534 ± 0.000354
+  val_right_shoulder_rmse: 0.059377 ± 0.002942
+  val_right_shoulder_mae: 0.045920 ± 0.002206
+  val_right_shoulder_r2: 0.467442 ± 0.061469
+  val_right_elbow_mse: 0.006892 ± 0.000503
+  val_right_elbow_rmse: 0.082962 ± 0.003031
+  val_right_elbow_mae: 0.064761 ± 0.002973
+  val_right_elbow_r2: 0.546931 ± 0.042677
+  val_left_hand_mse: 0.010697 ± 0.001504
+  val_left_hand_rmse: 0.103171 ± 0.007258
+  val_left_hand_mae: 0.080670 ± 0.005702
+  val_left_hand_r2: 0.590388 ± 0.028581
+  val_right_hand_mse: 0.011972 ± 0.000998
+  val_right_hand_rmse: 0.109319 ± 0.004577
+  val_right_hand_mae: 0.084412 ± 0.004178
+  val_right_hand_r2: 0.556629 ± 0.032059
+  val_left_hip_mse: 0.004394 ± 0.000342
+  val_left_hip_rmse: 0.066238 ± 0.002656
+  val_left_hip_mae: 0.046621 ± 0.001845
+  val_left_hip_r2: 0.491756 ± 0.022900
+  val_right_hip_mse: 0.004567 ± 0.000340
+  val_right_hip_rmse: 0.067531 ± 0.002579
+  val_right_hip_mae: 0.047249 ± 0.001916
+  val_right_hip_r2: 0.489951 ± 0.020978
+  val_left_knee_mse: 0.004563 ± 0.000448
+  val_left_knee_rmse: 0.067466 ± 0.003338
+  val_left_knee_mae: 0.048579 ± 0.001704
+  val_left_knee_r2: 0.537910 ± 0.036292
+  val_right_knee_mse: 0.004751 ± 0.000479
+  val_right_knee_rmse: 0.068844 ± 0.003442
+  val_right_knee_mae: 0.049422 ± 0.001750
+  val_right_knee_r2: 0.570915 ± 0.034956
+  val_left_foot_mse: 0.004535 ± 0.000503
+  val_left_foot_rmse: 0.067235 ± 0.003764
+  val_left_foot_mae: 0.047642 ± 0.001955
+  val_left_foot_r2: 0.052418 ± 0.025721
+  val_right_foot_mse: 0.004857 ± 0.000591
+  val_right_foot_rmse: 0.069562 ± 0.004235
+  val_right_foot_mae: 0.049904 ± 0.001474
+  val_right_foot_r2: 0.041010 ± 0.005764
+
+Test Metrics:
+  test_mse: 0.004880
+  test_rmse: 0.069860
+  test_mae: 0.050640
+  test_r2: 0.760858
+  test_head_mse: 0.002862
+  test_head_rmse: 0.053499
+  test_head_mae: 0.042431
+  test_head_r2: 0.666560
+  test_left_shoulder_mse: 0.001809
+  test_left_shoulder_rmse: 0.042533
+  test_left_shoulder_mae: 0.033314
+  test_left_shoulder_r2: 0.620130
+  test_left_elbow_mse: 0.005907
+  test_left_elbow_rmse: 0.076855
+  test_left_elbow_mae: 0.058759
+  test_left_elbow_r2: 0.585348
+  test_right_shoulder_mse: 0.002486
+  test_right_shoulder_rmse: 0.049862
+  test_right_shoulder_mae: 0.039606
+  test_right_shoulder_r2: 0.585519
+  test_right_elbow_mse: 0.007984
+  test_right_elbow_rmse: 0.089353
+  test_right_elbow_mae: 0.069311
+  test_right_elbow_r2: 0.540139
+  test_left_hand_mse: 0.011781
+  test_left_hand_rmse: 0.108542
+  test_left_hand_mae: 0.083951
+  test_left_hand_r2: 0.558460
+  test_right_hand_mse: 0.015061
+  test_right_hand_rmse: 0.122724
+  test_right_hand_mae: 0.093556
+  test_right_hand_r2: 0.509436
+  test_left_hip_mse: 0.002410
+  test_left_hip_rmse: 0.049095
+  test_left_hip_mae: 0.036977
+  test_left_hip_r2: 0.558225
+  test_right_hip_mse: 0.002517
+  test_right_hip_rmse: 0.050168
+  test_right_hip_mae: 0.037588
+  test_right_hip_r2: 0.569780
+  test_left_knee_mse: 0.002432
+  test_left_knee_rmse: 0.049314
+  test_left_knee_mae: 0.038787
+  test_left_knee_r2: 0.703750
+  test_right_knee_mse: 0.002751
+  test_right_knee_rmse: 0.052451
+  test_right_knee_mae: 0.041390
+  test_right_knee_r2: 0.710750
+  test_left_foot_mse: 0.002678
+  test_left_foot_rmse: 0.051753
+  test_left_foot_mae: 0.042090
+  test_left_foot_r2: 0.117279
+  test_right_foot_mse: 0.002766
+  test_right_foot_rmse: 0.052592
+  test_right_foot_mae: 0.040559
+  test_right_foot_r2: 0.061162
+
+LSTM_ADAM_MSE
+------------------------------
+Best Fold: 4
+
+Validation Metrics (mean ± std):
+  val_mse: 0.005856 ± 0.000535
+  val_rmse: 0.076445 ± 0.003468
+  val_mae: 0.057632 ± 0.002748
+  val_r2: 0.725815 ± 0.016610
+  val_head_mse: 0.004308 ± 0.000371
+  val_head_rmse: 0.065572 ± 0.002880
+  val_head_mae: 0.052797 ± 0.002385
+  val_head_r2: 0.581707 ± 0.019821
+  val_left_shoulder_mse: 0.002955 ± 0.000183
+  val_left_shoulder_rmse: 0.054329 ± 0.001689
+  val_left_shoulder_mae: 0.043664 ± 0.001646
+  val_left_shoulder_r2: 0.485286 ± 0.014118
+  val_left_elbow_mse: 0.005823 ± 0.000807
+  val_left_elbow_rmse: 0.076120 ± 0.005393
+  val_left_elbow_mae: 0.060416 ± 0.004870
+  val_left_elbow_r2: 0.571442 ± 0.032506
+  val_right_shoulder_mse: 0.003784 ± 0.000185
+  val_right_shoulder_rmse: 0.061495 ± 0.001503
+  val_right_shoulder_mae: 0.049331 ± 0.002084
+  val_right_shoulder_r2: 0.431157 ± 0.017122
+  val_right_elbow_mse: 0.007520 ± 0.000756
+  val_right_elbow_rmse: 0.086607 ± 0.004360
+  val_right_elbow_mae: 0.069063 ± 0.003426
+  val_right_elbow_r2: 0.508017 ± 0.030003
+  val_left_hand_mse: 0.011183 ± 0.001935
+  val_left_hand_rmse: 0.105347 ± 0.009237
+  val_left_hand_mae: 0.084047 ± 0.007815
+  val_left_hand_r2: 0.573160 ± 0.040956
+  val_right_hand_mse: 0.012662 ± 0.001522
+  val_right_hand_rmse: 0.112317 ± 0.006811
+  val_right_hand_mae: 0.088874 ± 0.005607
+  val_right_hand_r2: 0.532809 ± 0.034698
+  val_left_hip_mse: 0.004563 ± 0.000163
+  val_left_hip_rmse: 0.067537 ± 0.001217
+  val_left_hip_mae: 0.050339 ± 0.001979
+  val_left_hip_r2: 0.471322 ± 0.012631
+  val_right_hip_mse: 0.004766 ± 0.000161
+  val_right_hip_rmse: 0.069028 ± 0.001165
+  val_right_hip_mae: 0.051450 ± 0.002416
+  val_right_hip_r2: 0.466432 ± 0.022157
+  val_left_knee_mse: 0.004580 ± 0.000472
+  val_left_knee_rmse: 0.067588 ± 0.003462
+  val_left_knee_mae: 0.050358 ± 0.002112
+  val_left_knee_r2: 0.535868 ± 0.041936
+  val_right_knee_mse: 0.004631 ± 0.000422
+  val_right_knee_rmse: 0.067983 ± 0.003028
+  val_right_knee_mae: 0.050464 ± 0.002274
+  val_right_knee_r2: 0.580887 ± 0.040832
+  val_left_foot_mse: 0.004528 ± 0.000445
+  val_left_foot_rmse: 0.067210 ± 0.003308
+  val_left_foot_mae: 0.048214 ± 0.001914
+  val_left_foot_r2: 0.052110 ± 0.035469
+  val_right_foot_mse: 0.004824 ± 0.000589
+  val_right_foot_rmse: 0.069324 ± 0.004231
+  val_right_foot_mae: 0.050199 ± 0.001712
+  val_right_foot_r2: 0.047586 ± 0.005444
+
+Test Metrics:
+  test_mse: 0.004864
+  test_rmse: 0.069739
+  test_mae: 0.051728
+  test_r2: 0.761684
+  test_head_mse: 0.002833
+  test_head_rmse: 0.053223
+  test_head_mae: 0.043654
+  test_head_r2: 0.669988
+  test_left_shoulder_mse: 0.001853
+  test_left_shoulder_rmse: 0.043051
+  test_left_shoulder_mae: 0.034718
+  test_left_shoulder_r2: 0.610822
+  test_left_elbow_mse: 0.006247
+  test_left_elbow_rmse: 0.079039
+  test_left_elbow_mae: 0.062142
+  test_left_elbow_r2: 0.561446
+  test_right_shoulder_mse: 0.002468
+  test_right_shoulder_rmse: 0.049677
+  test_right_shoulder_mae: 0.039717
+  test_right_shoulder_r2: 0.588582
+  test_right_elbow_mse: 0.008040
+  test_right_elbow_rmse: 0.089668
+  test_right_elbow_mae: 0.069739
+  test_right_elbow_r2: 0.536882
+  test_left_hand_mse: 0.011544
+  test_left_hand_rmse: 0.107444
+  test_left_hand_mae: 0.085911
+  test_left_hand_r2: 0.567353
+  test_right_hand_mse: 0.014721
+  test_right_hand_rmse: 0.121331
+  test_right_hand_mae: 0.094182
+  test_right_hand_r2: 0.520508
+  test_left_hip_mse: 0.002419
+  test_left_hip_rmse: 0.049183
+  test_left_hip_mae: 0.038230
+  test_left_hip_r2: 0.556629
+  test_right_hip_mse: 0.002561
+  test_right_hip_rmse: 0.050610
+  test_right_hip_mae: 0.038838
+  test_right_hip_r2: 0.562153
+  test_left_knee_mse: 0.002472
+  test_left_knee_rmse: 0.049721
+  test_left_knee_mae: 0.039528
+  test_left_knee_r2: 0.698832
+  test_right_knee_mse: 0.002621
+  test_right_knee_rmse: 0.051196
+  test_right_knee_mae: 0.041366
+  test_right_knee_r2: 0.724431
+  test_left_foot_mse: 0.002677
+  test_left_foot_rmse: 0.051735
+  test_left_foot_mae: 0.042670
+  test_left_foot_r2: 0.117876
+  test_right_foot_mse: 0.002769
+  test_right_foot_rmse: 0.052620
+  test_right_foot_mae: 0.041764
+  test_right_foot_r2: 0.060181
+
+LSTM_ADAM_MAE
+------------------------------
+Best Fold: 5
+
+Validation Metrics (mean ± std):
+  val_mse: 0.005611 ± 0.000474
+  val_rmse: 0.074841 ± 0.003193
+  val_mae: 0.054920 ± 0.002287
+  val_r2: 0.737077 ± 0.017281
+  val_head_mse: 0.004126 ± 0.000352
+  val_head_rmse: 0.064176 ± 0.002743
+  val_head_mae: 0.050659 ± 0.002419
+  val_head_r2: 0.598997 ± 0.024373
+  val_left_shoulder_mse: 0.002766 ± 0.000157
+  val_left_shoulder_rmse: 0.052574 ± 0.001515
+  val_left_shoulder_mae: 0.041212 ± 0.001577
+  val_left_shoulder_r2: 0.517535 ± 0.023678
+  val_left_elbow_mse: 0.005455 ± 0.000723
+  val_left_elbow_rmse: 0.073694 ± 0.004922
+  val_left_elbow_mae: 0.057222 ± 0.004301
+  val_left_elbow_r2: 0.598422 ± 0.025617
+  val_right_shoulder_mse: 0.003603 ± 0.000190
+  val_right_shoulder_rmse: 0.060003 ± 0.001571
+  val_right_shoulder_mae: 0.046511 ± 0.001915
+  val_right_shoulder_r2: 0.457846 ± 0.031185
+  val_right_elbow_mse: 0.006940 ± 0.000589
+  val_right_elbow_rmse: 0.083231 ± 0.003564
+  val_right_elbow_mae: 0.065135 ± 0.003552
+  val_right_elbow_r2: 0.545243 ± 0.029300
+  val_left_hand_mse: 0.010686 ± 0.001787
+  val_left_hand_rmse: 0.103000 ± 0.008761
+  val_left_hand_mae: 0.080687 ± 0.006786
+  val_left_hand_r2: 0.592018 ± 0.037179
+  val_right_hand_mse: 0.012176 ± 0.001541
+  val_right_hand_rmse: 0.110121 ± 0.006996
+  val_right_hand_mae: 0.085344 ± 0.005377
+  val_right_hand_r2: 0.551513 ± 0.026054
+  val_left_hip_mse: 0.004280 ± 0.000415
+  val_left_hip_rmse: 0.065343 ± 0.003236
+  val_left_hip_mae: 0.046135 ± 0.001777
+  val_left_hip_r2: 0.504800 ± 0.038657
+  val_right_hip_mse: 0.004450 ± 0.000421
+  val_right_hip_rmse: 0.066634 ± 0.003187
+  val_right_hip_mae: 0.046229 ± 0.001737
+  val_right_hip_r2: 0.502904 ± 0.036671
+  val_left_knee_mse: 0.004454 ± 0.000374
+  val_left_knee_rmse: 0.066679 ± 0.002805
+  val_left_knee_mae: 0.048052 ± 0.001510
+  val_left_knee_r2: 0.548812 ± 0.028304
+  val_right_knee_mse: 0.004637 ± 0.000314
+  val_right_knee_rmse: 0.068055 ± 0.002288
+  val_right_knee_mae: 0.048942 ± 0.001125
+  val_right_knee_r2: 0.581163 ± 0.016677
+  val_left_foot_mse: 0.004524 ± 0.000524
+  val_left_foot_rmse: 0.067144 ± 0.003938
+  val_left_foot_mae: 0.047798 ± 0.002276
+  val_left_foot_r2: 0.055373 ± 0.022730
+  val_right_foot_mse: 0.004851 ± 0.000638
+  val_right_foot_rmse: 0.069498 ± 0.004574
+  val_right_foot_mae: 0.050036 ± 0.001901
+  val_right_foot_r2: 0.043022 ± 0.026966
+
+Test Metrics:
+  test_mse: 0.004931
+  test_rmse: 0.070218
+  test_mae: 0.050958
+  test_r2: 0.758400
+  test_head_mse: 0.002864
+  test_head_rmse: 0.053518
+  test_head_mae: 0.042151
+  test_head_r2: 0.666327
+  test_left_shoulder_mse: 0.001717
+  test_left_shoulder_rmse: 0.041441
+  test_left_shoulder_mae: 0.032825
+  test_left_shoulder_r2: 0.639386
+  test_left_elbow_mse: 0.006208
+  test_left_elbow_rmse: 0.078790
+  test_left_elbow_mae: 0.061667
+  test_left_elbow_r2: 0.564205
+  test_right_shoulder_mse: 0.002477
+  test_right_shoulder_rmse: 0.049772
+  test_right_shoulder_mae: 0.039393
+  test_right_shoulder_r2: 0.587015
+  test_right_elbow_mse: 0.008157
+  test_right_elbow_rmse: 0.090315
+  test_right_elbow_mae: 0.069511
+  test_right_elbow_r2: 0.530180
+  test_left_hand_mse: 0.012027
+  test_left_hand_rmse: 0.109669
+  test_left_hand_mae: 0.086223
+  test_left_hand_r2: 0.549242
+  test_right_hand_mse: 0.015273
+  test_right_hand_rmse: 0.123585
+  test_right_hand_mae: 0.094738
+  test_right_hand_r2: 0.502527
+  test_left_hip_mse: 0.002193
+  test_left_hip_rmse: 0.046827
+  test_left_hip_mae: 0.035851
+  test_left_hip_r2: 0.598100
+  test_right_hip_mse: 0.002387
+  test_right_hip_rmse: 0.048856
+  test_right_hip_mae: 0.036397
+  test_right_hip_r2: 0.591980
+  test_left_knee_mse: 0.002368
+  test_left_knee_rmse: 0.048659
+  test_left_knee_mae: 0.037194
+  test_left_knee_r2: 0.711563
+  test_right_knee_mse: 0.002833
+  test_right_knee_rmse: 0.053227
+  test_right_knee_mae: 0.041619
+  test_right_knee_r2: 0.702135
+  test_left_foot_mse: 0.002805
+  test_left_foot_rmse: 0.052960
+  test_left_foot_mae: 0.042947
+  test_left_foot_r2: 0.075602
+  test_right_foot_mse: 0.002788
+  test_right_foot_rmse: 0.052801
+  test_right_foot_mae: 0.041943
+  test_right_foot_r2: 0.053695
+
+GRU_SGD_MSE
+------------------------------
+Best Fold: 5
+
+Validation Metrics (mean ± std):
+  val_mse: 0.005628 ± 0.000174
+  val_rmse: 0.075010 ± 0.001165
+  val_mae: 0.056806 ± 0.000583
+  val_r2: 0.735682 ± 0.013455
+  val_head_mse: 0.004048 ± 0.000121
+  val_head_rmse: 0.063615 ± 0.000955
+  val_head_mae: 0.051549 ± 0.000848
+  val_head_r2: 0.604967 ± 0.028741
+  val_left_shoulder_mse: 0.002862 ± 0.000100
+  val_left_shoulder_rmse: 0.053485 ± 0.000934
+  val_left_shoulder_mae: 0.043369 ± 0.001054
+  val_left_shoulder_r2: 0.499514 ± 0.038863
+  val_left_elbow_mse: 0.005426 ± 0.000437
+  val_left_elbow_rmse: 0.073600 ± 0.002990
+  val_left_elbow_mae: 0.058849 ± 0.002345
+  val_left_elbow_r2: 0.598206 ± 0.027013
+  val_right_shoulder_mse: 0.003671 ± 0.000124
+  val_right_shoulder_rmse: 0.060581 ± 0.001028
+  val_right_shoulder_mae: 0.048902 ± 0.000834
+  val_right_shoulder_r2: 0.446906 ± 0.034707
+  val_right_elbow_mse: 0.007034 ± 0.000208
+  val_right_elbow_rmse: 0.083859 ± 0.001239
+  val_right_elbow_mae: 0.067171 ± 0.001736
+  val_right_elbow_r2: 0.537264 ± 0.033106
+  val_left_hand_mse: 0.010349 ± 0.000722
+  val_left_hand_rmse: 0.101668 ± 0.003595
+  val_left_hand_mae: 0.081982 ± 0.002941
+  val_left_hand_r2: 0.601088 ± 0.023017
+  val_right_hand_mse: 0.011954 ± 0.000436
+  val_right_hand_rmse: 0.109317 ± 0.002013
+  val_right_hand_mae: 0.087031 ± 0.002079
+  val_right_hand_r2: 0.556340 ± 0.026511
+  val_left_hip_mse: 0.004459 ± 0.000306
+  val_left_hip_rmse: 0.066738 ± 0.002331
+  val_left_hip_mae: 0.049324 ± 0.001129
+  val_left_hip_r2: 0.483735 ± 0.025901
+  val_right_hip_mse: 0.004710 ± 0.000336
+  val_right_hip_rmse: 0.068589 ± 0.002459
+  val_right_hip_mae: 0.050266 ± 0.000687
+  val_right_hip_r2: 0.473437 ± 0.028442
+  val_left_knee_mse: 0.004556 ± 0.000550
+  val_left_knee_rmse: 0.067381 ± 0.003990
+  val_left_knee_mae: 0.050566 ± 0.001833
+  val_left_knee_r2: 0.538993 ± 0.042932
+  val_right_knee_mse: 0.004717 ± 0.000337
+  val_right_knee_rmse: 0.068635 ± 0.002475
+  val_right_knee_mae: 0.050934 ± 0.001163
+  val_right_knee_r2: 0.573288 ± 0.031110
+  val_left_foot_mse: 0.004531 ± 0.000491
+  val_left_foot_rmse: 0.067214 ± 0.003684
+  val_left_foot_mae: 0.048114 ± 0.001998
+  val_left_foot_r2: 0.053020 ± 0.020669
+  val_right_foot_mse: 0.004845 ± 0.000622
+  val_right_foot_rmse: 0.069461 ± 0.004458
+  val_right_foot_mae: 0.050424 ± 0.001880
+  val_right_foot_r2: 0.044023 ± 0.018756
+
+Test Metrics:
+  test_mse: 0.005257
+  test_rmse: 0.072503
+  test_mae: 0.054428
+  test_r2: 0.742419
+  test_head_mse: 0.003297
+  test_head_rmse: 0.057417
+  test_head_mae: 0.046863
+  test_head_r2: 0.615935
+  test_left_shoulder_mse: 0.001998
+  test_left_shoulder_rmse: 0.044701
+  test_left_shoulder_mae: 0.036327
+  test_left_shoulder_r2: 0.580433
+  test_left_elbow_mse: 0.006765
+  test_left_elbow_rmse: 0.082249
+  test_left_elbow_mae: 0.065512
+  test_left_elbow_r2: 0.525095
+  test_right_shoulder_mse: 0.002836
+  test_right_shoulder_rmse: 0.053253
+  test_right_shoulder_mae: 0.043636
+  test_right_shoulder_r2: 0.527216
+  test_right_elbow_mse: 0.008637
+  test_right_elbow_rmse: 0.092933
+  test_right_elbow_mae: 0.073343
+  test_right_elbow_r2: 0.502544
+  test_left_hand_mse: 0.012496
+  test_left_hand_rmse: 0.111785
+  test_left_hand_mae: 0.089606
+  test_left_hand_r2: 0.531682
+  test_right_hand_mse: 0.015741
+  test_right_hand_rmse: 0.125463
+  test_right_hand_mae: 0.099349
+  test_right_hand_r2: 0.487291
+  test_left_hip_mse: 0.002464
+  test_left_hip_rmse: 0.049634
+  test_left_hip_mae: 0.039226
+  test_left_hip_r2: 0.548462
+  test_right_hip_mse: 0.002890
+  test_right_hip_rmse: 0.053758
+  test_right_hip_mae: 0.043464
+  test_right_hip_r2: 0.505996
+  test_left_knee_mse: 0.002635
+  test_left_knee_rmse: 0.051331
+  test_left_knee_mae: 0.041962
+  test_left_knee_r2: 0.679021
+  test_right_knee_mse: 0.002875
+  test_right_knee_rmse: 0.053616
+  test_right_knee_mae: 0.043721
+  test_right_knee_r2: 0.697761
+  test_left_foot_mse: 0.002844
+  test_left_foot_rmse: 0.053332
+  test_left_foot_mae: 0.043067
+  test_left_foot_r2: 0.062595
+  test_right_foot_mse: 0.002860
+  test_right_foot_rmse: 0.053483
+  test_right_foot_mae: 0.041491
+  test_right_foot_r2: 0.029076
+
+GRU_SGD_MAE
+------------------------------
+Best Fold: 5
+
+Validation Metrics (mean ± std):
+  val_mse: 0.005437 ± 0.000494
+  val_rmse: 0.073662 ± 0.003335
+  val_mae: 0.054129 ± 0.002476
+  val_r2: 0.745142 ± 0.019985
+  val_head_mse: 0.003890 ± 0.000349
+  val_head_rmse: 0.062309 ± 0.002747
+  val_head_mae: 0.049327 ± 0.002255
+  val_head_r2: 0.620838 ± 0.038959
+  val_left_shoulder_mse: 0.002695 ± 0.000237
+  val_left_shoulder_rmse: 0.051863 ± 0.002265
+  val_left_shoulder_mae: 0.040764 ± 0.002088
+  val_left_shoulder_r2: 0.529812 ± 0.040580
+  val_left_elbow_mse: 0.005200 ± 0.000610
+  val_left_elbow_rmse: 0.071987 ± 0.004269
+  val_left_elbow_mae: 0.055927 ± 0.003706
+  val_left_elbow_r2: 0.615880 ± 0.033643
+  val_right_shoulder_mse: 0.003387 ± 0.000246
+  val_right_shoulder_rmse: 0.058160 ± 0.002123
+  val_right_shoulder_mae: 0.045034 ± 0.002191
+  val_right_shoulder_r2: 0.490654 ± 0.033624
+  val_right_elbow_mse: 0.006593 ± 0.000621
+  val_right_elbow_rmse: 0.081108 ± 0.003806
+  val_right_elbow_mae: 0.063107 ± 0.003620
+  val_right_elbow_r2: 0.568334 ± 0.027051
+  val_left_hand_mse: 0.010279 ± 0.001449
+  val_left_hand_rmse: 0.101130 ± 0.007163
+  val_left_hand_mae: 0.079189 ± 0.005820
+  val_left_hand_r2: 0.605567 ± 0.039920
+  val_right_hand_mse: 0.011589 ± 0.001375
+  val_right_hand_rmse: 0.107465 ± 0.006349
+  val_right_hand_mae: 0.082502 ± 0.006027
+  val_right_hand_r2: 0.572159 ± 0.033004
+  val_left_hip_mse: 0.004231 ± 0.000370
+  val_left_hip_rmse: 0.064985 ± 0.002887
+  val_left_hip_mae: 0.046016 ± 0.001439
+  val_left_hip_r2: 0.510418 ± 0.032496
+  val_right_hip_mse: 0.004422 ± 0.000420
+  val_right_hip_rmse: 0.066424 ± 0.003167
+  val_right_hip_mae: 0.046426 ± 0.001376
+  val_right_hip_r2: 0.506193 ± 0.034203
+  val_left_knee_mse: 0.004423 ± 0.000494
+  val_left_knee_rmse: 0.066404 ± 0.003727
+  val_left_knee_mae: 0.048387 ± 0.002454
+  val_left_knee_r2: 0.552189 ± 0.040599
+  val_right_knee_mse: 0.004629 ± 0.000523
+  val_right_knee_rmse: 0.067926 ± 0.003814
+  val_right_knee_mae: 0.049260 ± 0.002084
+  val_right_knee_r2: 0.581975 ± 0.040863
+  val_left_foot_mse: 0.004536 ± 0.000494
+  val_left_foot_rmse: 0.067251 ± 0.003697
+  val_left_foot_mae: 0.047963 ± 0.001990
+  val_left_foot_r2: 0.052005 ± 0.020716
+  val_right_foot_mse: 0.004809 ± 0.000647
+  val_right_foot_rmse: 0.069190 ± 0.004673
+  val_right_foot_mae: 0.049772 ± 0.001639
+  val_right_foot_r2: 0.051943 ± 0.017275
+
+Test Metrics:
+  test_mse: 0.004737
+  test_rmse: 0.068828
+  test_mae: 0.049941
+  test_r2: 0.767871
+  test_head_mse: 0.002612
+  test_head_rmse: 0.051110
+  test_head_mae: 0.040785
+  test_head_r2: 0.695671
+  test_left_shoulder_mse: 0.001631
+  test_left_shoulder_rmse: 0.040385
+  test_left_shoulder_mae: 0.031596
+  test_left_shoulder_r2: 0.657530
+  test_left_elbow_mse: 0.005952
+  test_left_elbow_rmse: 0.077148
+  test_left_elbow_mae: 0.059623
+  test_left_elbow_r2: 0.582171
+  test_right_shoulder_mse: 0.002225
+  test_right_shoulder_rmse: 0.047172
+  test_right_shoulder_mae: 0.037223
+  test_right_shoulder_r2: 0.629038
+  test_right_elbow_mse: 0.007551
+  test_right_elbow_rmse: 0.086899
+  test_right_elbow_mae: 0.066467
+  test_right_elbow_r2: 0.565050
+  test_left_hand_mse: 0.011427
+  test_left_hand_rmse: 0.106898
+  test_left_hand_mae: 0.083772
+  test_left_hand_r2: 0.571734
+  test_right_hand_mse: 0.014565
+  test_right_hand_rmse: 0.120684
+  test_right_hand_mae: 0.091795
+  test_right_hand_r2: 0.525613
+  test_left_hip_mse: 0.002363
+  test_left_hip_rmse: 0.048612
+  test_left_hip_mae: 0.036769
+  test_left_hip_r2: 0.566866
+  test_right_hip_mse: 0.002564
+  test_right_hip_rmse: 0.050639
+  test_right_hip_mae: 0.037880
+  test_right_hip_r2: 0.561667
+  test_left_knee_mse: 0.002381
+  test_left_knee_rmse: 0.048794
+  test_left_knee_mae: 0.037556
+  test_left_knee_r2: 0.709961
+  test_right_knee_mse: 0.002685
+  test_right_knee_rmse: 0.051820
+  test_right_knee_mae: 0.040377
+  test_right_knee_r2: 0.717670
+  test_left_foot_mse: 0.002827
+  test_left_foot_rmse: 0.053173
+  test_left_foot_mae: 0.043852
+  test_left_foot_r2: 0.068181
+  test_right_foot_mse: 0.002800
+  test_right_foot_rmse: 0.052915
+  test_right_foot_mae: 0.041544
+  test_right_foot_r2: 0.049595
+
+GRU_RMSPROP_MSE
+------------------------------
+Best Fold: 5
+
+Validation Metrics (mean ± std):
+  val_mse: 0.005771 ± 0.000435
+  val_rmse: 0.075915 ± 0.002800
+  val_mae: 0.057739 ± 0.001973
+  val_r2: 0.729783 ± 0.008282
+  val_head_mse: 0.004259 ± 0.000347
+  val_head_rmse: 0.065209 ± 0.002650
+  val_head_mae: 0.052980 ± 0.002317
+  val_head_r2: 0.586503 ± 0.011253
+  val_left_shoulder_mse: 0.002923 ± 0.000218
+  val_left_shoulder_rmse: 0.054031 ± 0.001971
+  val_left_shoulder_mae: 0.043680 ± 0.001836
+  val_left_shoulder_r2: 0.490719 ± 0.023404
+  val_left_elbow_mse: 0.005685 ± 0.000760
+  val_left_elbow_rmse: 0.075235 ± 0.004973
+  val_left_elbow_mae: 0.059812 ± 0.004153
+  val_left_elbow_r2: 0.581912 ± 0.016639
+  val_right_shoulder_mse: 0.003709 ± 0.000183
+  val_right_shoulder_rmse: 0.060884 ± 0.001520
+  val_right_shoulder_mae: 0.049142 ± 0.001149
+  val_right_shoulder_r2: 0.441993 ± 0.027165
+  val_right_elbow_mse: 0.007135 ± 0.000608
+  val_right_elbow_rmse: 0.084397 ± 0.003531
+  val_right_elbow_mae: 0.067675 ± 0.002482
+  val_right_elbow_r2: 0.532922 ± 0.018250
+  val_left_hand_mse: 0.010812 ± 0.001569
+  val_left_hand_rmse: 0.103712 ± 0.007468
+  val_left_hand_mae: 0.083316 ± 0.006420
+  val_left_hand_r2: 0.586748 ± 0.018800
+  val_right_hand_mse: 0.012268 ± 0.001371
+  val_right_hand_rmse: 0.110594 ± 0.006055
+  val_right_hand_mae: 0.088384 ± 0.005115
+  val_right_hand_r2: 0.547551 ± 0.018217
+  val_left_hip_mse: 0.004648 ± 0.000395
+  val_left_hip_rmse: 0.068112 ± 0.002929
+  val_left_hip_mae: 0.051751 ± 0.002212
+  val_left_hip_r2: 0.462141 ± 0.035062
+  val_right_hip_mse: 0.004895 ± 0.000437
+  val_right_hip_rmse: 0.069894 ± 0.003123
+  val_right_hip_mae: 0.052911 ± 0.002127
+  val_right_hip_r2: 0.453267 ± 0.035390
+  val_left_knee_mse: 0.004617 ± 0.000574
+  val_left_knee_rmse: 0.067819 ± 0.004157
+  val_left_knee_mae: 0.051287 ± 0.002555
+  val_left_knee_r2: 0.532888 ± 0.045633
+  val_right_knee_mse: 0.004768 ± 0.000297
+  val_right_knee_rmse: 0.069016 ± 0.002162
+  val_right_knee_mae: 0.051814 ± 0.001528
+  val_right_knee_r2: 0.568542 ± 0.029404
+  val_left_foot_mse: 0.004504 ± 0.000473
+  val_left_foot_rmse: 0.067014 ± 0.003558
+  val_left_foot_mae: 0.047850 ± 0.002016
+  val_left_foot_r2: 0.058504 ± 0.018588
+  val_right_foot_mse: 0.004800 ± 0.000607
+  val_right_foot_rmse: 0.069145 ± 0.004362
+  val_right_foot_mae: 0.050008 ± 0.001698
+  val_right_foot_r2: 0.052685 ± 0.011071
+
+Test Metrics:
+  test_mse: 0.005230
+  test_rmse: 0.072316
+  test_mae: 0.054308
+  test_r2: 0.743749
+  test_head_mse: 0.003127
+  test_head_rmse: 0.055920
+  test_head_mae: 0.045944
+  test_head_r2: 0.635700
+  test_left_shoulder_mse: 0.001950
+  test_left_shoulder_rmse: 0.044162
+  test_left_shoulder_mae: 0.035830
+  test_left_shoulder_r2: 0.590489
+  test_left_elbow_mse: 0.006698
+  test_left_elbow_rmse: 0.081839
+  test_left_elbow_mae: 0.064550
+  test_left_elbow_r2: 0.529816
+  test_right_shoulder_mse: 0.002860
+  test_right_shoulder_rmse: 0.053476
+  test_right_shoulder_mae: 0.043541
+  test_right_shoulder_r2: 0.523247
+  test_right_elbow_mse: 0.008389
+  test_right_elbow_rmse: 0.091589
+  test_right_elbow_mae: 0.071756
+  test_right_elbow_r2: 0.516833
+  test_left_hand_mse: 0.012347
+  test_left_hand_rmse: 0.111118
+  test_left_hand_mae: 0.089060
+  test_left_hand_r2: 0.537258
+  test_right_hand_mse: 0.015558
+  test_right_hand_rmse: 0.124730
+  test_right_hand_mae: 0.098195
+  test_right_hand_r2: 0.493266
+  test_left_hip_mse: 0.002535
+  test_left_hip_rmse: 0.050344
+  test_left_hip_mae: 0.040448
+  test_left_hip_r2: 0.535456
+  test_right_hip_mse: 0.002821
+  test_right_hip_rmse: 0.053116
+  test_right_hip_mae: 0.042877
+  test_right_hip_r2: 0.517724
+  test_left_knee_mse: 0.002933
+  test_left_knee_rmse: 0.054159
+  test_left_knee_mae: 0.043697
+  test_left_knee_r2: 0.642665
+  test_right_knee_mse: 0.003138
+  test_right_knee_rmse: 0.056014
+  test_right_knee_mae: 0.045293
+  test_right_knee_r2: 0.670120
+  test_left_foot_mse: 0.002754
+  test_left_foot_rmse: 0.052483
+  test_left_foot_mae: 0.042888
+  test_left_foot_r2: 0.092202
+  test_right_foot_mse: 0.002875
+  test_right_foot_rmse: 0.053619
+  test_right_foot_mae: 0.041922
+  test_right_foot_r2: 0.024128
+
+GRU_RMSPROP_MAE
+------------------------------
+Best Fold: 5
+
+Validation Metrics (mean ± std):
+  val_mse: 0.005708 ± 0.000790
+  val_rmse: 0.075372 ± 0.005200
+  val_mae: 0.055400 ± 0.004344
+  val_r2: 0.732276 ± 0.037537
+  val_head_mse: 0.004144 ± 0.000876
+  val_head_rmse: 0.064033 ± 0.006645
+  val_head_mae: 0.051015 ± 0.005884
+  val_head_r2: 0.596871 ± 0.086328
+  val_left_shoulder_mse: 0.002743 ± 0.000402
+  val_left_shoulder_rmse: 0.052238 ± 0.003827
+  val_left_shoulder_mae: 0.041118 ± 0.003738
+  val_left_shoulder_r2: 0.522491 ± 0.062416
+  val_left_elbow_mse: 0.005633 ± 0.001105
+  val_left_elbow_rmse: 0.074684 ± 0.007402
+  val_left_elbow_mae: 0.058425 ± 0.006827
+  val_left_elbow_r2: 0.584894 ± 0.072767
+  val_right_shoulder_mse: 0.003657 ± 0.000665
+  val_right_shoulder_rmse: 0.060237 ± 0.005297
+  val_right_shoulder_mae: 0.047007 ± 0.005323
+  val_right_shoulder_r2: 0.449805 ± 0.102372
+  val_right_elbow_mse: 0.006898 ± 0.001016
+  val_right_elbow_rmse: 0.082832 ± 0.006109
+  val_right_elbow_mae: 0.064678 ± 0.006445
+  val_right_elbow_r2: 0.548500 ± 0.059585
+  val_left_hand_mse: 0.011075 ± 0.002503
+  val_left_hand_rmse: 0.104557 ± 0.011971
+  val_left_hand_mae: 0.082197 ± 0.010039
+  val_left_hand_r2: 0.576705 ± 0.081351
+  val_right_hand_mse: 0.012472 ± 0.002393
+  val_right_hand_rmse: 0.111161 ± 0.010737
+  val_right_hand_mae: 0.086682 ± 0.010757
+  val_right_hand_r2: 0.540137 ± 0.078399
+  val_left_hip_mse: 0.004328 ± 0.000374
+  val_left_hip_rmse: 0.065726 ± 0.002875
+  val_left_hip_mae: 0.046386 ± 0.002009
+  val_left_hip_r2: 0.499210 ± 0.031947
+  val_right_hip_mse: 0.004547 ± 0.000402
+  val_right_hip_rmse: 0.067362 ± 0.003022
+  val_right_hip_mae: 0.047518 ± 0.003024
+  val_right_hip_r2: 0.492105 ± 0.033536
+  val_left_knee_mse: 0.004575 ± 0.000346
+  val_left_knee_rmse: 0.067593 ± 0.002542
+  val_left_knee_mae: 0.048517 ± 0.000809
+  val_left_knee_r2: 0.536548 ± 0.022622
+  val_right_knee_mse: 0.004757 ± 0.000313
+  val_right_knee_rmse: 0.068937 ± 0.002227
+  val_right_knee_mae: 0.049102 ± 0.001480
+  val_right_knee_r2: 0.570254 ± 0.015588
+  val_left_foot_mse: 0.004532 ± 0.000555
+  val_left_foot_rmse: 0.067189 ± 0.004165
+  val_left_foot_mae: 0.047765 ± 0.002400
+  val_left_foot_r2: 0.054265 ± 0.030231
+  val_right_foot_mse: 0.004842 ± 0.000661
+  val_right_foot_rmse: 0.069420 ± 0.004760
+  val_right_foot_mae: 0.049784 ± 0.001987
+  val_right_foot_r2: 0.045600 ± 0.023992
+
+Test Metrics:
+  test_mse: 0.004646
+  test_rmse: 0.068158
+  test_mae: 0.049745
+  test_r2: 0.772367
+  test_head_mse: 0.002482
+  test_head_rmse: 0.049820
+  test_head_mae: 0.039683
+  test_head_r2: 0.710840
+  test_left_shoulder_mse: 0.001636
+  test_left_shoulder_rmse: 0.040442
+  test_left_shoulder_mae: 0.031862
+  test_left_shoulder_r2: 0.656571
+  test_left_elbow_mse: 0.005953
+  test_left_elbow_rmse: 0.077153
+  test_left_elbow_mae: 0.059856
+  test_left_elbow_r2: 0.582123
+  test_right_shoulder_mse: 0.002157
+  test_right_shoulder_rmse: 0.046438
+  test_right_shoulder_mae: 0.037456
+  test_right_shoulder_r2: 0.640484
+  test_right_elbow_mse: 0.007346
+  test_right_elbow_rmse: 0.085707
+  test_right_elbow_mae: 0.065910
+  test_right_elbow_r2: 0.576902
+  test_left_hand_mse: 0.011126
+  test_left_hand_rmse: 0.105480
+  test_left_hand_mae: 0.083436
+  test_left_hand_r2: 0.583025
+  test_right_hand_mse: 0.013830
+  test_right_hand_rmse: 0.117600
+  test_right_hand_mae: 0.090700
+  test_right_hand_r2: 0.549546
+  test_left_hip_mse: 0.002409
+  test_left_hip_rmse: 0.049078
+  test_left_hip_mae: 0.036969
+  test_left_hip_r2: 0.558522
+  test_right_hip_mse: 0.002585
+  test_right_hip_rmse: 0.050843
+  test_right_hip_mae: 0.037812
+  test_right_hip_r2: 0.558113
+  test_left_knee_mse: 0.002494
+  test_left_knee_rmse: 0.049939
+  test_left_knee_mae: 0.038101
+  test_left_knee_r2: 0.696191
+  test_right_knee_mse: 0.002869
+  test_right_knee_rmse: 0.053559
+  test_right_knee_mae: 0.041095
+  test_right_knee_r2: 0.698401
+  test_left_foot_mse: 0.002708
+  test_left_foot_rmse: 0.052035
+  test_left_foot_mae: 0.042565
+  test_left_foot_r2: 0.107620
+  test_right_foot_mse: 0.002800
+  test_right_foot_rmse: 0.052913
+  test_right_foot_mae: 0.041244
+  test_right_foot_r2: 0.049680
+
+GRU_ADAM_MSE
+------------------------------
+Best Fold: 4
+
+Validation Metrics (mean ± std):
+  val_mse: 0.005954 ± 0.000252
+  val_rmse: 0.077147 ± 0.001636
+  val_mae: 0.058403 ± 0.001197
+  val_r2: 0.720586 ± 0.011655
+  val_head_mse: 0.004473 ± 0.000324
+  val_head_rmse: 0.066839 ± 0.002419
+  val_head_mae: 0.054113 ± 0.001658
+  val_head_r2: 0.564552 ± 0.029918
+  val_left_shoulder_mse: 0.003059 ± 0.000103
+  val_left_shoulder_rmse: 0.055301 ± 0.000936
+  val_left_shoulder_mae: 0.044896 ± 0.000751
+  val_left_shoulder_r2: 0.466277 ± 0.017100
+  val_left_elbow_mse: 0.006190 ± 0.000493
+  val_left_elbow_rmse: 0.078611 ± 0.003135
+  val_left_elbow_mae: 0.063258 ± 0.002706
+  val_left_elbow_r2: 0.542184 ± 0.020678
+  val_right_shoulder_mse: 0.003849 ± 0.000093
+  val_right_shoulder_rmse: 0.062033 ± 0.000755
+  val_right_shoulder_mae: 0.050174 ± 0.000840
+  val_right_shoulder_r2: 0.420296 ± 0.031077
+  val_right_elbow_mse: 0.007483 ± 0.000317
+  val_right_elbow_rmse: 0.086484 ± 0.001855
+  val_right_elbow_mae: 0.069546 ± 0.002069
+  val_right_elbow_r2: 0.508245 ± 0.031734
+  val_left_hand_mse: 0.011601 ± 0.001316
+  val_left_hand_rmse: 0.107529 ± 0.006241
+  val_left_hand_mae: 0.086861 ± 0.005476
+  val_left_hand_r2: 0.554808 ± 0.024590
+  val_right_hand_mse: 0.013043 ± 0.000907
+  val_right_hand_rmse: 0.114134 ± 0.004032
+  val_right_hand_mae: 0.091347 ± 0.003894
+  val_right_hand_r2: 0.516740 ± 0.030625
+  val_left_hip_mse: 0.004462 ± 0.000259
+  val_left_hip_rmse: 0.066771 ± 0.001935
+  val_left_hip_mae: 0.049717 ± 0.001811
+  val_left_hip_r2: 0.482784 ± 0.029836
+  val_right_hip_mse: 0.004694 ± 0.000318
+  val_right_hip_rmse: 0.068473 ± 0.002304
+  val_right_hip_mae: 0.050976 ± 0.001898
+  val_right_hip_r2: 0.474851 ± 0.032796
+  val_left_knee_mse: 0.004504 ± 0.000428
+  val_left_knee_rmse: 0.067036 ± 0.003171
+  val_left_knee_mae: 0.049984 ± 0.002163
+  val_left_knee_r2: 0.543699 ± 0.035912
+  val_right_knee_mse: 0.004780 ± 0.000360
+  val_right_knee_rmse: 0.069087 ± 0.002585
+  val_right_knee_mae: 0.050713 ± 0.001760
+  val_right_knee_r2: 0.567984 ± 0.027396
+  val_left_foot_mse: 0.004455 ± 0.000457
+  val_left_foot_rmse: 0.066655 ± 0.003438
+  val_left_foot_mae: 0.047591 ± 0.001892
+  val_left_foot_r2: 0.068363 ± 0.020146
+  val_right_foot_mse: 0.004814 ± 0.000622
+  val_right_foot_rmse: 0.069237 ± 0.004487
+  val_right_foot_mae: 0.050067 ± 0.001768
+  val_right_foot_r2: 0.050389 ± 0.011143
+
+Test Metrics:
+  test_mse: 0.004994
+  test_rmse: 0.070669
+  test_mae: 0.053239
+  test_r2: 0.755283
+  test_head_mse: 0.002878
+  test_head_rmse: 0.053643
+  test_head_mae: 0.043840
+  test_head_r2: 0.664767
+  test_left_shoulder_mse: 0.001876
+  test_left_shoulder_rmse: 0.043318
+  test_left_shoulder_mae: 0.035603
+  test_left_shoulder_r2: 0.605984
+  test_left_elbow_mse: 0.006712
+  test_left_elbow_rmse: 0.081928
+  test_left_elbow_mae: 0.065798
+  test_left_elbow_r2: 0.528798
+  test_right_shoulder_mse: 0.002649
+  test_right_shoulder_rmse: 0.051466
+  test_right_shoulder_mae: 0.041600
+  test_right_shoulder_r2: 0.558413
+  test_right_elbow_mse: 0.007991
+  test_right_elbow_rmse: 0.089392
+  test_right_elbow_mae: 0.070765
+  test_right_elbow_r2: 0.539737
+  test_left_hand_mse: 0.011861
+  test_left_hand_rmse: 0.108909
+  test_left_hand_mae: 0.088128
+  test_left_hand_r2: 0.555467
+  test_right_hand_mse: 0.014711
+  test_right_hand_rmse: 0.121288
+  test_right_hand_mae: 0.096221
+  test_right_hand_r2: 0.520850
+  test_left_hip_mse: 0.002662
+  test_left_hip_rmse: 0.051592
+  test_left_hip_mae: 0.041654
+  test_left_hip_r2: 0.512137
+  test_right_hip_mse: 0.002995
+  test_right_hip_rmse: 0.054729
+  test_right_hip_mae: 0.044607
+  test_right_hip_r2: 0.487995
+  test_left_knee_mse: 0.002373
+  test_left_knee_rmse: 0.048710
+  test_left_knee_mae: 0.038574
+  test_left_knee_r2: 0.710954
+  test_right_knee_mse: 0.002698
+  test_right_knee_rmse: 0.051944
+  test_right_knee_mae: 0.040719
+  test_right_knee_r2: 0.716312
+  test_left_foot_mse: 0.002726
+  test_left_foot_rmse: 0.052211
+  test_left_foot_mae: 0.043685
+  test_left_foot_r2: 0.101563
+  test_right_foot_mse: 0.002792
+  test_right_foot_rmse: 0.052843
+  test_right_foot_mae: 0.040916
+  test_right_foot_r2: 0.052178
+
+GRU_ADAM_MAE
+------------------------------
+Best Fold: 4
+
+Validation Metrics (mean ± std):
+  val_mse: 0.005656 ± 0.000365
+  val_rmse: 0.075166 ± 0.002424
+  val_mae: 0.055303 ± 0.001958
+  val_r2: 0.734786 ± 0.013853
+  val_head_mse: 0.003870 ± 0.000338
+  val_head_rmse: 0.062146 ± 0.002811
+  val_head_mae: 0.049213 ± 0.002388
+  val_head_r2: 0.623864 ± 0.025981
+  val_left_shoulder_mse: 0.002800 ± 0.000195
+  val_left_shoulder_rmse: 0.052879 ± 0.001860
+  val_left_shoulder_mae: 0.041529 ± 0.001645
+  val_left_shoulder_r2: 0.511259 ± 0.038278
+  val_left_elbow_mse: 0.005505 ± 0.000645
+  val_left_elbow_rmse: 0.074063 ± 0.004444
+  val_left_elbow_mae: 0.057547 ± 0.004233
+  val_left_elbow_r2: 0.594352 ± 0.021004
+  val_right_shoulder_mse: 0.003451 ± 0.000152
+  val_right_shoulder_rmse: 0.058731 ± 0.001284
+  val_right_shoulder_mae: 0.045686 ± 0.001648
+  val_right_shoulder_r2: 0.480393 ± 0.031141
+  val_right_elbow_mse: 0.006918 ± 0.000505
+  val_right_elbow_rmse: 0.083119 ± 0.003111
+  val_right_elbow_mae: 0.064940 ± 0.003837
+  val_right_elbow_r2: 0.546302 ± 0.028599
+  val_left_hand_mse: 0.010869 ± 0.001663
+  val_left_hand_rmse: 0.103950 ± 0.007982
+  val_left_hand_mae: 0.081735 ± 0.006368
+  val_left_hand_r2: 0.584812 ± 0.025422
+  val_right_hand_mse: 0.012207 ± 0.001265
+  val_right_hand_rmse: 0.110334 ± 0.005820
+  val_right_hand_mae: 0.085642 ± 0.005674
+  val_right_hand_r2: 0.548951 ± 0.030523
+  val_left_hip_mse: 0.004361 ± 0.000395
+  val_left_hip_rmse: 0.065966 ± 0.003040
+  val_left_hip_mae: 0.047250 ± 0.001324
+  val_left_hip_r2: 0.495324 ± 0.037232
+  val_right_hip_mse: 0.004562 ± 0.000398
+  val_right_hip_rmse: 0.067480 ± 0.002956
+  val_right_hip_mae: 0.047738 ± 0.001283
+  val_right_hip_r2: 0.490098 ± 0.036204
+  val_left_knee_mse: 0.004770 ± 0.000403
+  val_left_knee_rmse: 0.069000 ± 0.002932
+  val_left_knee_mae: 0.049882 ± 0.001179
+  val_left_knee_r2: 0.516919 ± 0.029436
+  val_right_knee_mse: 0.004827 ± 0.000464
+  val_right_knee_rmse: 0.069402 ± 0.003265
+  val_right_knee_mae: 0.050235 ± 0.001794
+  val_right_knee_r2: 0.564364 ± 0.027433
+  val_left_foot_mse: 0.004553 ± 0.000533
+  val_left_foot_rmse: 0.067357 ± 0.003992
+  val_left_foot_mae: 0.047816 ± 0.002076
+  val_left_foot_r2: 0.049399 ± 0.024196
+  val_right_foot_mse: 0.004832 ± 0.000650
+  val_right_foot_rmse: 0.069353 ± 0.004667
+  val_right_foot_mae: 0.049722 ± 0.001803
+  val_right_foot_r2: 0.047324 ± 0.021804
+
+Test Metrics:
+  test_mse: 0.004542
+  test_rmse: 0.067393
+  test_mae: 0.049462
+  test_r2: 0.777447
+  test_head_mse: 0.002464
+  test_head_rmse: 0.049643
+  test_head_mae: 0.039616
+  test_head_r2: 0.712892
+  test_left_shoulder_mse: 0.001469
+  test_left_shoulder_rmse: 0.038322
+  test_left_shoulder_mae: 0.030232
+  test_left_shoulder_r2: 0.691635
+  test_left_elbow_mse: 0.005643
+  test_left_elbow_rmse: 0.075120
+  test_left_elbow_mae: 0.058260
+  test_left_elbow_r2: 0.603851
+  test_right_shoulder_mse: 0.002073
+  test_right_shoulder_rmse: 0.045525
+  test_right_shoulder_mae: 0.036775
+  test_right_shoulder_r2: 0.654484
+  test_right_elbow_mse: 0.007202
+  test_right_elbow_rmse: 0.084866
+  test_right_elbow_mae: 0.065557
+  test_right_elbow_r2: 0.585163
+  test_left_hand_mse: 0.010591
+  test_left_hand_rmse: 0.102912
+  test_left_hand_mae: 0.081674
+  test_left_hand_r2: 0.603076
+  test_right_hand_mse: 0.013505
+  test_right_hand_rmse: 0.116211
+  test_right_hand_mae: 0.090470
+  test_right_hand_r2: 0.560127
+  test_left_hip_mse: 0.002604
+  test_left_hip_rmse: 0.051027
+  test_left_hip_mae: 0.038081
+  test_left_hip_r2: 0.522758
+  test_right_hip_mse: 0.002804
+  test_right_hip_rmse: 0.052949
+  test_right_hip_mae: 0.039227
+  test_right_hip_r2: 0.520758
+  test_left_knee_mse: 0.002404
+  test_left_knee_rmse: 0.049029
+  test_left_knee_mae: 0.038070
+  test_left_knee_r2: 0.707156
+  test_right_knee_mse: 0.002641
+  test_right_knee_rmse: 0.051395
+  test_right_knee_mae: 0.040380
+  test_right_knee_r2: 0.722279
+  test_left_foot_mse: 0.002837
+  test_left_foot_rmse: 0.053263
+  test_left_foot_mae: 0.043739
+  test_left_foot_r2: 0.065026
+  test_right_foot_mse: 0.002808
+  test_right_foot_rmse: 0.052988
+  test_right_foot_mae: 0.040926
+  test_right_foot_r2: 0.046974

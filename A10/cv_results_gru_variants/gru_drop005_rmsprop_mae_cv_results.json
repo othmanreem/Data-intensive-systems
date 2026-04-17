@@ -1,0 +1,1243 @@
+{
+  "model_name": "gru_drop005_rmsprop_mae",
+  "n_splits": 5,
+  "epochs": 100,
+  "batch_size": 32,
+  "patience": 10,
+  "aggregate_results": {
+    "n_folds": 5,
+    "train_metrics": {
+      "train_mse": {
+        "mean": 0.002473666239529848,
+        "std": 0.00031337651191991507
+      },
+      "train_rmse": {
+        "mean": 0.049638491175810026,
+        "std": 0.003112303539001003
+      },
+      "train_mae": {
+        "mean": 0.03476821929216385,
+        "std": 0.0021125982105764884
+      },
+      "train_r2": {
+        "mean": 0.8841986060142517,
+        "std": 0.014279731942839402
+      },
+      "train_head_mse": {
+        "mean": 0.0017565661575645209,
+        "std": 0.0002093262687031345
+      },
+      "train_head_rmse": {
+        "mean": 0.04183236198424266,
+        "std": 0.0025728677353899056
+      },
+      "train_head_mae": {
+        "mean": 0.031707316637039185,
+        "std": 0.0017842349512972265
+      },
+      "train_head_r2": {
+        "mean": 0.8294998168945312,
+        "std": 0.0202261216703116
+      },
+      "train_left_shoulder_mse": {
+        "mean": 0.0012517789844423532,
+        "std": 0.0001550452247561123
+      },
+      "train_left_shoulder_rmse": {
+        "mean": 0.03531398943449633,
+        "std": 0.0021682100134984405
+      },
+      "train_left_shoulder_mae": {
+        "mean": 0.026149369403719903,
+        "std": 0.0013595190181572578
+      },
+      "train_left_shoulder_r2": {
+        "mean": 0.7823869943618774,
+        "std": 0.027202209015578353
+      },
+      "train_left_elbow_mse": {
+        "mean": 0.002190166153013706,
+        "std": 0.00020458594687247563
+      },
+      "train_left_elbow_rmse": {
+        "mean": 0.046748778051252854,
+        "std": 0.0021720736010562972
+      },
+      "train_left_elbow_mae": {
+        "mean": 0.035333297401666644,
+        "std": 0.0015218559362608136
+      },
+      "train_left_elbow_r2": {
+        "mean": 0.8388077855110169,
+        "std": 0.015302260608201088
+      },
+      "train_right_shoulder_mse": {
+        "mean": 0.0013771714875474572,
+        "std": 0.00019828874022001134
+      },
+      "train_right_shoulder_rmse": {
+        "mean": 0.03701780910090931,
+        "std": 0.0026178802333364677
+      },
+      "train_right_shoulder_mae": {
+        "mean": 0.02740100622177124,
+        "std": 0.0014368722858816756
+      },
+      "train_right_shoulder_r2": {
+        "mean": 0.7932462573051453,
+        "std": 0.029364307204805994
+      },
+      "train_right_elbow_mse": {
+        "mean": 0.002746188826858997,
+        "std": 0.00027061209642883295
+      },
+      "train_right_elbow_rmse": {
+        "mean": 0.052340877836343155,
+        "std": 0.002573195324882759
+      },
+      "train_right_elbow_mae": {
+        "mean": 0.03919529691338539,
+        "std": 0.001714162381457608
+      },
+      "train_right_elbow_r2": {
+        "mean": 0.8204793214797974,
+        "std": 0.01728495969508646
+      },
+      "train_left_hand_mse": {
+        "mean": 0.004215316474437713,
+        "std": 0.0005462761351673315
+      },
+      "train_left_hand_rmse": {
+        "mean": 0.06478534481681719,
+        "std": 0.004263281764534403
+      },
+      "train_left_hand_mae": {
+        "mean": 0.04940273389220238,
+        "std": 0.0028856225876767554
+      },
+      "train_left_hand_r2": {
+        "mean": 0.8386736392974854,
+        "std": 0.021330946129943913
+      },
+      "train_right_hand_mse": {
+        "mean": 0.004886380583047867,
+        "std": 0.000551350586914599
+      },
+      "train_right_hand_rmse": {
+        "mean": 0.06978578781618856,
+        "std": 0.004040346757615493
+      },
+      "train_right_hand_mae": {
+        "mean": 0.051996753364801404,
+        "std": 0.0028853474020804457
+      },
+      "train_right_hand_r2": {
+        "mean": 0.819918441772461,
+        "std": 0.01995949111240566
+      },
+      "train_left_hip_mse": {
+        "mean": 0.0019088170723989607,
+        "std": 0.00041878111491916746
+      },
+      "train_left_hip_rmse": {
+        "mean": 0.0434495732212994,
+        "std": 0.004577298251796801
+      },
+      "train_left_hip_mae": {
+        "mean": 0.029698966816067696,
+        "std": 0.0022955034127792313
+      },
+      "train_left_hip_r2": {
+        "mean": 0.779353654384613,
+        "std": 0.04969845549721402
+      },
+      "train_right_hip_mse": {
+        "mean": 0.0019318700768053531,
+        "std": 0.00046341174562121586
+      },
+      "train_right_hip_rmse": {
+        "mean": 0.04366817569620949,
+        "std": 0.004996049256195524
+      },
+      "train_right_hip_mae": {
+        "mean": 0.02957407422363758,
+        "std": 0.002419015298768875
+      },
+      "train_right_hip_r2": {
+        "mean": 0.7844499588012696,
+        "std": 0.05236258689572127
+      },
+      "train_left_knee_mse": {
+        "mean": 0.0019236823543906211,
+        "std": 0.00043577915153824215
+      },
+      "train_left_knee_rmse": {
+        "mean": 0.0435963946610337,
+        "std": 0.004799659045183686
+      },
+      "train_left_knee_mae": {
+        "mean": 0.03052172213792801,
+        "std": 0.0030123883093183335
+      },
+      "train_left_knee_r2": {
+        "mean": 0.8049808979034424,
+        "std": 0.044245469940201884
+      },
+      "train_right_knee_mse": {
+        "mean": 0.0020254291594028473,
+        "std": 0.00024979577904166557
+      },
+      "train_right_knee_rmse": {
+        "mean": 0.04491977119790712,
+        "std": 0.0027646545770713647
+      },
+      "train_right_knee_mae": {
+        "mean": 0.031061116605997086,
+        "std": 0.0024178342859042844
+      },
+      "train_right_knee_r2": {
+        "mean": 0.8168398380279541,
+        "std": 0.023773500486881476
+      },
+      "train_left_foot_mse": {
+        "mean": 0.0028797079343348742,
+        "std": 0.0003365114047375227
+      },
+      "train_left_foot_rmse": {
+        "mean": 0.05357279105967024,
+        "std": 0.0031086962559552967
+      },
+      "train_left_foot_mae": {
+        "mean": 0.034099362790584564,
+        "std": 0.002114340152056258
+      },
+      "train_left_foot_r2": {
+        "mean": 0.3967308759689331,
+        "std": 0.08098445305026354
+      },
+      "train_right_foot_mse": {
+        "mean": 0.0030645848717540504,
+        "std": 0.00029596003593744774
+      },
+      "train_right_foot_rmse": {
+        "mean": 0.055295944355385186,
+        "std": 0.0026350350282671633
+      },
+      "train_right_foot_mae": {
+        "mean": 0.03584583029150963,
+        "std": 0.002740689654040448
+      },
+      "train_right_foot_r2": {
+        "mean": 0.3927988648414612,
+        "std": 0.07384494470503543
+      }
+    },
+    "val_metrics": {
+      "val_mse": {
+        "mean": 0.002696175454184413,
+        "std": 0.0004614604948064909
+      },
+      "val_rmse": {
+        "mean": 0.051744562398315916,
+        "std": 0.004321540974143745
+      },
+      "val_mae": {
+        "mean": 0.036435505747795104,
+        "std": 0.002870162913016352
+      },
+      "val_r2": {
+        "mean": 0.8731892943382263,
+        "std": 0.02398508749802099
+      },
+      "val_head_mse": {
+        "mean": 0.0019459713017567991,
+        "std": 0.00028347671386163274
+      },
+      "val_head_rmse": {
+        "mean": 0.04399363773708413,
+        "std": 0.0032451718621679003
+      },
+      "val_head_mae": {
+        "mean": 0.033360612019896506,
+        "std": 0.002460812712432826
+      },
+      "val_head_r2": {
+        "mean": 0.8101413965225219,
+        "std": 0.030188336807246332
+      },
+      "val_left_shoulder_mse": {
+        "mean": 0.0013972264481708408,
+        "std": 0.00017815488360232093
+      },
+      "val_left_shoulder_rmse": {
+        "mean": 0.03729964144148298,
+        "std": 0.0024419657056655207
+      },
+      "val_left_shoulder_mae": {
+        "mean": 0.02768673337996006,
+        "std": 0.0017187302846982779
+      },
+      "val_left_shoulder_r2": {
+        "mean": 0.7557456970214844,
+        "std": 0.0339760864968323
+      },
+      "val_left_elbow_mse": {
+        "mean": 0.0024582650512456894,
+        "std": 0.0002843592011648728
+      },
+      "val_left_elbow_rmse": {
+        "mean": 0.04949924489796271,
+        "std": 0.002844258387910967
+      },
+      "val_left_elbow_mae": {
+        "mean": 0.03772040158510208,
+        "std": 0.0022216103063891386
+      },
+      "val_left_elbow_r2": {
+        "mean": 0.8177037596702575,
+        "std": 0.02136315978215585
+      },
+      "val_right_shoulder_mse": {
+        "mean": 0.0014872139086946844,
+        "std": 0.00024403108676748073
+      },
+      "val_right_shoulder_rmse": {
+        "mean": 0.03843689351175279,
+        "std": 0.003133548445590138
+      },
+      "val_right_shoulder_mae": {
+        "mean": 0.028590511158108713,
+        "std": 0.0021272777884087475
+      },
+      "val_right_shoulder_r2": {
+        "mean": 0.7761120438575745,
+        "std": 0.03798219252400059
+      },
+      "val_right_elbow_mse": {
+        "mean": 0.002998122852295637,
+        "std": 0.0004062145661158604
+      },
+      "val_right_elbow_rmse": {
+        "mean": 0.05463605310890984,
+        "std": 0.003608954554441087
+      },
+      "val_right_elbow_mae": {
+        "mean": 0.04136682599782944,
+        "std": 0.002831791823547136
+      },
+      "val_right_elbow_r2": {
+        "mean": 0.8029229044914246,
+        "std": 0.028955404507517477
+      },
+      "val_left_hand_mse": {
+        "mean": 0.004719693586230278,
+        "std": 0.0010229877073189577
+      },
+      "val_left_hand_rmse": {
+        "mean": 0.06831301101797445,
+        "std": 0.0072819030403033285
+      },
+      "val_left_hand_mae": {
+        "mean": 0.052215203642845154,
+        "std": 0.005703120752424897
+      },
+      "val_left_hand_r2": {
+        "mean": 0.8183467149734497,
+        "std": 0.03806421386678114
+      },
+      "val_right_hand_mse": {
+        "mean": 0.005437867809087038,
+        "std": 0.0009486092442320651
+      },
+      "val_right_hand_rmse": {
+        "mean": 0.07347521277627625,
+        "std": 0.006265853219472144
+      },
+      "val_right_hand_mae": {
+        "mean": 0.055027741193771365,
+        "std": 0.004688571942659887
+      },
+      "val_right_hand_r2": {
+        "mean": 0.7982340693473816,
+        "std": 0.036726121821378084
+      },
+      "val_left_hip_mse": {
+        "mean": 0.002001659502275288,
+        "std": 0.0005904805502221997
+      },
+      "val_left_hip_rmse": {
+        "mean": 0.04430721024350471,
+        "std": 0.006207303981050053
+      },
+      "val_left_hip_mae": {
+        "mean": 0.030464084073901176,
+        "std": 0.0029376500234539857
+      },
+      "val_left_hip_r2": {
+        "mean": 0.7685086011886597,
+        "std": 0.06451118783653646
+      },
+      "val_right_hip_mse": {
+        "mean": 0.0020094346953555943,
+        "std": 0.0005731962391682105
+      },
+      "val_right_hip_rmse": {
+        "mean": 0.04441697622096315,
+        "std": 0.0060470586851781374
+      },
+      "val_right_hip_mae": {
+        "mean": 0.030346772447228432,
+        "std": 0.0030261856395904416
+      },
+      "val_right_hip_r2": {
+        "mean": 0.7749728202819824,
+        "std": 0.06307118382846993
+      },
+      "val_left_knee_mse": {
+        "mean": 0.002065141964703798,
+        "std": 0.0004191869851568666
+      },
+      "val_left_knee_rmse": {
+        "mean": 0.04520340365218377,
+        "std": 0.004668432602227141
+      },
+      "val_left_knee_mae": {
+        "mean": 0.031811585649847984,
+        "std": 0.0034679010840952705
+      },
+      "val_left_knee_r2": {
+        "mean": 0.7909870028495789,
+        "std": 0.0406398332209525
+      },
+      "val_right_knee_mse": {
+        "mean": 0.0022597518982365727,
+        "std": 0.0004896037022160314
+      },
+      "val_right_knee_rmse": {
+        "mean": 0.04728153856399406,
+        "std": 0.004920163539773332
+      },
+      "val_right_knee_mae": {
+        "mean": 0.032485519722104075,
+        "std": 0.0032491504875892543
+      },
+      "val_right_knee_r2": {
+        "mean": 0.7967396378517151,
+        "std": 0.036621301752196064
+      },
+      "val_left_foot_mse": {
+        "mean": 0.003020091913640499,
+        "std": 0.0005264340315369771
+      },
+      "val_left_foot_rmse": {
+        "mean": 0.05475020889855249,
+        "std": 0.004744105732945202
+      },
+      "val_left_foot_mae": {
+        "mean": 0.03536792024970055,
+        "std": 0.003700812036325256
+      },
+      "val_left_foot_r2": {
+        "mean": 0.37129786014556887,
+        "std": 0.06424786796022913
+      },
+      "val_right_foot_mse": {
+        "mean": 0.00324983992613852,
+        "std": 0.0007496520930317162
+      },
+      "val_right_foot_rmse": {
+        "mean": 0.0566152656658904,
+        "std": 0.006674699972221305
+      },
+      "val_right_foot_mae": {
+        "mean": 0.037217669561505316,
+        "std": 0.0038339067034072333
+      },
+      "val_right_foot_r2": {
+        "mean": 0.36645113229751586,
+        "std": 0.07813545113784345
+      }
+    },
+    "best_fold": "1",
+    "best_fold_metrics": {
+      "fold": 1,
+      "train_metrics": {
+        "train_mse": 0.002055462682619691,
+        "train_rmse": 0.04533721079444225,
+        "train_mae": 0.03143950179219246,
+        "train_r2": 0.9036157727241516,
+        "train_head_mse": 0.001379575696773827,
+        "train_head_rmse": 0.0371426398735177,
+        "train_head_mae": 0.028452355414628983,
+        "train_head_r2": 0.8648251891136169,
+        "train_left_shoulder_mse": 0.0010469715343788266,
+        "train_left_shoulder_rmse": 0.03235693950884148,
+        "train_left_shoulder_mae": 0.024260729551315308,
+        "train_left_shoulder_r2": 0.8165571689605713,
+        "train_left_elbow_mse": 0.00191043084487319,
+        "train_left_elbow_rmse": 0.043708475664031,
+        "train_left_elbow_mae": 0.03325830399990082,
+        "train_left_elbow_r2": 0.8571557402610779,
+        "train_right_shoulder_mse": 0.0011232045944780111,
+        "train_right_shoulder_rmse": 0.03351424465026791,
+        "train_right_shoulder_mae": 0.02531515620648861,
+        "train_right_shoulder_r2": 0.8312661647796631,
+        "train_right_elbow_mse": 0.0023454008623957634,
+        "train_right_elbow_rmse": 0.04842933885978378,
+        "train_right_elbow_mae": 0.03635305166244507,
+        "train_right_elbow_r2": 0.8455174565315247,
+        "train_left_hand_mse": 0.0033332700841128826,
+        "train_left_hand_rmse": 0.057734479162047374,
+        "train_left_hand_mae": 0.04473966732621193,
+        "train_left_hand_r2": 0.8705357313156128,
+        "train_right_hand_mse": 0.0039002900011837482,
+        "train_right_hand_rmse": 0.06245230180853023,
+        "train_right_hand_mae": 0.04674039036035538,
+        "train_right_hand_r2": 0.8552058935165405,
+        "train_left_hip_mse": 0.0016126309055835009,
+        "train_left_hip_rmse": 0.04015757594257279,
+        "train_left_hip_mae": 0.02690274268388748,
+        "train_left_hip_r2": 0.8143638372421265,
+        "train_right_hip_mse": 0.001638821791857481,
+        "train_right_hip_rmse": 0.040482363960834614,
+        "train_right_hip_mae": 0.026920292526483536,
+        "train_right_hip_r2": 0.8177621364593506,
+        "train_left_knee_mse": 0.001429813914000988,
+        "train_left_knee_rmse": 0.03781288026586956,
+        "train_left_knee_mae": 0.025857385247945786,
+        "train_left_knee_r2": 0.856446385383606,
+        "train_right_knee_mse": 0.0017681699246168137,
+        "train_right_knee_rmse": 0.04204961265715552,
+        "train_right_knee_mae": 0.02762027643620968,
+        "train_right_knee_r2": 0.8401798605918884,
+        "train_left_foot_mse": 0.002543381182476878,
+        "train_left_foot_rmse": 0.050431946050860245,
+        "train_left_foot_mae": 0.030712664127349854,
+        "train_left_foot_r2": 0.4905170798301697,
+        "train_right_foot_mse": 0.0026890505105257034,
+        "train_right_foot_rmse": 0.05185605567844226,
+        "train_right_foot_mae": 0.031580496579408646,
+        "train_right_foot_r2": 0.4890747666358948
+      },
+      "val_metrics": {
+        "val_mse": 0.0022162715904414654,
+        "val_rmse": 0.04707729378842273,
+        "val_mae": 0.03297486901283264,
+        "val_r2": 0.896840512752533,
+        "val_head_mse": 0.0015577379381284118,
+        "val_head_rmse": 0.039468188939048264,
+        "val_head_mae": 0.030305583029985428,
+        "val_head_r2": 0.8542959094047546,
+        "val_left_shoulder_mse": 0.0010942297521978617,
+        "val_left_shoulder_rmse": 0.03307914376458166,
+        "val_left_shoulder_mae": 0.024993067607283592,
+        "val_left_shoulder_r2": 0.8158875107765198,
+        "val_left_elbow_mse": 0.0021560178138315678,
+        "val_left_elbow_rmse": 0.04643293888859037,
+        "val_left_elbow_mae": 0.03624393418431282,
+        "val_left_elbow_r2": 0.8511369228363037,
+        "val_right_shoulder_mse": 0.0011579911224544048,
+        "val_right_shoulder_rmse": 0.034029268614744056,
+        "val_right_shoulder_mae": 0.026059990748763084,
+        "val_right_shoulder_r2": 0.8264210820198059,
+        "val_right_elbow_mse": 0.0025947540998458862,
+        "val_right_elbow_rmse": 0.05093872887936925,
+        "val_right_elbow_mae": 0.03920048847794533,
+        "val_right_elbow_r2": 0.8353111147880554,
+        "val_left_hand_mse": 0.0038659004494547844,
+        "val_left_hand_rmse": 0.06217636568226535,
+        "val_left_hand_mae": 0.04809108376502991,
+        "val_left_hand_r2": 0.8607600927352905,
+        "val_right_hand_mse": 0.0044793239794671535,
+        "val_right_hand_rmse": 0.0669277519379454,
+        "val_right_hand_mae": 0.05144505575299263,
+        "val_right_hand_r2": 0.8396141529083252,
+        "val_left_hip_mse": 0.002035460900515318,
+        "val_left_hip_rmse": 0.04511608250408404,
+        "val_left_hip_mae": 0.02806137129664421,
+        "val_left_hip_r2": 0.7621680498123169,
+        "val_right_hip_mse": 0.002000671112909913,
+        "val_right_hip_rmse": 0.04472886219109439,
+        "val_right_hip_mae": 0.0278277900069952,
+        "val_right_hip_r2": 0.7744302153587341,
+        "val_left_knee_mse": 0.001422963454388082,
+        "val_left_knee_rmse": 0.037722187826106826,
+        "val_left_knee_mae": 0.02618386596441269,
+        "val_left_knee_r2": 0.8500813841819763,
+        "val_right_knee_mse": 0.001764711574651301,
+        "val_right_knee_rmse": 0.04200847027268788,
+        "val_right_knee_mae": 0.028040364384651184,
+        "val_right_knee_r2": 0.8407278060913086,
+        "val_left_foot_mse": 0.002523233648389578,
+        "val_left_foot_rmse": 0.050231799175318996,
+        "val_left_foot_mae": 0.031062817201018333,
+        "val_left_foot_r2": 0.36281341314315796,
+        "val_right_foot_mse": 0.0021585351787507534,
+        "val_right_foot_rmse": 0.04646003851430553,
+        "val_right_foot_mae": 0.031157827004790306,
+        "val_right_foot_r2": 0.49348360300064087
+      },
+      "best_epoch": 100
+    }
+  },
+  "fold_details": [
+    {
+      "fold": 1,
+      "train_metrics": {
+        "train_mse": 0.002055462682619691,
+        "train_rmse": 0.04533721079444225,
+        "train_mae": 0.03143950179219246,
+        "train_r2": 0.9036157727241516,
+        "train_head_mse": 0.001379575696773827,
+        "train_head_rmse": 0.0371426398735177,
+        "train_head_mae": 0.028452355414628983,
+        "train_head_r2": 0.8648251891136169,
+        "train_left_shoulder_mse": 0.0010469715343788266,
+        "train_left_shoulder_rmse": 0.03235693950884148,
+        "train_left_shoulder_mae": 0.024260729551315308,
+        "train_left_shoulder_r2": 0.8165571689605713,
+        "train_left_elbow_mse": 0.00191043084487319,
+        "train_left_elbow_rmse": 0.043708475664031,
+        "train_left_elbow_mae": 0.03325830399990082,
+        "train_left_elbow_r2": 0.8571557402610779,
+        "train_right_shoulder_mse": 0.0011232045944780111,
+        "train_right_shoulder_rmse": 0.03351424465026791,
+        "train_right_shoulder_mae": 0.02531515620648861,
+        "train_right_shoulder_r2": 0.8312661647796631,
+        "train_right_elbow_mse": 0.0023454008623957634,
+        "train_right_elbow_rmse": 0.04842933885978378,
+        "train_right_elbow_mae": 0.03635305166244507,
+        "train_right_elbow_r2": 0.8455174565315247,
+        "train_left_hand_mse": 0.0033332700841128826,
+        "train_left_hand_rmse": 0.057734479162047374,
+        "train_left_hand_mae": 0.04473966732621193,
+        "train_left_hand_r2": 0.8705357313156128,
+        "train_right_hand_mse": 0.0039002900011837482,
+        "train_right_hand_rmse": 0.06245230180853023,
+        "train_right_hand_mae": 0.04674039036035538,
+        "train_right_hand_r2": 0.8552058935165405,
+        "train_left_hip_mse": 0.0016126309055835009,
+        "train_left_hip_rmse": 0.04015757594257279,
+        "train_left_hip_mae": 0.02690274268388748,
+        "train_left_hip_r2": 0.8143638372421265,
+        "train_right_hip_mse": 0.001638821791857481,
+        "train_right_hip_rmse": 0.040482363960834614,
+        "train_right_hip_mae": 0.026920292526483536,
+        "train_right_hip_r2": 0.8177621364593506,
+        "train_left_knee_mse": 0.001429813914000988,
+        "train_left_knee_rmse": 0.03781288026586956,
+        "train_left_knee_mae": 0.025857385247945786,
+        "train_left_knee_r2": 0.856446385383606,
+        "train_right_knee_mse": 0.0017681699246168137,
+        "train_right_knee_rmse": 0.04204961265715552,
+        "train_right_knee_mae": 0.02762027643620968,
+        "train_right_knee_r2": 0.8401798605918884,
+        "train_left_foot_mse": 0.002543381182476878,
+        "train_left_foot_rmse": 0.050431946050860245,
+        "train_left_foot_mae": 0.030712664127349854,
+        "train_left_foot_r2": 0.4905170798301697,
+        "train_right_foot_mse": 0.0026890505105257034,
+        "train_right_foot_rmse": 0.05185605567844226,
+        "train_right_foot_mae": 0.031580496579408646,
+        "train_right_foot_r2": 0.4890747666358948
+      },
+      "val_metrics": {
+        "val_mse": 0.0022162715904414654,
+        "val_rmse": 0.04707729378842273,
+        "val_mae": 0.03297486901283264,
+        "val_r2": 0.896840512752533,
+        "val_head_mse": 0.0015577379381284118,
+        "val_head_rmse": 0.039468188939048264,
+        "val_head_mae": 0.030305583029985428,
+        "val_head_r2": 0.8542959094047546,
+        "val_left_shoulder_mse": 0.0010942297521978617,
+        "val_left_shoulder_rmse": 0.03307914376458166,
+        "val_left_shoulder_mae": 0.024993067607283592,
+        "val_left_shoulder_r2": 0.8158875107765198,
+        "val_left_elbow_mse": 0.0021560178138315678,
+        "val_left_elbow_rmse": 0.04643293888859037,
+        "val_left_elbow_mae": 0.03624393418431282,
+        "val_left_elbow_r2": 0.8511369228363037,
+        "val_right_shoulder_mse": 0.0011579911224544048,
+        "val_right_shoulder_rmse": 0.034029268614744056,
+        "val_right_shoulder_mae": 0.026059990748763084,
+        "val_right_shoulder_r2": 0.8264210820198059,
+        "val_right_elbow_mse": 0.0025947540998458862,
+        "val_right_elbow_rmse": 0.05093872887936925,
+        "val_right_elbow_mae": 0.03920048847794533,
+        "val_right_elbow_r2": 0.8353111147880554,
+        "val_left_hand_mse": 0.0038659004494547844,
+        "val_left_hand_rmse": 0.06217636568226535,
+        "val_left_hand_mae": 0.04809108376502991,
+        "val_left_hand_r2": 0.8607600927352905,
+        "val_right_hand_mse": 0.0044793239794671535,
+        "val_right_hand_rmse": 0.0669277519379454,
+        "val_right_hand_mae": 0.05144505575299263,
+        "val_right_hand_r2": 0.8396141529083252,
+        "val_left_hip_mse": 0.002035460900515318,
+        "val_left_hip_rmse": 0.04511608250408404,
+        "val_left_hip_mae": 0.02806137129664421,
+        "val_left_hip_r2": 0.7621680498123169,
+        "val_right_hip_mse": 0.002000671112909913,
+        "val_right_hip_rmse": 0.04472886219109439,
+        "val_right_hip_mae": 0.0278277900069952,
+        "val_right_hip_r2": 0.7744302153587341,
+        "val_left_knee_mse": 0.001422963454388082,
+        "val_left_knee_rmse": 0.037722187826106826,
+        "val_left_knee_mae": 0.02618386596441269,
+        "val_left_knee_r2": 0.8500813841819763,
+        "val_right_knee_mse": 0.001764711574651301,
+        "val_right_knee_rmse": 0.04200847027268788,
+        "val_right_knee_mae": 0.028040364384651184,
+        "val_right_knee_r2": 0.8407278060913086,
+        "val_left_foot_mse": 0.002523233648389578,
+        "val_left_foot_rmse": 0.050231799175318996,
+        "val_left_foot_mae": 0.031062817201018333,
+        "val_left_foot_r2": 0.36281341314315796,
+        "val_right_foot_mse": 0.0021585351787507534,
+        "val_right_foot_rmse": 0.04646003851430553,
+        "val_right_foot_mae": 0.031157827004790306,
+        "val_right_foot_r2": 0.49348360300064087
+      },
+      "best_epoch": 100
+    },
+    {
+      "fold": 2,
+      "train_metrics": {
+        "train_mse": 0.002492680214345455,
+        "train_rmse": 0.04992674848561095,
+        "train_mae": 0.03487063944339752,
+        "train_r2": 0.8797284960746765,
+        "train_head_mse": 0.0018667796393856406,
+        "train_head_rmse": 0.04320624537477934,
+        "train_head_mae": 0.03231959417462349,
+        "train_head_r2": 0.8143038153648376,
+        "train_left_shoulder_mse": 0.0012977129081264138,
+        "train_left_shoulder_rmse": 0.03602378253496451,
+        "train_left_shoulder_mae": 0.026368973776698112,
+        "train_left_shoulder_r2": 0.7688028216362,
+        "train_left_elbow_mse": 0.002266582101583481,
+        "train_left_elbow_rmse": 0.04760863473765532,
+        "train_left_elbow_mae": 0.035618457943201065,
+        "train_left_elbow_r2": 0.8262197971343994,
+        "train_right_shoulder_mse": 0.0013536571059376001,
+        "train_right_shoulder_rmse": 0.03679207939132552,
+        "train_right_shoulder_mae": 0.027393797412514687,
+        "train_right_shoulder_r2": 0.7931105494499207,
+        "train_right_elbow_mse": 0.0027408821042627096,
+        "train_right_elbow_rmse": 0.05235343450302673,
+        "train_right_elbow_mae": 0.039115503430366516,
+        "train_right_elbow_r2": 0.8149957656860352,
+        "train_left_hand_mse": 0.004503682721406221,
+        "train_left_hand_rmse": 0.06710948309595464,
+        "train_left_hand_mae": 0.05056854337453842,
+        "train_left_hand_r2": 0.8195925354957581,
+        "train_right_hand_mse": 0.004977112170308828,
+        "train_right_hand_rmse": 0.07054865108780485,
+        "train_right_hand_mae": 0.05191313475370407,
+        "train_right_hand_r2": 0.8091517090797424,
+        "train_left_hip_mse": 0.0018363699782639742,
+        "train_left_hip_rmse": 0.042852887630403326,
+        "train_left_hip_mae": 0.029081713408231735,
+        "train_left_hip_r2": 0.7861324548721313,
+        "train_right_hip_mse": 0.0017693701665848494,
+        "train_right_hip_rmse": 0.04206388197236258,
+        "train_right_hip_mae": 0.028413310647010803,
+        "train_right_hip_r2": 0.8008003830909729,
+        "train_left_knee_mse": 0.0019134660251438618,
+        "train_left_knee_rmse": 0.043743182613338295,
+        "train_left_knee_mae": 0.030253304168581963,
+        "train_left_knee_r2": 0.8059453964233398,
+        "train_right_knee_mse": 0.0017419327050447464,
+        "train_right_knee_rmse": 0.04173646732828195,
+        "train_right_knee_mae": 0.029560169205069542,
+        "train_right_knee_r2": 0.8432574272155762,
+        "train_left_foot_mse": 0.0030449109617620707,
+        "train_left_foot_rmse": 0.055180711863495116,
+        "train_left_foot_mae": 0.03549841418862343,
+        "train_left_foot_r2": 0.3442314863204956,
+        "train_right_foot_mse": 0.003092382103204727,
+        "train_right_foot_rmse": 0.05560919081594991,
+        "train_right_foot_mae": 0.03721339628100395,
+        "train_right_foot_r2": 0.36539095640182495
+      },
+      "val_metrics": {
+        "val_mse": 0.0028700674884021282,
+        "val_rmse": 0.05357301082076803,
+        "val_mae": 0.037474218755960464,
+        "val_r2": 0.8796266913414001,
+        "val_head_mse": 0.00200696405954659,
+        "val_head_rmse": 0.044799152442279416,
+        "val_head_mae": 0.03361309692263603,
+        "val_head_r2": 0.8214975595474243,
+        "val_left_shoulder_mse": 0.0014894529012963176,
+        "val_left_shoulder_rmse": 0.038593430804948106,
+        "val_left_shoulder_mae": 0.02892269939184189,
+        "val_left_shoulder_r2": 0.7626011967658997,
+        "val_left_elbow_mse": 0.0028202023822814226,
+        "val_left_elbow_rmse": 0.053105577694639784,
+        "val_left_elbow_mae": 0.04056242108345032,
+        "val_left_elbow_r2": 0.8194788694381714,
+        "val_right_shoulder_mse": 0.0015457043191418052,
+        "val_right_shoulder_rmse": 0.039315446317469235,
+        "val_right_shoulder_mae": 0.02966597117483616,
+        "val_right_shoulder_r2": 0.782270073890686,
+        "val_right_elbow_mse": 0.0031083403155207634,
+        "val_right_elbow_rmse": 0.05575249156334418,
+        "val_right_elbow_mae": 0.04231351241469383,
+        "val_right_elbow_r2": 0.8182029128074646,
+        "val_left_hand_mse": 0.005579992197453976,
+        "val_left_hand_rmse": 0.07469934536161596,
+        "val_left_hand_mae": 0.0572098046541214,
+        "val_left_hand_r2": 0.8170373439788818,
+        "val_right_hand_mse": 0.005869059357792139,
+        "val_right_hand_rmse": 0.07660978630561593,
+        "val_right_hand_mae": 0.0578438863158226,
+        "val_right_hand_r2": 0.810944676399231,
+        "val_left_hip_mse": 0.0014881138922646642,
+        "val_left_hip_rmse": 0.038576079275435236,
+        "val_left_hip_mae": 0.028551816940307617,
+        "val_left_hip_r2": 0.8332663178443909,
+        "val_right_hip_mse": 0.0014634951949119568,
+        "val_right_hip_rmse": 0.038255655724506364,
+        "val_right_hip_mae": 0.02802165597677231,
+        "val_right_hip_r2": 0.8421639800071716,
+        "val_left_knee_mse": 0.002159374300390482,
+        "val_left_knee_rmse": 0.04646906821091296,
+        "val_left_knee_mae": 0.03187607601284981,
+        "val_left_knee_r2": 0.7811920046806335,
+        "val_right_knee_mse": 0.0022871852852404118,
+        "val_right_knee_rmse": 0.04782452598030023,
+        "val_right_knee_mae": 0.032368630170822144,
+        "val_right_knee_r2": 0.7894412279129028,
+        "val_left_foot_mse": 0.0035432553850114346,
+        "val_left_foot_rmse": 0.059525249978571566,
+        "val_left_foot_mae": 0.03733405843377113,
+        "val_left_foot_r2": 0.33773356676101685,
+        "val_right_foot_mse": 0.0039497376419603825,
+        "val_right_foot_rmse": 0.06284693820672875,
+        "val_right_foot_mae": 0.03888124227523804,
+        "val_right_foot_r2": 0.32158005237579346
+      },
+      "best_epoch": 100
+    },
+    {
+      "fold": 3,
+      "train_metrics": {
+        "train_mse": 0.0030167538207024336,
+        "train_rmse": 0.054924983574894524,
+        "train_mae": 0.03810624033212662,
+        "train_r2": 0.8604320287704468,
+        "train_head_mse": 0.0019938223995268345,
+        "train_head_rmse": 0.04465223846042698,
+        "train_head_mae": 0.03380269557237625,
+        "train_head_r2": 0.8080132007598877,
+        "train_left_shoulder_mse": 0.0015144414501264691,
+        "train_left_shoulder_rmse": 0.038915825188815784,
+        "train_left_shoulder_mae": 0.028395621106028557,
+        "train_left_shoulder_r2": 0.7378336191177368,
+        "train_left_elbow_mse": 0.002528417855501175,
+        "train_left_elbow_rmse": 0.05028337553805606,
+        "train_left_elbow_mae": 0.03782888129353523,
+        "train_left_elbow_r2": 0.8161884546279907,
+        "train_right_shoulder_mse": 0.0017353289294987917,
+        "train_right_shoulder_rmse": 0.04165727942987626,
+        "train_right_shoulder_mae": 0.029832085594534874,
+        "train_right_shoulder_r2": 0.7407286167144775,
+        "train_right_elbow_mse": 0.003197502112016082,
+        "train_right_elbow_rmse": 0.05654645976554219,
+        "train_right_elbow_mae": 0.04171718284487724,
+        "train_right_elbow_r2": 0.7922567129135132,
+        "train_left_hand_mse": 0.004991733934730291,
+        "train_left_hand_rmse": 0.07065220403306816,
+        "train_left_hand_mae": 0.05354689061641693,
+        "train_left_hand_r2": 0.8111338019371033,
+        "train_right_hand_mse": 0.005610589869320393,
+        "train_right_hand_rmse": 0.07490387085672137,
+        "train_right_hand_mae": 0.05550548434257507,
+        "train_right_hand_r2": 0.7948154211044312,
+        "train_left_hip_mse": 0.0026967001613229513,
+        "train_left_hip_rmse": 0.05192976180691523,
+        "train_left_hip_mae": 0.03381653502583504,
+        "train_left_hip_r2": 0.6850450038909912,
+        "train_right_hip_mse": 0.002812954830005765,
+        "train_right_hip_rmse": 0.05303729659405507,
+        "train_right_hip_mae": 0.03395641967654228,
+        "train_right_hip_r2": 0.6839628219604492,
+        "train_left_knee_mse": 0.00271745678037405,
+        "train_left_knee_rmse": 0.05212923153446682,
+        "train_left_knee_mae": 0.035370685160160065,
+        "train_left_knee_r2": 0.7245448231697083,
+        "train_right_knee_mse": 0.0024048183113336563,
+        "train_right_knee_rmse": 0.04903894688238784,
+        "train_right_knee_mae": 0.0348653644323349,
+        "train_right_knee_r2": 0.7788123488426208,
+        "train_left_foot_mse": 0.00342088146135211,
+        "train_left_foot_rmse": 0.05848830191886331,
+        "train_left_foot_mae": 0.03690307214856148,
+        "train_left_foot_r2": 0.2709681987762451,
+        "train_right_foot_mse": 0.0035931516904383898,
+        "train_right_foot_rmse": 0.05994290358698342,
+        "train_right_foot_mae": 0.03984019532799721,
+        "train_right_foot_r2": 0.2676692008972168
+      },
+      "val_metrics": {
+        "val_mse": 0.0035137732047587633,
+        "val_rmse": 0.0592770883626951,
+        "val_mae": 0.041418854147195816,
+        "val_r2": 0.8271358609199524,
+        "val_head_mse": 0.002174836117774248,
+        "val_head_rmse": 0.04663513823046146,
+        "val_head_mae": 0.03654616326093674,
+        "val_head_r2": 0.7819012403488159,
+        "val_left_shoulder_mse": 0.001610935083590448,
+        "val_left_shoulder_rmse": 0.04013645579258896,
+        "val_left_shoulder_mae": 0.02993924543261528,
+        "val_left_shoulder_r2": 0.7156563997268677,
+        "val_left_elbow_mse": 0.002785505261272192,
+        "val_left_elbow_rmse": 0.05277788610083007,
+        "val_left_elbow_mae": 0.0402623675763607,
+        "val_left_elbow_r2": 0.7849119901657104,
+        "val_right_shoulder_mse": 0.0018978998996317387,
+        "val_right_shoulder_rmse": 0.04356489297165481,
+        "val_right_shoulder_mae": 0.03206126019358635,
+        "val_right_shoulder_r2": 0.7093091011047363,
+        "val_right_elbow_mse": 0.003739325562492013,
+        "val_right_elbow_rmse": 0.06115002504081264,
+        "val_right_elbow_mae": 0.046523772180080414,
+        "val_right_elbow_r2": 0.7491978406906128,
+        "val_left_hand_mse": 0.006300292909145355,
+        "val_left_hand_rmse": 0.07937438446467068,
+        "val_left_hand_mae": 0.06085795909166336,
+        "val_left_hand_r2": 0.74765944480896,
+        "val_right_hand_mse": 0.00708767119795084,
+        "val_right_hand_rmse": 0.08418830796465053,
+        "val_right_hand_mae": 0.06294362246990204,
+        "val_right_hand_r2": 0.7297855615615845,
+        "val_left_hip_mse": 0.003118490567430854,
+        "val_left_hip_rmse": 0.05584344695155246,
+        "val_left_hip_mae": 0.03613794595003128,
+        "val_left_hip_r2": 0.6512445211410522,
+        "val_right_hip_mse": 0.0030879718251526356,
+        "val_right_hip_rmse": 0.055569522448484614,
+        "val_right_hip_mae": 0.03609778359532356,
+        "val_right_hip_r2": 0.661848783493042,
+        "val_left_knee_mse": 0.0027201473712921143,
+        "val_left_knee_rmse": 0.05215503208025199,
+        "val_left_knee_mae": 0.036343056708574295,
+        "val_left_knee_r2": 0.7240867018699646,
+        "val_right_knee_mse": 0.003180810948833823,
+        "val_right_knee_rmse": 0.056398678608933946,
+        "val_right_knee_mae": 0.038087934255599976,
+        "val_right_knee_r2": 0.7312495708465576,
+        "val_left_foot_mse": 0.0037478941958397627,
+        "val_left_foot_rmse": 0.06122004733614441,
+        "val_left_foot_mae": 0.0399569608271122,
+        "val_left_foot_r2": 0.2734053134918213,
+        "val_right_foot_mse": 0.0042272694408893585,
+        "val_right_foot_rmse": 0.0650174548939695,
+        "val_right_foot_mae": 0.042687028646469116,
+        "val_right_foot_r2": 0.2569108009338379
+      },
+      "best_epoch": 87
+    },
+    {
+      "fold": 4,
+      "train_metrics": {
+        "train_mse": 0.0023293604608625174,
+        "train_rmse": 0.04826344849741383,
+        "train_mae": 0.034517575055360794,
+        "train_r2": 0.8916745781898499,
+        "train_head_mse": 0.0017077169613912702,
+        "train_head_rmse": 0.041324532198093546,
+        "train_head_mae": 0.03152962028980255,
+        "train_head_r2": 0.8373924493789673,
+        "train_left_shoulder_mse": 0.0011702075134962797,
+        "train_left_shoulder_rmse": 0.03420829597475267,
+        "train_left_shoulder_mae": 0.025405768305063248,
+        "train_left_shoulder_r2": 0.8005127310752869,
+        "train_left_elbow_mse": 0.0020938189700245857,
+        "train_left_elbow_rmse": 0.045758266685098394,
+        "train_left_elbow_mae": 0.03438195213675499,
+        "train_left_elbow_r2": 0.8505493998527527,
+        "train_right_shoulder_mse": 0.0013347193598747253,
+        "train_right_shoulder_rmse": 0.036533811187374435,
+        "train_right_shoulder_mae": 0.02718243934214115,
+        "train_right_shoulder_r2": 0.8011150360107422,
+        "train_right_elbow_mse": 0.0027434458024799824,
+        "train_right_elbow_rmse": 0.05237791330780544,
+        "train_right_elbow_mae": 0.039684396237134933,
+        "train_right_elbow_r2": 0.823632538318634,
+        "train_left_hand_mse": 0.004048427566885948,
+        "train_left_hand_rmse": 0.06362725490610095,
+        "train_left_hand_mae": 0.04832181707024574,
+        "train_left_hand_r2": 0.8498220443725586,
+        "train_right_hand_mse": 0.004982086829841137,
+        "train_right_hand_rmse": 0.0705838992252563,
+        "train_right_hand_mae": 0.052881788462400436,
+        "train_right_hand_r2": 0.8197360634803772,
+        "train_left_hip_mse": 0.0015051969094201922,
+        "train_left_hip_rmse": 0.03879686726296586,
+        "train_left_hip_mae": 0.028659692034125328,
+        "train_left_hip_r2": 0.8256726264953613,
+        "train_right_hip_mse": 0.0015015958342701197,
+        "train_right_hip_rmse": 0.03875043011722734,
+        "train_right_hip_mae": 0.028423544019460678,
+        "train_right_hip_r2": 0.8315755128860474,
+        "train_left_knee_mse": 0.001649475540034473,
+        "train_left_knee_rmse": 0.04061373585419683,
+        "train_left_knee_mae": 0.03044450283050537,
+        "train_left_knee_r2": 0.8307429552078247,
+        "train_right_knee_mse": 0.0020409917924553156,
+        "train_right_knee_rmse": 0.04517733715542911,
+        "train_right_knee_mae": 0.03153478354215622,
+        "train_right_knee_r2": 0.816821277141571,
+        "train_left_foot_mse": 0.0025151632726192474,
+        "train_left_foot_rmse": 0.05015140349600644,
+        "train_left_foot_mae": 0.03429603576660156,
+        "train_left_foot_r2": 0.46943217515945435,
+        "train_right_foot_mse": 0.002988839754834771,
+        "train_right_foot_rmse": 0.05467028219091951,
+        "train_right_foot_mae": 0.03598213940858841,
+        "train_right_foot_r2": 0.41934603452682495
+      },
+      "val_metrics": {
+        "val_mse": 0.0023911045864224434,
+        "val_rmse": 0.04889892213967956,
+        "val_mae": 0.03525488078594208,
+        "val_r2": 0.8848626017570496,
+        "val_head_mse": 0.001686831470578909,
+        "val_head_rmse": 0.04107105392583576,
+        "val_head_mae": 0.030860433354973793,
+        "val_head_r2": 0.8220868706703186,
+        "val_left_shoulder_mse": 0.0013160471571609378,
+        "val_left_shoulder_rmse": 0.03627736425322184,
+        "val_left_shoulder_mae": 0.026742953807115555,
+        "val_left_shoulder_r2": 0.7506182789802551,
+        "val_left_elbow_mse": 0.0022632081527262926,
+        "val_left_elbow_rmse": 0.04757318732990562,
+        "val_left_elbow_mae": 0.035363659262657166,
+        "val_left_elbow_r2": 0.8100621700286865,
+        "val_right_shoulder_mse": 0.0013560382649302483,
+        "val_right_shoulder_rmse": 0.03682442484181183,
+        "val_right_shoulder_mae": 0.026879528537392616,
+        "val_right_shoulder_r2": 0.7892882823944092,
+        "val_right_elbow_mse": 0.0027889402117580175,
+        "val_right_elbow_rmse": 0.052810417644230175,
+        "val_right_elbow_mae": 0.03968168422579765,
+        "val_right_elbow_r2": 0.8043897151947021,
+        "val_left_hand_mse": 0.0038727661594748497,
+        "val_left_hand_rmse": 0.062231552764452615,
+        "val_left_hand_mae": 0.04685631021857262,
+        "val_left_hand_r2": 0.8309545516967773,
+        "val_right_hand_mse": 0.004730413667857647,
+        "val_right_hand_rmse": 0.0687780027905554,
+        "val_right_hand_mae": 0.05077134072780609,
+        "val_right_hand_r2": 0.8118121027946472,
+        "val_left_hip_mse": 0.0015643446240574121,
+        "val_left_hip_rmse": 0.03955179672350438,
+        "val_left_hip_mae": 0.029235482215881348,
+        "val_left_hip_r2": 0.8213025331497192,
+        "val_right_hip_mse": 0.0015988578088581562,
+        "val_right_hip_rmse": 0.039985720061769,
+        "val_right_hip_mae": 0.029367871582508087,
+        "val_right_hip_r2": 0.825577437877655,
+        "val_left_knee_mse": 0.002117802621796727,
+        "val_left_knee_rmse": 0.04601958954398363,
+        "val_left_knee_mae": 0.0342496782541275,
+        "val_left_knee_r2": 0.795352041721344,
+        "val_right_knee_mse": 0.002061152597889304,
+        "val_right_knee_rmse": 0.0453999184788839,
+        "val_right_knee_mae": 0.03270140290260315,
+        "val_right_knee_r2": 0.8085229992866516,
+        "val_left_foot_mse": 0.0028028201777487993,
+        "val_left_foot_rmse": 0.05294166768953165,
+        "val_left_foot_mae": 0.037596218287944794,
+        "val_left_foot_r2": 0.435538649559021,
+        "val_right_foot_mse": 0.002925136359408498,
+        "val_right_foot_rmse": 0.05408452976044534,
+        "val_right_foot_mae": 0.03800690546631813,
+        "val_right_foot_r2": 0.3809131979942322
+      },
+      "best_epoch": 86
+    },
+    {
+      "fold": 5,
+      "train_metrics": {
+        "train_mse": 0.0024740740191191435,
+        "train_rmse": 0.049740064526688575,
+        "train_mae": 0.03490713983774185,
+        "train_r2": 0.8855421543121338,
+        "train_head_mse": 0.0018349360907450318,
+        "train_head_rmse": 0.042836154014395736,
+        "train_head_mae": 0.03243231773376465,
+        "train_head_r2": 0.8229644298553467,
+        "train_left_shoulder_mse": 0.001229561516083777,
+        "train_left_shoulder_rmse": 0.0350651039651072,
+        "train_left_shoulder_mae": 0.026315754279494286,
+        "train_left_shoulder_r2": 0.7882286310195923,
+        "train_left_elbow_mse": 0.0021515809930860996,
+        "train_left_elbow_rmse": 0.04638513763142349,
+        "train_left_elbow_mae": 0.0355788916349411,
+        "train_left_elbow_r2": 0.8439255356788635,
+        "train_right_shoulder_mse": 0.0013389474479481578,
+        "train_right_shoulder_rmse": 0.036591630845702376,
+        "train_right_shoulder_mae": 0.02728155255317688,
+        "train_right_shoulder_r2": 0.8000109195709229,
+        "train_right_elbow_mse": 0.0027037132531404495,
+        "train_right_elbow_rmse": 0.05199724274555767,
+        "train_right_elbow_mae": 0.039106350392103195,
+        "train_right_elbow_r2": 0.8259941339492798,
+        "train_left_hand_mse": 0.0041994680650532246,
+        "train_left_hand_rmse": 0.06480330288691484,
+        "train_left_hand_mae": 0.04983675107359886,
+        "train_left_hand_r2": 0.842284083366394,
+        "train_right_hand_mse": 0.004961824044585228,
+        "train_right_hand_rmse": 0.0704402161026301,
+        "train_right_hand_mae": 0.052942968904972076,
+        "train_right_hand_r2": 0.8206831216812134,
+        "train_left_hip_mse": 0.0018931874074041843,
+        "train_left_hip_rmse": 0.04351077346363983,
+        "train_left_hip_mae": 0.030034150928258896,
+        "train_left_hip_r2": 0.7855543494224548,
+        "train_right_hip_mse": 0.0019366077613085508,
+        "train_right_hip_rmse": 0.04400690583656786,
+        "train_right_hip_mae": 0.030156804248690605,
+        "train_right_hip_r2": 0.7881489396095276,
+        "train_left_knee_mse": 0.001908199512399733,
+        "train_left_knee_rmse": 0.04368294303729699,
+        "train_left_knee_mae": 0.03068273328244686,
+        "train_left_knee_r2": 0.8072249293327332,
+        "train_right_knee_mse": 0.0021712330635637045,
+        "train_right_knee_rmse": 0.046596491966281156,
+        "train_right_knee_mae": 0.03172498941421509,
+        "train_right_knee_r2": 0.805128276348114,
+        "train_left_foot_mse": 0.0028742027934640646,
+        "train_left_foot_rmse": 0.053611591969126085,
+        "train_left_foot_mae": 0.0330866277217865,
+        "train_left_foot_r2": 0.4085054397583008,
+        "train_right_foot_mse": 0.0029595002997666597,
+        "train_right_foot_rmse": 0.054401289504630856,
+        "train_right_foot_mae": 0.03461292386054993,
+        "train_right_foot_r2": 0.42251336574554443
+      },
+      "val_metrics": {
+        "val_mse": 0.0024896604008972645,
+        "val_rmse": 0.04989649688001418,
+        "val_mae": 0.035054706037044525,
+        "val_r2": 0.8774808049201965,
+        "val_head_mse": 0.0023034869227558374,
+        "val_head_rmse": 0.04799465514779575,
+        "val_head_mae": 0.035477783530950546,
+        "val_head_r2": 0.7709254026412964,
+        "val_left_shoulder_mse": 0.0014754673466086388,
+        "val_left_shoulder_rmse": 0.03841181259207431,
+        "val_left_shoulder_mae": 0.027835700660943985,
+        "val_left_shoulder_r2": 0.7339650988578796,
+        "val_left_elbow_mse": 0.002266391646116972,
+        "val_left_elbow_rmse": 0.04760663447584771,
+        "val_left_elbow_mae": 0.0361696258187294,
+        "val_left_elbow_r2": 0.8229288458824158,
+        "val_right_shoulder_mse": 0.0014784359373152256,
+        "val_right_shoulder_rmse": 0.03845043481308404,
+        "val_right_shoulder_mae": 0.028285805135965347,
+        "val_right_shoulder_r2": 0.7732716798782349,
+        "val_right_elbow_mse": 0.0027592540718615055,
+        "val_right_elbow_rmse": 0.05252860241679294,
+        "val_right_elbow_mae": 0.03911467269062996,
+        "val_right_elbow_r2": 0.8075129389762878,
+        "val_left_hand_mse": 0.003979516215622425,
+        "val_left_hand_rmse": 0.06308340681686767,
+        "val_left_hand_mae": 0.048060860484838486,
+        "val_left_hand_r2": 0.8353221416473389,
+        "val_right_hand_mse": 0.005022870842367411,
+        "val_right_hand_rmse": 0.07087221488261398,
+        "val_right_hand_mae": 0.05213480070233345,
+        "val_right_hand_r2": 0.7990138530731201,
+        "val_left_hip_mse": 0.0018018875271081924,
+        "val_left_hip_rmse": 0.0424486457629474,
+        "val_left_hip_mae": 0.030333803966641426,
+        "val_left_hip_r2": 0.7745615839958191,
+        "val_right_hip_mse": 0.0018961775349453092,
+        "val_right_hip_rmse": 0.04354512067896137,
+        "val_right_hip_mae": 0.030418761074543,
+        "val_right_hip_r2": 0.7708436846733093,
+        "val_left_knee_mse": 0.001905422075651586,
+        "val_left_knee_rmse": 0.04365114059966344,
+        "val_left_knee_mae": 0.030405251309275627,
+        "val_left_knee_r2": 0.8042228817939758,
+        "val_right_knee_mse": 0.0020048990845680237,
+        "val_right_knee_rmse": 0.04477609947916437,
+        "val_right_knee_mae": 0.03122926689684391,
+        "val_right_knee_r2": 0.8137565851211548,
+        "val_left_foot_mse": 0.002483256161212921,
+        "val_left_foot_rmse": 0.049832280313195795,
+        "val_left_foot_mae": 0.030889546498656273,
+        "val_left_foot_r2": 0.44699835777282715,
+        "val_right_foot_mse": 0.002988521009683609,
+        "val_right_foot_rmse": 0.054667366954002906,
+        "val_right_foot_mae": 0.035355344414711,
+        "val_right_foot_r2": 0.37936800718307495
+      },
+      "best_epoch": 100
+    }
+  ],
+  "test_metrics": {
+    "test_mse": 0.0027181378100067377,
+    "test_rmse": 0.05213576325332485,
+    "test_mae": 0.035456374287605286,
+    "test_r2": 0.866809606552124,
+    "test_head_mse": 0.0017033809563145041,
+    "test_head_rmse": 0.04127203600883417,
+    "test_head_mae": 0.028883669525384903,
+    "test_head_r2": 0.8015559315681458,
+    "test_left_shoulder_mse": 0.001041050418280065,
+    "test_left_shoulder_rmse": 0.032265312927043883,
+    "test_left_shoulder_mae": 0.024377966299653053,
+    "test_left_shoulder_r2": 0.7814023494720459,
+    "test_left_elbow_mse": 0.003279737662523985,
+    "test_left_elbow_rmse": 0.05726899390179633,
+    "test_left_elbow_mae": 0.04450472816824913,
+    "test_left_elbow_r2": 0.7697587609291077,
+    "test_right_shoulder_mse": 0.0015329060843214393,
+    "test_right_shoulder_rmse": 0.03915234455714548,
+    "test_right_shoulder_mae": 0.026878517121076584,
+    "test_right_shoulder_r2": 0.7444455027580261,
+    "test_right_elbow_mse": 0.004571546334773302,
+    "test_right_elbow_rmse": 0.06761321124435152,
+    "test_right_elbow_mae": 0.04766281321644783,
+    "test_right_elbow_r2": 0.7366851568222046,
+    "test_left_hand_mse": 0.006625028792768717,
+    "test_left_hand_rmse": 0.08139427985287859,
+    "test_left_hand_mae": 0.06320392340421677,
+    "test_left_hand_r2": 0.7517092823982239,
+    "test_right_hand_mse": 0.009561670012772083,
+    "test_right_hand_rmse": 0.09778379217831595,
+    "test_right_hand_mae": 0.06907287985086441,
+    "test_right_hand_r2": 0.688563346862793,
+    "test_left_hip_mse": 0.0010334844700992107,
+    "test_left_hip_rmse": 0.03214785327357351,
+    "test_left_hip_mae": 0.024833919480443,
+    "test_left_hip_r2": 0.8105758428573608,
+    "test_right_hip_mse": 0.001152719953097403,
+    "test_right_hip_rmse": 0.03395172975118356,
+    "test_right_hip_mae": 0.025900309905409813,
+    "test_right_hip_r2": 0.8029546141624451,
+    "test_left_knee_mse": 0.0009109490201808512,
+    "test_left_knee_rmse": 0.0301819320153772,
+    "test_left_knee_mae": 0.022803761065006256,
+    "test_left_knee_r2": 0.8890263438224792,
+    "test_right_knee_mse": 0.0009880693396553397,
+    "test_right_knee_rmse": 0.03143357026580563,
+    "test_right_knee_mae": 0.024283383041620255,
+    "test_right_knee_r2": 0.8961153030395508,
+    "test_left_foot_mse": 0.0015657296171411872,
+    "test_left_foot_rmse": 0.03956930144873911,
+    "test_left_foot_mae": 0.029738979414105415,
+    "test_left_foot_r2": 0.4839726686477661,
+    "test_right_foot_mse": 0.0013695204397663474,
+    "test_right_foot_rmse": 0.037007032301528145,
+    "test_right_foot_mae": 0.028788041323423386,
+    "test_right_foot_r2": 0.5351462364196777
+  }
+}

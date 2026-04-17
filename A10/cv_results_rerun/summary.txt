@@ -1,6 +1,233 @@
 Cross-Validation Training Summary - Optimizer & Loss Function Variants
 ==================================================
 
+DENSE_FLAT:
+----------------------------------------
+
+  Optimizer: SGD, Loss: MSE
+    Best Fold: 5
+    Val RMSE: 0.059777 ± 0.000380
+    Val MAE:  0.044151 ± 0.000271
+    Val R²:   0.811253 ± 0.002552
+    Test RMSE: 0.057901
+    Test MAE:  0.042075
+    Test R²:   0.812498
+
+  Optimizer: SGD, Loss: MAE
+    Best Fold: 3
+    Val RMSE: 0.042340 ± 0.001068
+    Val MAE:  0.029234 ± 0.000849
+    Val R²:   0.905270 ± 0.004411
+    Test RMSE: 0.045225
+    Test MAE:  0.030943
+    Test R²:   0.885608
+
+  Optimizer: RMSPROP, Loss: MSE
+    Best Fold: 1
+    Val RMSE: 0.059574 ± 0.000555
+    Val MAE:  0.043976 ± 0.000389
+    Val R²:   0.812541 ± 0.002725
+    Test RMSE: 0.057816
+    Test MAE:  0.042010
+    Test R²:   0.813047
+
+  Optimizer: RMSPROP, Loss: MAE
+    Best Fold: 3
+    Val RMSE: 0.043342 ± 0.001035
+    Val MAE:  0.030137 ± 0.000729
+    Val R²:   0.900722 ± 0.004765
+    Test RMSE: 0.045709
+    Test MAE:  0.031539
+    Test R²:   0.883147
+
+  Optimizer: ADAM, Loss: MSE
+    Best Fold: 1
+    Val RMSE: 0.059204 ± 0.000886
+    Val MAE:  0.043660 ± 0.000640
+    Val R²:   0.814850 ± 0.004588
+    Test RMSE: 0.057497
+    Test MAE:  0.041599
+    Test R²:   0.815106
+
+  Optimizer: ADAM, Loss: MAE
+    Best Fold: 1
+    Val RMSE: 0.043445 ± 0.000320
+    Val MAE:  0.030182 ± 0.000336
+    Val R²:   0.900308 ± 0.000805
+    Test RMSE: 0.047239
+    Test MAE:  0.032057
+    Test R²:   0.875194
+
+CONV1D:
+----------------------------------------
+
+  Optimizer: SGD, Loss: MSE
+    Best Fold: 4
+    Val RMSE: 0.037308 ± 0.001770
+    Val MAE:  0.027669 ± 0.001185
+    Val R²:   0.934455 ± 0.007280
+    Test RMSE: 0.048204
+    Test MAE:  0.032699
+    Test R²:   0.886142
+
+  Optimizer: SGD, Loss: MAE
+    Best Fold: 1
+    Val RMSE: 0.040688 ± 0.003138
+    Val MAE:  0.028431 ± 0.001718
+    Val R²:   0.922252 ± 0.008808
+    Test RMSE: 0.045674
+    Test MAE:  0.031218
+    Test R²:   0.897780
+
+  Optimizer: RMSPROP, Loss: MSE
+    Best Fold: 1
+    Val RMSE: 0.038226 ± 0.002496
+    Val MAE:  0.028294 ± 0.001726
+    Val R²:   0.930787 ± 0.011849
+    Test RMSE: 0.049279
+    Test MAE:  0.033470
+    Test R²:   0.881005
+
+  Optimizer: RMSPROP, Loss: MAE
+    Best Fold: 1
+    Val RMSE: 0.039488 ± 0.002909
+    Val MAE:  0.027739 ± 0.001943
+    Val R²:   0.926031 ± 0.013733
+    Test RMSE: 0.047812
+    Test MAE:  0.031981
+    Test R²:   0.887983
+
+  Optimizer: ADAM, Loss: MSE
+    Best Fold: 5
+    Val RMSE: 0.038188 ± 0.002720
+    Val MAE:  0.028426 ± 0.001917
+    Val R²:   0.931006 ± 0.011791
+    Test RMSE: 0.047982
+    Test MAE:  0.032322
+    Test R²:   0.887189
+
+  Optimizer: ADAM, Loss: MAE
+    Best Fold: 4
+    Val RMSE: 0.039169 ± 0.001557
+    Val MAE:  0.027708 ± 0.001136
+    Val R²:   0.927801 ± 0.006863
+    Test RMSE: 0.048491
+    Test MAE:  0.033039
+    Test R²:   0.884783
+
+CONV1D_V2:
+----------------------------------------
+
+  Optimizer: SGD, Loss: MSE
+    Best Fold: 2
+    Val RMSE: 0.062167 ± 0.003800
+    Val MAE:  0.046432 ± 0.003176
+    Val R²:   0.817058 ± 0.029813
+    Test RMSE: 0.057667
+    Test MAE:  0.041327
+    Test R²:   0.837051
+
+  Optimizer: SGD, Loss: MAE
+    Best Fold: 4
+    Val RMSE: 0.068974 ± 0.008940
+    Val MAE:  0.049937 ± 0.006853
+    Val R²:   0.775564 ± 0.047067
+    Test RMSE: 0.057603
+    Test MAE:  0.040986
+    Test R²:   0.837412
+
+  Optimizer: RMSPROP, Loss: MSE
+    Best Fold: 1
+    Val RMSE: 0.063546 ± 0.004947
+    Val MAE:  0.047428 ± 0.003350
+    Val R²:   0.809553 ± 0.028552
+    Test RMSE: 0.058923
+    Test MAE:  0.043360
+    Test R²:   0.829877
+
+  Optimizer: RMSPROP, Loss: MAE
+    Best Fold: 4
+    Val RMSE: 0.063171 ± 0.003044
+    Val MAE:  0.045351 ± 0.002235
+    Val R²:   0.812542 ± 0.015570
+    Test RMSE: 0.057482
+    Test MAE:  0.040342
+    Test R²:   0.838092
+
+  Optimizer: ADAM, Loss: MSE
+    Best Fold: 1
+    Val RMSE: 0.061818 ± 0.002644
+    Val MAE:  0.045842 ± 0.001557
+    Val R²:   0.820452 ± 0.013690
+    Test RMSE: 0.057648
+    Test MAE:  0.042506
+    Test R²:   0.837159
+
+  Optimizer: ADAM, Loss: MAE
+    Best Fold: 5
+    Val RMSE: 0.065945 ± 0.005083
+    Val MAE:  0.047682 ± 0.003801
+    Val R²:   0.794475 ± 0.034476
+    Test RMSE: 0.058813
+    Test MAE:  0.041789
+    Test R²:   0.830507
+
+CONV1D_V3:
+----------------------------------------
+
+  Optimizer: SGD, Loss: MSE
+    Best Fold: 1
+    Val RMSE: 0.029997 ± 0.001785
+    Val MAE:  0.022075 ± 0.001154
+    Val R²:   0.957411 ± 0.006761
+    Test RMSE: 0.042868
+    Test MAE:  0.028328
+    Test R²:   0.909953
+
+  Optimizer: SGD, Loss: MAE
+    Best Fold: 1
+    Val RMSE: 0.032568 ± 0.002252
+    Val MAE:  0.022194 ± 0.000673
+    Val R²:   0.950091 ± 0.005977
+    Test RMSE: 0.043997
+    Test MAE:  0.029830
+    Test R²:   0.905147
+
+  Optimizer: RMSPROP, Loss: MSE
+    Best Fold: 1
+    Val RMSE: 0.029748 ± 0.001329
+    Val MAE:  0.021969 ± 0.000968
+    Val R²:   0.958297 ± 0.004721
+    Test RMSE: 0.044763
+    Test MAE:  0.028915
+    Test R²:   0.901818
+
+  Optimizer: RMSPROP, Loss: MAE
+    Best Fold: 4
+    Val RMSE: 0.032760 ± 0.002210
+    Val MAE:  0.022521 ± 0.000836
+    Val R²:   0.949316 ± 0.007836
+    Test RMSE: 0.043624
+    Test MAE:  0.029270
+    Test R²:   0.906748
+
+  Optimizer: ADAM, Loss: MSE
+    Best Fold: 1
+    Val RMSE: 0.030258 ± 0.001755
+    Val MAE:  0.022252 ± 0.001045
+    Val R²:   0.956834 ± 0.005398
+    Test RMSE: 0.044237
+    Test MAE:  0.029559
+    Test R²:   0.904110
+
+  Optimizer: ADAM, Loss: MAE
+    Best Fold: 4
+    Val RMSE: 0.032909 ± 0.001558
+    Val MAE:  0.022467 ± 0.000600
+    Val R²:   0.949044 ± 0.005156
+    Test RMSE: 0.042770
+    Test MAE:  0.028917
+    Test R²:   0.910365
 
 DENSE_FLAT_SGD_MSE
 ------------------------------
